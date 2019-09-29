@@ -1,7 +1,7 @@
 ﻿<dict>
 	<!--event:{"role":999,"ico":"","bk":"","music":"","wav":"","item":"","shark":5,"mask":"mask1.png","bktime":0,"mv":1.5,"bkx":10,"bky":10,"save":1,"goto":0,"choose":[{"key":"chs15_0","bk":"","goto":0},{"key":"chs15_1","bk":"","goto":0}]}-->
 	<key>debug_start</key>
-	<string>0</string><!--1876-->
+	<string>2047</string><!--1876-->
 	
 	<key>first</key>
     <string>这一次...请给他们一个圆满的结局！</string>
@@ -345,7 +345,7 @@
     <string>{"role":2,"ico":"ml1.png"}</string>
 	<key>53</key>
 	<string>柳梦璃：
-		........................(愿梦璃早日寻到恩人，以报恩情)</string>
+		........................（愿梦璃早日寻到恩人，以报恩情）</string>
 	
 	<key>event_54</key>
     <string>{"role":1,"ico":"zy1.png"}</string>
@@ -929,7 +929,7 @@
     <string>{"role":0,"save":1}</string>
 	<key>149</key>
     <string>
-		（一个人影从房顶上跳了下来）</string>
+一个人影从房顶上跳了下来。</string>
 		
 	<key>event_150</key>
     <string>{"role":1,"ico":"zy1.png"}</string>
@@ -1013,7 +1013,7 @@
     <string>{"role":7,"ico":"npc2.png"}</string>
 	<key>163</key>
     <string>？？？：
-		主人当年将公子送上昆仑山，只为避祸掩饰，以保公子性命。留下宝剑给公子以便日后相认，孰料主人未及相认便与世长辞，公子却对自己身世一无所知。</string>
+		主人当年为避祸掩饰将公子送上昆仑山，以保公子性命。留下宝剑以便日后相认，孰料主人未及相认便与世长辞，公子却对自己身世一无所知。</string>
 
 	<key>event_164</key>
     <string>{"role":1,"ico":"zy4.png"}</string>
@@ -1031,7 +1031,7 @@
     <string>{"role":7,"ico":"npc2.png"}</string>
 	<key>166</key>
     <string>？？？：
-		如今主人虽逝，但我燕国被灭只恨永不敢忘。只盼公子早日想通，带领我等共谋复国之事。</string>
+		如今主人虽逝，但我燕国被灭之恨永不敢忘。只盼公子早日想通，带领我等共谋复国之事。</string>
 
 	<key>event_167</key>
     <string>{"role":2,"ico":"ml1.png"}</string>
@@ -1344,7 +1344,7 @@
 	<key>chs214_0</key>  
     <string>无妨</string>
 	<key>chs214_1</key>  
-    <string>...</string>
+    <string>......</string>
 	
 	<key>event_215</key>
     <string>{"role":1,"ico":"zy1.png"}</string>
@@ -2058,7 +2058,7 @@
     <string>{"role":1,"ico":"zy1.png"}</string>
 	<key>332</key>
 	<string>慕容紫英：
-		我奉师命前往陈州，遇到数月前即墨郊外那些人。</string>
+		......我奉师命前往陈州，遇到数月前即墨郊外那些人。</string>
 		
 	<key>event_333</key>
     <string>{"role":1,"ico":"zy1.png"}</string>
@@ -2897,7 +2897,7 @@
     <string>{"role":4,"ico":"th1.png"}</string>
 	<key>472</key>
 	<string>云天河：
-		师叔?</string>
+		师叔？</string>
 		
 	<!--选项-->
 	<key>event_473</key>
@@ -3410,7 +3410,7 @@
     <string>{"role":1,"ico":"zy1.png"}</string>
 	<key>553</key>
 	<string>慕容紫英：
-		琼华以剑为苍冥间浩然正气，习剑者明是非、尊礼仪，及时手中无剑，心中也要存有慧剑——</string>
+		琼华以剑为苍冥间浩然正气，习剑者明是非、尊礼仪，即使手中无剑，心中也要存有慧剑——</string>
 		
 	<key>event_554</key>
     <string>{"role":1,"ico":"zy1.png"}</string>
@@ -3558,7 +3558,7 @@
     <string>{"role":1,"ico":"zy2.png","bk":"bk36.png","music":"snd/smt.mp3","save":1}</string>
 	<key>576</key>
 	<string>慕容紫英：
-		（这里......是月牙村？）</string>
+		（这里......是月牙村？似乎比以前还荒芜了。）</string>
 		
 	<key>event_577</key>
     <string>{"role":1,"ico":"zy2.png"}</string>
