@@ -1,7 +1,7 @@
 ﻿<dict>
 	<!--event:{"role":999,"ico":"","bk":"","music":"","wav":"","item":"","shark":5,"mask":"mask1.png","bktime":0,"mv":1.5,"bkx":10,"bky":10,"save":1,"goto":0,"choose":[{"key":"chs15_0","bk":"","goto":0},{"key":"chs15_1","bk":"","goto":0}]}-->
 	<key>debug_start</key>
-	<string>2047</string><!--1876-->
+	<string>0</string><!--2047-->
 	
 	<key>first</key>
     <string>这一次...请给他们一个圆满的结局！</string>
@@ -4373,7 +4373,7 @@
     <string>{"role":1,"ico":"zy1.png"}</string>
 	<key>710</key>
 	<string>慕容紫英：
-		我确实不知，何必期满。</string>
+		我确实不知，何必欺瞒。</string>
 		
 	<key>event_711</key>
     <string>{"role":2,"ico":"ml1_1.png"}</string>
@@ -11509,7 +11509,7 @@
 半个时辰后——</string>
 
 	<key>event_2047</key>
-    <string>{"role":1,"ico":"zy1.png","bk":"bk109.png"}</string>
+    <string>{"role":1,"ico":"zy1.png","bk":"bk109.png","music":"snd/cljf.mp3"}</string>
 	<key>2047</key>
 	<string>慕容紫英：
 		你醒了？</string>
@@ -11667,7 +11667,7 @@
 
 
 	<key>event_2080</key>
-    <string>{"ico":"zy4.png","bk":"禁地洞门"}</string>
+    <string>{"ico":"zy4.png","bk":"bk110.png","music":"snd/qhpjq.mp3"}</string>
 	<key>2080</key>
 	<string>慕容紫英：
 		......掌门？</string>
@@ -11853,7 +11853,7 @@
 ........................</string>
 
 	<key>event_2111</key>
-    <string>{"ico":"th1.png","bk":"门派中"}</string>
+    <string>{"ico":"th1.png","bk":"bk75.png","music":"snd/kld.mp3"}</string>
 	<key>2111</key>
 	<string>云天河：
 		我们现在该怎么办？</string>
@@ -11913,7 +11913,7 @@
 		......嗯。</string>
 		
 	<key>event_2121</key>
-    <string>{"ico":"zy1.png","bk":"青阳"}</string>
+    <string>{"ico":"zy1.png","bk":"bk55.png"}</string>
 	<key>2121</key>
 	<string>慕容紫英：
 		弟子慕容紫英拜见青阳、重光二位长老。</string>
