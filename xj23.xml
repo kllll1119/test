@@ -2274,7 +2274,7 @@
     <string>{"role":0}</string>
 	<key>368</key>
 	<string>
-也只有这，能让人抛却凡尘杂念，换的内心宁静。</string>
+也只有这里，能让人抛却凡尘杂念，换得内心宁静。</string>
 
 	<key>event_369</key>
     <string>{"role":0}</string>
@@ -2283,10 +2283,10 @@
 身处绝尘之处，洞悉尘世，远离繁华，只能保持一个无欲的心。</string>
 
 	<key>event_370</key>
-    <string>{"role":0,"mask":"mask1.png"}</string>
+    <string>{"role":0,"bk":"bk_null.png"}</string>
 	<key>370</key>
 	<string>
-（突袭的回忆......）</string>
+............</string>
 
 	<key>event_371</key>
     <string>{"role":2,"ico":"ml1.png","bk":"bk20.png"}</string>
@@ -11513,4 +11513,686 @@
 	<key>2047</key>
 	<string>慕容紫英：
 		你醒了？</string>
+		
+	<key>event_2048</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2048</key>
+	<string>云天河：
+		紫英？你回来了？</string>
+		
+	<key>event_2049</key>
+    <string>{"role":1,"ico":"zy1.png"}</string>
+	<key>2049</key>
+	<string>慕容紫英：
+		你太过胡闹！要是我再晚半刻，你早就性命难保！</string>
+		
+	<key>event_2050</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2050</key>
+	<string>云天河：
+		......会受重伤？可是、可是梦璃她进去了，什么事都没有发生......</string>
+		
+	<key>event_2051</key>
+    <string>{"ico":"zy4.png"}</string>
+	<key>2051</key>
+	<string>慕容紫英：
+		......！！</string>
+		
+	<key>event_2052</key>
+    <string>{"ico":"zy4.png"}</string>
+	<key>2052</key>
+	<string>慕容紫英：
+		你......刚刚说什么......</string>
+		
+	<key>event_2053</key>
+    <string>{"ico":"ls3.png"}</string>
+	<key>2053</key>
+	<string>韩菱纱：
+		梦璃？！怎么可能？你说她跑进了妖界？！</string>
+		
+	<key>event_2054</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2054</key>
+	<string>云天河：
+		真的！我没有看错！她还说了一堆很奇怪的话，她说自己是......</string>
+		
+	<key>event_2055</key>
+    <string>{"ico":"ls3.png"}</string>
+	<key>2055</key>
+	<string>韩菱纱：
+		是什么？</string>
+		
+	<key>event_2056</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2056</key>
+	<string>云天河：
+		......</string>
+		
+	<key>event_2057</key>
+    <string>{}</string>
+	<key>2057</key>
+	<string>
+他的目光忽然朝我望过来。</string>
+
+	<key>event_2058</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2058</key>
+	<string>云天河：
+		......没、没什么......</string>
+		
+	<key>event_2059</key>
+    <string>{}</string>
+	<key>2059</key>
+	<string>
+我的心却因他这句话仿佛沉入了谷底。</string>
+
+	<key>event_2060</key>
+    <string>{"ico":"zy6.png"}</string>
+	<key>2060</key>
+	<string>慕容紫英：
+		......莫非......梦璃和妖界有什么关系？</string>
+		
+	<key>event_2061</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2061</key>
+	<string>云天河：
+		......紫英，我问你，要是梦璃真的是妖，你会怎么办？</string>
+		
+	<key>event_2062</key>
+    <string>{"ico":"zy4.png"}</string>
+	<key>2062</key>
+	<string>慕容紫英：
+		......梦璃是妖？</string>
+		
+	<key>event_2063</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2063</key>
+	<string>云天河：
+		你回答我，你是不是也要杀了她？</string>
+		
+	<key>event_2064</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>2064</key>
+	<string>慕容紫英：
+		梦璃不可能是妖！</string>
+		
+	<key>event_2065</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>2065</key>
+	<string>慕容紫英：
+		她身上没有任何妖气，掌门与长老也未察觉，连师叔都没有说什么，你也不要乱想。</string>
+		
+	<key>event_2066</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2066</key>
+	<string>云天河：
+		可是梦璃她自己说......</string>
+		
+	<key>event_2067</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>2067</key>
+	<string>慕容紫英：
+		......够了！</string>
+		
+	<key>event_2068</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2068</key>
+	<string>云天河：
+		............</string>
+		
+	<key>event_2069</key>
+    <string>{"ico":"ls2.png"}</string>
+	<key>2069</key>
+	<string>韩菱纱：
+		............</string>
+		
+	<key>event_2070</key>
+    <string>{"ico":"ls2.png"}</string>
+	<key>2070</key>
+	<string>韩菱纱：
+		我们不如去禁地......找玄霄问问清楚。</string>
+		
+	<key>event_2071</key>
+    <string>{"ico":"ls2.png"}</string>
+	<key>2071</key>
+	<string>韩菱纱：
+		看那妖界入口，是否也有常人能够进入的可能？</string>
+		
+	<key>event_2072</key>
+    <string>{"ico":"zy1.png","goto":2080}</string>
+	<key>2072</key>
+	<string>慕容紫英：
+		......好，我同你们一起去。</string>
+
+
+
+	<key>event_2080</key>
+    <string>{"ico":"zy4.png","bk":"禁地洞门"}</string>
+	<key>2080</key>
+	<string>慕容紫英：
+		......掌门？</string>
+		
+	<key>event_2081</key>
+    <string>{}</string>
+	<key>2081</key>
+	<string>
+为何禁地门口会有这么多弟子守着，连掌门也在此处？</string>
+
+	<key>event_2082</key>
+    <string>{"ico":"sy1.png"}</string>
+	<key>2082</key>
+	<string>夙瑶：
+		你们几人跑来禁地，所为何来？</string>
+		
+	<key>event_2083</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2083</key>
+	<string>云天河：
+		我们是来找我大哥、找玄霄的！</string>
+		
+	<key>event_2084</key>
+    <string>{"ico":"sy1.png"}</string>
+	<key>2084</key>
+	<string>夙瑶：
+		玄霄？哼，他不会见你们。</string>
+		
+	<key>event_2085</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2085</key>
+	<string>云天河：
+		为什么？你为什么会在禁地里？你把我大哥怎么了？！</string>
+		
+	<key>event_2086</key>
+    <string>{"ico":"sy1.png"}</string>
+	<key>2086</key>
+	<string>夙瑶：
+		你口口声声称玄霄大哥，看不出来他还颇有办法，让你这么死心塌地。</string>
+		
+	<key>event_2087</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2087</key>
+	<string>云天河：
+		你......什么意思？</string>
+		
+	<key>event_2088</key>
+    <string>{"ico":"sy1.png"}</string>
+	<key>2088</key>
+	<string>夙瑶：
+		可悲，还想不明白吗？</string>
+		
+	<key>event_2089</key>
+    <string>{"ico":"sy1.png"}</string>
+	<key>2089</key>
+	<string>夙瑶：
+		今日一切都是我与玄霄策谋，而你们，不过是棋盘中的几颗小小棋子。</string>
+		
+	<key>event_2090</key>
+    <string>{"ico":"zy4.png"}</string>
+	<key>2090</key>
+	<string>慕容紫英：
+		......！</string>
+		
+	<key>event_2091</key>
+    <string>{"ico":"ls3.png"}</string>
+	<key>2091</key>
+	<string>韩菱纱：
+		......！</string>
+		
+	<key>event_2092</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2092</key>
+	<string>云天河：
+		不可能！你胡说！</string>
+		
+	<key>event_2093</key>
+    <string>{"ico":"sy1.png"}</string>
+	<key>2093</key>
+	<string>夙瑶：
+		玄霄身为羲和剑之主，在望舒剑被你们带至山门时，便有所感应，有他告知，我才会见机收你们入门。</string>
+		
+	<key>event_2094</key>
+    <string>{"ico":"sy1.png"}</string>
+	<key>2094</key>
+	<string>夙瑶：
+		不然就凭你们在禁地数次大摇大摆地出入，我又怎会不知？</string>
+		
+	<key>event_2095</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2095</key>
+	<string>云天河：
+		等等！我不懂你的意思！你说大哥骗了我们？可是大哥为什么要骗我们？！</string>
+		
+	<key>event_2096</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2096</key>
+	<string>云天河：
+		他、他不是我爹娘的师兄吗？</string>
+		
+	<key>event_2097</key>
+    <string>{"ico":"sy1.png"}</string>
+	<key>2097</key>
+	<string>夙瑶：
+		你可知道？玄霄恨云天青、夙玉入骨，没有杀了你，已算手下留情！</string>
+		
+	<key>event_2098</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2098</key>
+	<string>云天河：
+		你......说什么？怎么可能？！</string>
+		
+	<key>event_2099</key>
+    <string>{"ico":"sy1.png"}</string>
+	<key>2099</key>
+	<string>夙瑶：
+		当年你母亲与玄霄被选为望舒、羲和宿体。十九年妖界大战，你父母携望舒剑下山叛逃......</string>
+		
+	<key>event_2100</key>
+    <string>{"ico":"sy1.png"}</string>
+	<key>2100</key>
+	<string>夙瑶：
+		若非他们临阵脱逃，玄霄又怎会运功过度？</string>
+		
+	<key>event_2101</key>
+    <string>{"ico":"sy1.png"}</string>
+	<key>2101</key>
+	<string>夙瑶：
+		且他无望舒剑支持，内息大乱，才终致阳炎侵体，变为后来的模样！</string>
+		
+	<key>event_2102</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2102</key>
+	<string>云天河：
+		大哥......他......他是被我爹和我娘害的......</string>
+		
+	<key>event_2103</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>2103</key>
+	<string>慕容紫英：
+		掌门，弟子还是不明，无论如何，本派只是要将望舒剑取回，又何必......何必如此对待天河他们？</string>
+		
+	<key>event_2104</key>
+    <string>{"ico":"sy1.png"}</string>
+	<key>2104</key>
+	<string>夙瑶：
+		大胆！你有此一问，是觉得我曾错待他们？</string>
+		
+	<key>event_2105</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>2105</key>
+	<string>慕容紫英：
+		......</string>
+		
+	<key>event_2106</key>
+    <string>{"ico":"sy1.png"}</string>
+	<key>2106</key>
+	<string>夙瑶：
+		云天河等人入门以来，我命你尽心传授心法，如今令他们下山，也不以驱逐之名，我自问待他们已是不薄。</string>
+		
+	<key>event_2107</key>
+    <string>{"ico":"sy1.png"}</string>
+	<key>2107</key>
+	<string>夙瑶：
+		紫英你还是回去多多修行，勿要被杂念所扰。</string>
+		
+	<key>event_2108</key>
+    <string>{"ico":"sy1.png"}</string>
+	<key>2108</key>
+	<string>夙瑶：
+		至于其他几人就自行下山去吧，最好将山上的一切通通忘记。</string>
+		
+	<key>event_2109</key>
+    <string>{"bk":"bk_null.png"}</string>
+	<key>2109</key>
+	<string>
+............</string>
+
+	<key>event_2110</key>
+    <string>{}</string>
+	<key>2110</key>
+	<string>
+........................</string>
+
+	<key>event_2111</key>
+    <string>{"ico":"th1.png","bk":"门派中"}</string>
+	<key>2111</key>
+	<string>云天河：
+		我们现在该怎么办？</string>
+		
+	<key>event_2112</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>2112</key>
+	<string>慕容紫英：
+		我们不如去找青阳、重光二位长老。</string>
+		
+	<key>event_2113</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>2113</key>
+	<string>慕容紫英：
+		无论玄霄师叔之事，还是梦璃之事，或许长老都会有些办法可想......</string>
+		
+	<key>event_2114</key>
+    <string>{"ico":"ls2.png"}</string>
+	<key>2114</key>
+	<string>韩菱纱：
+		......紫英，掌门都已经让我和天河下山了，你......还有跟我们一起吗？</string>
+		
+	<key>event_2115</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>2115</key>
+	<string>慕容紫英：
+		......我并非不信掌门的话，但是也不能丢下你们不管......</string>
+		
+	<key>event_2116</key>
+    <string>{"ico":"zy6.png"}</string>
+	<key>2116</key>
+	<string>慕容紫英：
+		何况，梦璃失踪之事也要弄清楚原由。</string>
+		
+	<key>event_2117</key>
+    <string>{"ico":"zy6.png"}</string>
+	<key>2117</key>
+	<string>慕容紫英：
+		......走吧。</string>
+		
+	<key>event_2118</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2118</key>
+	<string>云天河：
+		......</string>
+		
+	<key>event_2119</key>
+    <string>{"ico":"ls2.png"}</string>
+	<key>2119</key>
+	<string>韩菱纱：
+		天河，我们走吧。</string>
+		
+	<key>event_2120</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2120</key>
+	<string>云天河：
+		......嗯。</string>
+		
+	<key>event_2121</key>
+    <string>{"ico":"zy1.png","bk":"青阳"}</string>
+	<key>2121</key>
+	<string>慕容紫英：
+		弟子慕容紫英拜见青阳、重光二位长老。</string>
+		
+	<key>event_2122</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2122</key>
+	<string>青阳：
+		已找齐了三件至阴至寒之物？</string>
+		
+	<key>event_2123</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>2123</key>
+	<string>慕容紫英：
+		......不错，弟子等已将三样东西交给师叔，他似乎也已破冰而出。</string>
+		
+	<key>event_2124</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2124</key>
+	<string>青阳：
+		唔......如此甚好、如此甚好啊！</string>
+		
+	<key>event_2125</key>
+    <string>{"ico":"cg.png"}</string>
+	<key>2125</key>
+	<string>重光：
+		今日来此，可是玄霄还有他事相求？</string>
+		
+	<key>event_2126</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2126</key>
+	<string>云天河：
+		长老！我想问你们，我爹和我娘当初真的是带着望舒剑逃走？才会害了玄霄，害他被冰封？！</string>
+		
+	<key>event_2127</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2127</key>
+	<string>青阳：
+		......！！</string>
+		
+	<key>event_2128</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2128</key>
+	<string>青阳：
+		这些话，你从哪里听来的？！</string>
+		
+	<key>event_2129</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2129</key>
+	<string>云天河：
+		是掌门告诉我的......</string>
+		
+	<key>event_2130</key>
+    <string>{"ico":"cg.png"}</string>
+	<key>2130</key>
+	<string>重光：
+		岂有此理！夙瑶竟如此不知轻重！</string>
+		
+	<key>event_2131</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2131</key>
+	<string>云天河：
+		长老......这些都是真的吗？</string>
+		
+	<key>event_2132</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2132</key>
+	<string>青阳：
+		......唉，孩子，你知道了又能如何呢？当年你爹和你娘确实带走了望舒剑......</string>
+		
+	<key>event_2133</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2133</key>
+	<string>青阳：
+		此举令琼华派升仙功亏一篑，那些弟子的死伤也变得毫无价值啊......</string>
+		
+	<key>event_2134</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2134</key>
+	<string>青阳：
+		最悲惨之人，莫过于玄霄，他内息失调终致走火入魔，不得不被冰封......</string>
+		
+	<key>event_2135</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2135</key>
+	<string>云天河：
+		这么说来，真的是我爹娘害了他......</string>
+		
+	<key>event_2136</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>2136</key>
+	<string>韩菱纱：
+		......但是，就算掌门和玄霄想取回望舒剑，也不该骗我们啊！为什么不光明正大说出来呢？！</string>
+		
+	<key>event_2137</key>
+    <string>{"ico":"zy2.png"}</string>
+	<key>2137</key>
+	<string>慕容紫英：
+		菱纱！</string>
+		
+	<key>event_2138</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2138</key>
+	<string>青阳：
+		......夙瑶嘛，她的资质原本也算的上出类拔萃，奈何老掌门的其他几位弟子更是万中选一之人......</string>
+		
+	<key>event_2139</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2139</key>
+	<string>青阳：
+		......夙瑶虽十分刻苦，但若不是大弟子玄震死于十九年前的大战，夙玉、云天青出逃，而玄霄又被冰封......</string>
+		
+	<key>event_2140</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2140</key>
+	<string>青阳：
+		......那无论如何也轮不到她继任掌门之位。</string>
+		
+	<key>event_2141</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2141</key>
+	<string>青阳：
+		所以......她难免患得患失，任何事情都要思虑周全，她这么做，也有不得已的原因啊......</string>
+		
+	<key>event_2142</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>2142</key>
+	<string>韩菱纱：
+		有什么不得已的原因——</string>
+	
+	<key>event_2143</key>
+    <string>{"ico":"cg.png"}</string>
+	<key>2143</key>
+	<string>重光：
+		够了！当年之事不必再多纠缠，许多事情也不会在有改变。你们若是没有其他事，便请回。</string>
+		
+	<key>event_2144</key>
+    <string>{"ico":"ls3.png"}</string>
+	<key>2144</key>
+	<string>韩菱纱：
+		可是......</string>
+		
+	<key>event_2145</key>
+    <string>{}</string>
+	<key>2145</key>
+	<string>
+我见两位长老不愿再与菱纱多谈，便出声打断。</string>
+
+	<key>event_2146</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>2146</key>
+	<string>慕容紫英：
+		两位长老，我们尚有一事相求——</string>
+		
+	<key>event_2147</key>
+    <string>{"ico":"cg.png"}</string>
+	<key>2147</key>
+	<string>重光：
+		何事？</string>
+	
+	<key>event_2146</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>2146</key>
+	<string>慕容紫英：
+		两位长老，我们尚有一事相求——</string>
+	
+	<key>event_2147</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>2147</key>
+	<string>慕容紫英：
+		......弟子有个朋友，不，弟子的师侄柳梦璃，她穿过妖界入口的结界，就此失去了踪影......</string>
+		
+	<key>event_2148</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2148</key>
+	<string>青阳：
+		奇怪......人是不能穿过那结界的，柳梦璃却又毫发无伤，莫非......她是妖？</string>
+		
+	<key>event_2149</key>
+    <string>{"ico":"cg.png"}</string>
+	<key>2149</key>
+	<string>重光：
+		不可能。她的灵力虽比常人高出许多，但若真是妖物，又怎能瞒过你我之眼？</string>
+		
+	<key>event_2150</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>2150</key>
+	<string>慕容紫英：
+		......弟看来二位长老也不知究竟是怎么回事，我们多有打扰了......</string>
+		
+	<key>event_2151</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2151</key>
+	<string>云天河：
+		等等！长老，你们有没有办法让人穿过那个结界？要是梦璃一直不出来，我们就进去找她！</string>
+		
+	<key>event_2152</key>
+    <string>{"ico":"cg.png"}</string>
+	<key>2152</key>
+	<string>重光：
+		荒谬！人入妖界，岂不是如同羊入虎口？！</string>
+		
+	<key>event_2153</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>2153</key>
+	<string>慕容紫英：
+		长老，弟子知道这想法乃是异想天开，但弟子也一同请求，若是二位有此办法，请一定告诉我们！</string>
+		
+	<key>event_2154</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2154</key>
+	<string>青阳：
+		......你们，真的不怕？妖界可不是儿戏之地，人若闯入，说不定顷刻便会身首异处。</string>
+		
+	<key>event_2155</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>2155</key>
+	<string>慕容紫英：
+		长老，您这么说就是有办法了？！</string>
+		
+	<key>event_2156</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2156</key>
+	<string>青阳：
+		......唉......这世上有种叫“翳影枝”的东西......</string>
+		
+	<key>event_2157</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2157</key>
+	<string>青阳：
+		用它就可以穿过大部分的结界，妖界的结界或许也可以......</string>
+		
+	<key>event_2158</key>
+    <string>{"ico":"ls2.png"}</string>
+	<key>2158</key>
+	<string>韩菱纱：
+		真的吗？那个翳影枝要去哪里才能弄到呢？</string>
+		
+	<key>event_2159</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2159</key>
+	<string>青阳：
+		......若是真的想要翳影枝，就只能去鬼界一闯。</string>
+		
+	<key>event_2160</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2160</key>
+	<string>青阳：
+		你们若想取得翳影枝，须得去无常殿，那就只有到不周山看看了。</string>
+		
+	<key>event_2161</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>2161</key>
+	<string>慕容紫英：
+		不周山？可是传说在大漠之中、支撑天地的那座山？</string>
+		
+	<key>event_2162</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>2162</key>
+	<string>青阳：
+		不错，相传那里有进入幽冥之国、即是鬼界的入口，但究竟要如何开启，我也并不知晓。</string>
+		
+	<key>event_2163</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>2163</key>
+	<string>慕容紫英：
+		多谢二位长老指点，弟子等这就去寻访不周山了。</string>
+		
+	<key>event_2164</key>
+    <string>{"ico":"qy1.png","goto":2170}</string>
+	<key>2164</key>
+	<string>青阳：
+		......去吧，若真的无法可施，也不必勉强。</string>
+
+
+
+	<key>event_2170</key>
+    <string>{"ico":"th1.png","bk":"不周山"}</string>
+	<key>2170</key>
+	<string>云天河：
+		这里，就是不周山？</string>
 </dict>
