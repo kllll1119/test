@@ -357,6 +357,7 @@ struct ST_EventInfo
 	std::string muisc;						//音乐
 	std::string wav;						//音效
 	std::string mask;						
+	std::string tag;						//章节标签
 	int shark;								//屏幕晃动
 	float bktime;							//bk加载过渡时间
 	float mv;								//mv展示时间
@@ -376,4 +377,5 @@ bool GetEventInfoEx(int event, ST_EventInfo& info);
 
 std::string GetCurTime();
 
+void Save(int index);
 #endif

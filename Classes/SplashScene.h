@@ -56,6 +56,7 @@ public:
 	std::string m_backgroud;
 	std::string m_music;
 	std::string m_wav;
+	std::string m_tag;
 	int m_lastChoose = -1;
 	int m_curEvent = 0;	//µ±Ç°event
 

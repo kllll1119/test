@@ -79,15 +79,19 @@ bool SaveScene::init()
 		}
 		else //5暂定为系统自动存档
 		{
+			pItem->setColor(Color3B(200, 50, 150));
 			pItem->setPosition(Vec2(visibleSize.width / 2 + origin.x + xDistance, startYpos - yDistance));
 		}
 
 		char bk[20] = { 0 };
 		char tm[20] = { 0 };
+		char tag[20] = { 0 };
 		snprintf(bk, 20 - 1, "bk%d", i);
 		snprintf(tm, 20 - 1, "tm%d", i);
+		snprintf(tag, 20 - 1, "tag%d", i);
 		std::string backgroud = UserDefault->getStringForKey(bk);
 		std::string time = UserDefault->getStringForKey(tm);
+		std::string title = UserDefault->getStringForKey(tag);
 		if (!backgroud.empty())	//如果有存档，显示相关图片
 		{
 			ImageView* pImg = ImageView::create(backgroud);
@@ -103,15 +107,30 @@ bool SaveScene::init()
 				pSysTip->setAnchorPoint(Vec2(0, 0));
 				pItem->addChild(pSysTip, 3);
 			}
-			if (!time.empty())
-			{	//time
-				TTFConfig ttfConfig;
-				ttfConfig.fontFilePath = "23hwxw.ttf";
+			TTFConfig ttfConfig;
+			ttfConfig.fontFilePath = "23hwxw.ttf";
+			ttfConfig.distanceFieldEnabled = false;
+			ttfConfig.glyphs = GlyphCollection::ASCII;
+			ttfConfig.customGlyphs = nullptr;
+			if (!title.empty())
+			{
+				ttfConfig.fontSize = 15;
+				ttfConfig.outlineSize = 2;
+				LabelRPG* lab = LabelRPG::createWithTTF(ttfConfig, "", cocos2d::TextHAlignment::CENTER);
+				//pTime->setColor(Color3B(225, 127, 39));
+				lab->setColor(Color3B(255, 255, 255));
+				//ttfConfig.outlineSize = 1;
+				//pTime->setStringWithRunText(-1, time, 0.01f);
+				lab->setString(title);
+				lab->setPosition(Vec2(98, 125));
+				//pTime->setOriginalPosition(Vec2(100, 10));
+				pItem->addChild(lab, 4);
+			}
+
+			if (!time.empty())	//time
+			{
 				ttfConfig.fontSize = 13;
-				ttfConfig.distanceFieldEnabled = false;
-				ttfConfig.outlineSize = 1;
-				ttfConfig.glyphs = GlyphCollection::ASCII;
-				ttfConfig.customGlyphs = nullptr;
+				ttfConfig.outlineSize = 2;
 				LabelRPG* pTime = LabelRPG::createWithTTF(ttfConfig, "", cocos2d::TextHAlignment::LEFT);
 				//pTime->setColor(Color3B(225, 127, 39));
 				pTime->setColor(Color3B(255, 255, 255));
@@ -140,29 +159,6 @@ bool SaveScene::init()
 	pClose->addTouchEventListener(CC_CALLBACK_2(SaveScene::BtnItemClose, this));
 	this->addChild(pClose, 1);
     return true;
-}
-
-void Save(int index)
-{
-	char event[20] = { 0 };
-	char bk[20] = { 0 };
-	char music[20] = { 0 };
-	char chs[20] = { 0 };
-	char tm[20] = { 0 };
-	snprintf(event, 20 - 1, "event%d", index);
-	snprintf(bk, 20 - 1, "bk%d", index);
-	snprintf(music, 20 - 1, "music%d", index);
-	snprintf(chs, 20 - 1, "chs%d", index);
-	snprintf(tm, 20 - 1, "tm%d", index);
-	SplashScene* spIns = SplashScene::instance();
-	if (spIns)
-	{
-		UserDefault->setIntegerForKey(event, spIns->m_curEvent);
-		UserDefault->setStringForKey(bk, spIns->m_backgroud);
-		UserDefault->setStringForKey(music, spIns->m_music);
-		UserDefault->setIntegerForKey(chs, spIns->m_lastChoose);
-		UserDefault->setStringForKey(tm, GetCurTime());
-	}
 }
 
 void SaveScene::BtnItemClick(cocos2d::Ref* pSender, Widget::TouchEventType type)

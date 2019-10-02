@@ -205,11 +205,7 @@ void SplashScene::FirstGame()
 
 void SplashScene::AutoSave()
 {
-	UserDefault->setIntegerForKey("event5", m_curEvent);
-	UserDefault->setStringForKey("bk5", m_backgroud);
-	UserDefault->setStringForKey("music5", m_music);
-	UserDefault->setIntegerForKey("chs5", m_lastChoose);
-	UserDefault->setStringForKey("tm5", GetCurTime());
+	Save(5);
 }
 
 void SplashScene::LoadSave(int index)
@@ -434,6 +430,9 @@ void SplashScene::update(float delta)
 			if (!info.wav.empty())
 				PlayWav(info.wav);
 
+			if (!info.tag.empty())
+				m_tag = info.tag;
+
 			if (!info.item.empty())
 			{
 				m_GetItem->loadTexture(info.item);
@@ -570,7 +569,7 @@ void SplashScene::showText()
 				CCLOG("[warn]text null:%d", m_curEvent);
 			}
 		}
-		//if (info.save > 0)
+		if (info.mv < 0.001f)
 			AutoSave();
 	}
 }
