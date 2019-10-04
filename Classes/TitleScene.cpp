@@ -83,6 +83,11 @@ bool TitleScene::init()
 	pExit->setAnchorPoint(Vec2(0.5, 0));
 	pExit->addTouchEventListener(CC_CALLBACK_2(TitleScene::BtnExit, this));
 	this->addChild(pExit, 1);
+
+	ParticleSystem* ps = ParticleSnow::create();	//create
+	ps->setTexture(Director::getInstance()->getTextureCache()->addImage("lz1.png"));
+	ps->setPosition(Point(visibleSize.width / 2, visibleSize.height));//生成的雪花从这个坐标往下落
+	this->addChild(ps, 10);
     return true;
 }
 

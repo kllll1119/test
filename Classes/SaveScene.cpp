@@ -36,6 +36,10 @@ bool SaveScene::init()
     {
         return false;
     }
+
+	//if (UserDefault->isXMLFileExist()) //ÊÇ·ñ´æÔÚ
+	//std::string path = UserDefault->getXMLFilePath();
+	//C:/Users/Administrator/AppData/Local/XJ23/UserDefault.xml
     
     Size visibleSize = Director::getInstance()->getVisibleSize();
     Vec2 origin = Director::getInstance()->getVisibleOrigin();
@@ -112,32 +116,25 @@ bool SaveScene::init()
 			ttfConfig.distanceFieldEnabled = false;
 			ttfConfig.glyphs = GlyphCollection::ASCII;
 			ttfConfig.customGlyphs = nullptr;
+			ttfConfig.outlineSize = 2;
 			if (!title.empty())
 			{
 				ttfConfig.fontSize = 15;
-				ttfConfig.outlineSize = 2;
 				LabelRPG* lab = LabelRPG::createWithTTF(ttfConfig, "", cocos2d::TextHAlignment::CENTER);
 				//pTime->setColor(Color3B(225, 127, 39));
 				lab->setColor(Color3B(255, 255, 255));
-				//ttfConfig.outlineSize = 1;
-				//pTime->setStringWithRunText(-1, time, 0.01f);
 				lab->setString(title);
 				lab->setPosition(Vec2(98, 125));
-				//pTime->setOriginalPosition(Vec2(100, 10));
 				pItem->addChild(lab, 4);
 			}
 
 			if (!time.empty())	//time
 			{
 				ttfConfig.fontSize = 13;
-				ttfConfig.outlineSize = 2;
 				LabelRPG* pTime = LabelRPG::createWithTTF(ttfConfig, "", cocos2d::TextHAlignment::LEFT);
-				//pTime->setColor(Color3B(225, 127, 39));
 				pTime->setColor(Color3B(255, 255, 255));
-				//pTime->setStringWithRunText(-1, time, 0.01f);
 				pTime->setString(time);
 				pTime->setPosition(Vec2(100, 10));
-				//pTime->setOriginalPosition(Vec2(100, 10));
 				pItem->addChild(pTime,4);
 			}
 			pItem->setUserData((void*)i);

@@ -107,14 +107,16 @@ void SplashScene::InitAllUI()
 	ttfConfig.fontFilePath = "23hwxw.ttf";
 	ttfConfig.fontSize = 24;
 	ttfConfig.distanceFieldEnabled = false;
-	ttfConfig.outlineSize = 0;// 10;描边
+	ttfConfig.outlineSize = 0;	//描边
 	ttfConfig.glyphs = GlyphCollection::ASCII;
 	ttfConfig.customGlyphs = nullptr;
 	m_labTalk = LabelRPG::createWithTTF(ttfConfig, "");
+	m_labTalk->enableShadow(Color4B(30, 30, 30, 255)/*,Size(1,1)*/);
+	//m_labTalk->enableOutline(Color4B(255, 255, 255, 255),1);
 	//lab->setColor(Color3B(255,255,255));
 	m_labTalk->SetOverCallBack(std::bind(&SplashScene::TalkOverCB, this, std::placeholders::_1));
 
-	m_labTalk->setOriginalPosition(Vec2(175, 130));
+	m_labTalk->setOriginalPosition(Vec2(173, 132));
 	this->addChild(m_labTalk, ZORDER_WZ);
 
 
@@ -536,7 +538,12 @@ void SplashScene::showText()
 		{
 			m_TouXiangLeft->loadTexture(info.ico);
 			m_TouXiangLeft->setVisible(true);
+			//m_labTalk->setOriginalPosition(Vec2(175, 130));
 		}
+// 		else
+// 		{
+// 			m_labTalk->setOriginalPosition(Vec2(130, 130));
+// 		}
 		auto *chnStrings = Dictionary::createWithContentsOfFile(XML_CH_CFG);
 		if (chnStrings)
 		{

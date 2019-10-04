@@ -120,13 +120,13 @@
     <string>{"wav":"wav/jb2.mp3"}</string>
 	<key>18</key>
 	<string>
-微一踌躇,提步朝湖边软轿走去。</string>
+微一踌躇，提步朝湖边软轿走去。</string>
 	
 	<key>et_19</key>
     <string>{"role":1,"ico":"zy1.png","bk":"bk2.png","music":"snd/ml_zmxy.mp3","tag":"第一章 初识"}</string>
 	<key>19</key>
 	<string>慕容紫英：
-		…….方才多谢阁下解围。</string>
+		……方才多谢阁下解围。</string>
 	
 	<key>et_20</key>
     <string>{}</string>
@@ -184,7 +184,7 @@
 		见公子打扮…请问公子是修仙之人吗？</string>
 	<key>27_1</key>
 	<string>
-见对方彬彬有礼，也不好拉下脸来，再观望下。</string>
+见对方彬彬有礼，也不好拉下脸来。</string>
 
 	<key>et_28</key>
     <string>{"role":1,"ico":"zy1.png"}</string>
@@ -315,7 +315,7 @@
 		这里水深，还是让我来吧。</string>
 	<key>48_1</key>
 	<string>慕容紫英：
-		姑娘当心。（见她兴致盎然，便站在她身侧，护着她将河灯放入水中。）</string>
+		柳姑娘当心。（见她兴致盎然，便站在她身侧，护着她将河灯放入水中。）</string>
 
 	<key>et_49</key>
     <string>{"role":2,"ico":"ml1.png"}</string>
@@ -399,7 +399,7 @@
     <string>{}</string>
 	<key>62</key>
 	<string>
-渐渐的，人群慢慢散去，只留下一些孩童在那里玩耍，却也被父母一一唤回。我也和她并肩离开了岸边。</string>
+渐渐的，人群慢慢散去，只留下一些孩童在那里玩耍，却也被父母一一唤回。</string>
 	
 	<key>et_63</key>
     <string>{"role":2,"ico":"ml1.png","bk":"bk4.png"}</string>
@@ -731,13 +731,7 @@
     <string>{"role":1,"ico":"zy1.png"}</string>
 	<key>117</key>
 	<string>慕容紫英：
-		嗯，我要前往镇上看看。</string>
-	
-	<key>et_116</key>
-    <string>{"role":2,"ico":"ml1.png"}</string>
-	<key>116</key>
-	<string>柳梦璃：
-		那我们启程吧，到了镇上也好稍作休憩。</string>
+		嗯，我要前往镇上看看，你们也顺便再打探下吧。</string>
 	
 	<key>et_118</key>
     <string>{"bk":"bk7.png"}</string>
@@ -863,7 +857,7 @@
     <string>{}</string>
 	<key>138</key>
 	<string>
-她有些吃惊的望着我，仿佛不曾料到我会挡在他身前。</string>
+她有些吃惊的望着我，仿佛不曾料到我会挡在她身前。</string>
 
 	<key>et_139</key>
     <string>{}</string>
@@ -1013,7 +1007,7 @@
     <string>{"role":7,"ico":"npc2.png"}</string>
 	<key>163</key>
     <string>？？：
-		主人当年为避祸掩饰将公子送上昆仑山，以保公子性命。留下宝剑以便日后相认，孰料主人未及相认便与世长辞，公子却对自己身世一无所知。</string>
+		主人当年为避祸将公子送上昆仑山，以保公子性命，留下宝剑以便日后相认。孰料未及相认便与世长辞，公子却对自己身世一无所知。</string>
 
 	<key>et_164</key>
     <string>{"role":1,"ico":"zy4.png"}</string>
@@ -1163,7 +1157,7 @@
     <string>{"bk":"bk9.png","music":"snd/ml_zmxy.mp3","tag":"第一章 夺回灵珠"}</string>
 	<key>186</key>
     <string>
-（片刻后，客栈小院。）</string>
+那群人走后——</string>
 
 	<key>et_187</key>
     <string>{"role":1,"ico":"zy1.png"}</string>
@@ -1413,7 +1407,7 @@
     <string>{}</string>
 	<key>225</key>
 	<string>
-我也该回门派了。</string>
+我也该回门派复命了。</string>
 	
 	<key>et_226</key>
     <string>{"role":8,"ico":"sy1.png","bk":"bk10.png","music":"snd/qya.mp3","tag":"第一章 复命"}</string>
@@ -1514,7 +1508,7 @@
 		不错。</string>
 		
 	<key>et_242</key>
-    <string>{"role":1,"ico":"zy1.png"}</string>
+    <string>{"role":1,"ico":"zy4.png"}</string>
 	<key>242_0</key>
 	<string>慕容紫英：
 		……！</string>
@@ -1526,7 +1520,7 @@
 		当年你父亲四处颠沛，不忍你年幼被卷入祸乱之中，所以将你送上昆仑山，拜入琼华。</string>
 		
 	<key>et_244</key>
-    <string>{"role":1,"ico":"zy1.png"}</string>
+    <string>{"role":1,"ico":"zy2.png"}</string>
 	<key>244_0</key>
 	<string>慕容紫英：
 		那当年父亲果真留下一把剑？</string>
@@ -2370,7 +2364,7 @@
     <string>{"bk":"bk23.png","mv":1,"wav":"wav/fs2.wav"}</string>
 	<key>384</key>
 	<string>
-【上清破云剑】</string>
+“上清破云剑”</string>
 
 	<key>et_385</key>
     <string>{"bk":"bk24.png","tag":"第三章 再次相见"}</string>
@@ -2618,7 +2612,7 @@
 …………</string>
 
 	<key>et_426</key>
-    <string>{"role":1,"ico":"zy1.png","bk":"bk28.png","music":"snd/qya.mp3","tag":"第三章 收徒"}</string>
+    <string>{"role":1,"ico":"zy1.png","bk":"bk48.png","music":"snd/qya.mp3","tag":"第三章 收徒"}</string>
 	<key>426</key>
 	<string>慕容紫英：
 		（柳姑娘，究竟为何回来琼华？）</string>
@@ -3195,7 +3189,7 @@
 翌日早晨——</string>
 
 	<key>et_519</key>
-    <string>{"bk":"bk28.png","music":"snd/fgqt.mp3","tag":"第三章 授课"}</string>
+    <string>{"bk":"bk28.png","music":"snd/fgqt.mp3"}</string>
 	<key>519</key>
 	<string>
 才到剑舞坪，就听见他们三人的交谈声。</string>
@@ -3479,7 +3473,7 @@
 		（也不知，他们入门心法练得如何了。）</string>
 		
 	<key>et_565</key>
-    <string>{"bk":"bk28.png"}</string>
+    <string>{"bk":"bk39.png"}</string>
 	<key>565</key>
 	<string>
 这里早已看不见他们三人的身影。</string>
@@ -3507,7 +3501,7 @@
     <string>后山</string>
 	
 	<key>et_569</key>
-    <string>{"role":1,"ico":"zy2.png","tag":"第三章 月牙村"}</string>
+    <string>{"role":1,"ico":"zy2.png","tag":"第三章 叹沧桑"}</string>
 	<key>569</key>
 	<string>慕容紫英：
 		（也不在这边……莫非是下山去了？）</string>
@@ -4274,7 +4268,7 @@
 		你！你是玄霄师叔？！</string>
 		
 	<key>et_694</key>
-    <string>{"role":1,"ico":"zy4.png"}</string>
+    <string>{"role":1,"ico":"zy1.png"}</string>
 	<key>694</key>
 	<string>慕容紫英：
 		师叔在上，请受弟子一拜！</string>
@@ -4325,7 +4319,7 @@
     <string>{"ico":"xx2_1.png"}</string>
 	<key>702</key>
 	<string>玄霄：
-		如何？令你为难?</string>
+		如何？令你为难？</string>
 		
 	<key>et_703</key>
     <string>{"role":1,"ico":"zy1.png"}</string>
@@ -4696,7 +4690,7 @@
 翌日早晨——</string>
 
 	<key>et_764</key>
-    <string>{"role":1,"ico":"zy1.png","bk":"bk48.png","music":"snd/fgqt.mp3","tag":"第三章 授课"}</string>
+    <string>{"role":1,"ico":"zy1.png","bk":"bk48.png","music":"snd/fgqt.mp3","tag":"第三章 早课"}</string>
 	<key>764</key>
 	<string>慕容紫英：
 		（早课前先要去哪里？）</string>
@@ -4786,7 +4780,7 @@
     <string>{"role":4,"ico":"th1_1.png","bk":"bk42.png"}</string>
 	<key>787</key>
 	<string>云天河：
-		唔……是不是还早？</string>
+		唔……今天好清静，是不是还早？</string>
 		
 	<key>et_788</key>
     <string>{"role":1,"ico":"zy1.png"}</string>
@@ -4936,7 +4930,7 @@
     <string>{"role":2,"ico":"ml1_1.png"}</string>
 	<key>812</key>
 	<string>柳梦璃：
-		……我听说云公子被罚去思返谷，又见你一人抛到后山来，就跟来看看。</string>
+		……我听说云公子被罚去思返谷，又见你一人跑到后山来，就跟来看看。</string>
 		
 	<key>et_813</key>
     <string>{"role":1,"ico":"zy6.png"}</string>
@@ -5665,7 +5659,7 @@
     <string>{"role":1,"ico":"zy1.png"}</string>
 	<key>978</key>
 	<string>慕容紫英：
-		十九年前，许多师叔师伯都在与要接的那场大战之中牺牲，半数以上的弟子命丧妖魔之手。</string>
+		十九年前，许多师叔师伯都在与妖界的那场大战之中牺牲，半数以上的弟子命丧妖魔之手。</string>
 		
 	<key>et_979</key>
     <string>{"role":1,"ico":"zy1.png"}</string>
@@ -5808,13 +5802,13 @@
 		……你那么早过来，可是因为菱纱未归？</string>
 		
 	<key>et_1002</key>
-    <string>{"role":1,"ico":"zy2.png"}</string>
+    <string>{"role":1,"ico":"zy1.png"}</string>
 	<key>1002</key>
 	<string>慕容紫英：
 		……果然如此？</string>
 		
 	<key>et_1003</key>
-    <string>{"role":1,"ico":"zy2.png"}</string>
+    <string>{"role":1,"ico":"zy1.png"}</string>
 	<key>1003</key>
 	<string>慕容紫英：
 		……莫非他们昨夜又去了禁地？</string>
@@ -6040,7 +6034,7 @@
     <string>{"ico":"qy1.png","bk":"bk55.png"}</string>
 	<key>1053</key>
 	<string>青阳：
-		是掌门夙瑶命你来的?</string>
+		是掌门夙瑶命你来的？</string>
 		
 	<key>et_1054</key>
     <string>{"role":1,"ico":"zy1.png"}</string>
@@ -6723,7 +6717,7 @@
     <string>{"role":1,"ico":"zy2.png"}</string>
 	<key>1235</key>
 	<string>慕容紫英：
-		（法术下看不出是哪一个女童。）</string>
+		（法术掩盖下分不清是哪一个。）</string>
 		
 	<key>et_1236</key>
     <string>{"role":1,"ico":"zy2.png"}</string>
@@ -6810,7 +6804,7 @@
 		今天我大寿，更是要教训教训他，才觉得说不出的舒心~</string>
 		
 	<key>et_1250</key>
-    <string>{"role":1,"ico":"zy2.png"}</string>
+    <string>{"role":1,"ico":"zy1.png"}</string>
 	<key>1250</key>
 	<string>慕容紫英：
 		山神身为地仙，庇护凡人，本是常理！你怎可如此？</string>
@@ -6912,7 +6906,7 @@
 一个时辰后——</string>
 
 	<key>et_1267</key>
-    <string>{"role":4,"ico":"ls1_1.png","bk":"bk57.png","music":"snd/ysms.mp3"}</string>
+    <string>{"role":4,"ico":"ls1_1.png","bk":"bk57.png","music":"snd/ysms.mp3","tag":"第四章 万家同庆"}</string>
 	<key>1267</key>
 	<string>韩菱纱：
 		小紫英，你刚刚好厉害哦！那只臭狐狸被你吓的浑身发抖呢。</string>
@@ -7048,7 +7042,7 @@
     <string>{"ico":"xyc.png"}</string>
 	<key>1296</key>
 	<string>夏元辰：
-		如今狐三被你们打跑，我也可以安心带她离开即墨，游历五湖四海。</string>
+		如今胡三被你们打跑，我也可以安心带她离开即墨，游历五湖四海。</string>
 		
 	<key>et_1297</key>
     <string>{"ico":"xyc.png"}</string>
@@ -7126,7 +7120,7 @@
     <string>{}</string>
 	<key>1309</key>
 	<string>青年甲：
-		恩公，你们是即墨的大恩人，请一定哟留下来，看看今晚的花灯啊！</string>
+		恩公，你们是即墨的大恩人，请一定要留下来，看看今晚的花灯啊！</string>
 		
 	<key>et_1310</key>
     <string>{"role":4,"ico":"ls1_1.png"}</string>
@@ -7374,7 +7368,7 @@
 		（……还是别打扰他们了。）</string>
 		
 	<key>et_1351</key>
-    <string>{"role":1,"ico":"xyc.png","bk":"bk65.png","tag":"第四章 万家同庆"}</string>
+    <string>{"role":1,"ico":"xyc.png","bk":"bk65.png"}</string>
 	<key>1351</key>
 	<string>夏元辰：
 		你们来了？</string>
@@ -7440,7 +7434,7 @@
 		菱纱，别心急，你村里的人……你担心的那些事，一定会有办法的。</string>
 		
 	<key>et_1362</key>
-    <string>{"role":1,"ico":"zy2.png"}</string>
+    <string>{"role":1,"ico":"zy1.png"}</string>
 	<key>1362</key>
 	<string>慕容紫英：
 		村里人？……到底何事？</string>
@@ -7458,7 +7452,7 @@
 		其实连天河、梦璃也不是很清楚，不过总有一天，我会全部告诉你们的，但不是现在……</string>
 		
 	<key>et_1365</key>
-    <string>{"role":1,"ico":"zy2.png"}</string>
+    <string>{"role":1,"ico":"zy1.png"}</string>
 	<key>1365</key>
 	<string>慕容紫英：
 		……我知道了，若是有能帮上忙的，你一定要说出来。</string>
@@ -7473,7 +7467,7 @@
     <string>{"role":1,"ico":"xyc.png","item":"gjht.png","wav":"wav/item.wav"}</string>
 	<key>1367</key>
 	<string>夏元辰：
-		这边是光纪寒图。相传此乃冬神遗落人间之物，我也是偶然得到。</string>
+		这便是光纪寒图。相传此乃冬神遗落人间之物，我也是偶然得到。</string>
 		
 	<key>et_1368</key>
     <string>{"ico":"lb.png"}</string>
@@ -8139,7 +8133,7 @@
     <string>{"role":1,"ico":"zy1.png"}</string>
 	<key>1488</key>
 	<string>慕容紫英：
-		（罢了，我想做些做什么……）</string>
+		（罢了，我想这些做什么……）</string>
 		
 	<key>et_1489</key>
     <string>{}</string>
@@ -8619,7 +8613,7 @@
     <string>{"role":1,"ico":"zy1.png"}</string>
 	<key>1568</key>
 	<string>慕容紫英：
-		先四处查探，看是否有可以开启的机关。</string>
+		我们再四处仔细查探下，看看是否有类似机关之类的东西。</string>
 		
 	<key>et_1569</key>
     <string>{"bk":"bk_null.png"}</string>
@@ -8634,7 +8628,7 @@
 		这一堆石头有些奇怪，我来试试它。</string>
 		
 	<key>et_1571</key>
-    <string>{"role":4,"ico":"th4_1.png","shark":5}</string>
+    <string>{"role":4,"ico":"th4_1.png","shark":5,"bk":"bk76.png"}</string>
 	<key>1571</key>
 	<string>云天河：
 		哈哈，成功了！菱纱你真厉害！</string>
@@ -13237,7 +13231,7 @@
 		……好吧。</string>
 		
 	<key>et_2361</key>
-    <string>{"music":"snd/yjjh.mp3"}</string>
+    <string>{"music":"snd/ws.mp3"}</string>
 	<key>2361</key>
 	<string>？？：
 		野小子？！是你？！</string>
@@ -13401,4 +13395,2344 @@
 	<key>2393</key>
 	<string>云天青：
 		想要飞升成仙，就必须拥有强大的灵力，修炼百年，所得不过尔尔，倒不如网缚妖界，从他们那里夺取灵力……当时，门派中很多人都觉得这是个绝妙之法。</string>
+		
+	<key>et_2394</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2394</key>
+	<string>云天青：
+		但是妖界又岂会乖乖就范？于是，双方争斗不休，场面十分惨烈……</string>
+	<key>et_2395</key>
+    <string>{"ico":"tq3.png"}</string>
+	<key>2395</key>
+	<string>云天青：
+		我如今想来，仍觉心寒……我虽然并不讨厌妖，却也不会喜欢妖，但我忍受不了，自己升仙却要以其他生灵的命作为代价……</string>
+		
+	<key>et_2396</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2396</key>
+	<string>慕容紫英：
+		……</string>
+	<key>et_2397</key>
+    <string>{"ico":"tq3.png"}</string>
+	<key>2397</key>
+	<string>云天青：
+		那段日子，简直像在炼狱一般，许多弟子见妖就杀，连幼儿也不放过……琼华派同样死伤不少，连掌门都被杀死，虽然那以后妖界之主不再露面，但再次出现之时，又有何人能够抵挡？</string>
+	<key>et_2398</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2398</key>
+	<string>云天青：
+		渐渐地，门派中有了不同意见，一派主张继续打下去，另一派则主张放妖界离去，减少己方伤亡。</string>
+	<key>et_2399</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2399</key>
+	<string>云天青：
+		我觉得，再打下去，也只是生灵涂炭，不管是人还是妖……眼看当初一同入门的师兄弟，一个接一个地死去，变成冷冰冰的尸骨，就像一场噩梦……</string>
+	<key>et_2400</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2400</key>
+	<string>云天青：
+		夙玉和我想的一样，她不愿再使用望舒剑，长老们虽说会考虑她的话，其实却只是拖延时间，想让她与玄霄继续网缚住妖界。</string>
+	<key>et_2401</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2401</key>
+	<string>云天青：
+		还有一人……本是与我们俩最亲密之人，却又与我们想的完全不同。</string>
+	<key>et_2402</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2402</key>
+	<string>云天河：
+		那个人……就是……玄霄？</string>
+	<key>et_2403</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2403</key>
+	<string>云天青：
+		不错。师兄他非常清楚自己想要什么，绝不会半途而废。我和夙玉虽想劝他，反被他大骂妇人之仁……</string>
+	<key>et_2404</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2404</key>
+	<string>云天青：
+		被自己私心爱慕的人痛骂，夙玉当时已是伤心欲绝。这个时候又有弟子说我是叛徒，因为他们看到我救了一只年幼的、身受重伤的妖。</string>
+	<key>et_2405</key>
+    <string>{"ico":"ls3.png"}</string>
+	<key>2405</key>
+	<string>韩菱纱：
+		……！</string>
+	<key>et_2406</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2406</key>
+	<string>云天青：
+		我和夙玉已无法可想，妖界就算是强弩之末，也绝对会战个不死不休，唯一能阻止这场大战的，惟有我们带着望舒剑逃下山去，这样琼华派升仙的美梦也就化为了泡影。</string>
+	<key>et_2407</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2407</key>
+	<string>云天青：
+		我们趁夜逃出门派……后来的事你多少也知道一些，夙玉没有羲和之力的支撑，渐渐被冰寒侵体，我运功替她抵御寒气，却是杯水车薪……</string>
+	<key>et_2408</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2408</key>
+	<string>云天青：
+		我不死心，在黄山诸峰之间，寻找传说中的阴阳紫阙——</string>
+	<key>et_2409</key>
+    <string>{"ico":"ls3.png"}</string>
+	<key>2409</key>
+	<string>韩菱纱：
+		呀！阴阳紫阕！</string>
+	<key>et_2410</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2410</key>
+	<string>云天青：
+		原来姑娘你也知道那件宝物啊，难得！我少年时游历江湖，听说过许多奇珍异宝，阴阳紫阙就是其中之一。</string>
+	<key>et_2411</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2411</key>
+	<string>云天青：
+		当时也是再没有其他办法了，我想到用阴阳紫阙“阳”的那一半，抑制夙玉身上的寒气……</string>
+	<key>et_2412</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2412</key>
+	<string>云天河：
+		爹，那后来呢？你找到了吗？</string>
+	<key>et_2413</key>
+    <string>{"ico":"tq3.png"}</string>
+	<key>2413</key>
+	<string>云天青：
+		……差不多把整个黄山都找遍了，我终于寻得“阳”的那一半，给夙玉服下，她的身体果然好转，我们以为这样就没事了……没多久就成了亲，定居在黄山青鸾峰上……</string>
+	<key>et_2414</key>
+    <string>{"ico":"tq3.png"}</string>
+	<key>2414</key>
+	<string>云天青：
+		可是……后来还是不行，夙玉的身体时好时坏，生下你之后，不久便过世了，但奇怪的是，我们一直担心你会先天体寒，你却十分健康……</string>
+	<key>et_2415</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2415</key>
+	<string>云天青：
+		我因为曾替夙玉运功驱寒，也被冰寒之气反噬，过不了几年便这样归位了，唉～</string>
+	<key>et_2416</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2416</key>
+	<string>云天青：
+		这就是全部的事了。有些事说严重也很严重，说不严重也很不严重，就看你怎么想了。</string>
+	<key>et_2417</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2417</key>
+	<string>云天河：
+		嗯……</string>
+	<key>et_2418</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2418</key>
+	<string>云天青：
+		天河，你如今身体可有不适？会不会怕冷？</string>
+	<key>et_2419</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2419</key>
+	<string>云天河：
+		孩儿一切都好，并不会像爹和娘那样……</string>
+	<key>et_2420</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2420</key>
+	<string>云天青：
+		这就太好了，就算你小时候看来没什么，我也还是放心不下。</string>
+	<key>et_2421</key>
+    <string>{"ico":"ls2.png"}</string>
+	<key>2421</key>
+	<string>韩菱纱：
+		前辈，您说、您说天河的娘爱慕着玄霄，那她……</string>
+	<key>et_2422</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2422</key>
+	<string>云天青：
+		……我知道你想问什么……不过，夙玉她深心里究竟爱着谁、亦或怨着谁，怕是只有她自己才知晓……</string>
+	<key>et_2423</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2423</key>
+	<string>云天青：
+		至少，在她刚入师门时，眼里根本没有我，只有玄霄师兄……</string>
+	<key>et_2424</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2424</key>
+	<string>云天青：
+		那一天在剑舞坪，当我和师兄第一次见到夙玉……她那时的模样，我永远都忘不了，她就好像后山的凤凰花一样美，虽然神色冷冷淡淡，眼里却透着明澈聪慧……</string>
+	<key>et_2425</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2425</key>
+	<string>云天青：
+		虽然我和夙玉都是不信天命之人，但是如今回想起来，或许从那一刻起，我们三人之间的某些东西，已是不可更改了……</string>
+	<key>et_2426</key>
+    <string>{"ico":"th6.png"}</string>
+	<key>2426</key>
+	<string>云天河：
+		爹……</string>
+	<key>et_2427</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2427</key>
+	<string>云天青：
+		夙玉的性情外柔内刚，兼之以望舒剑修炼，身染阴寒，性情中更是有着相当绝决的一面。当初师兄与她决裂，令她十分伤心，日后嫁我，至死都不再提“玄霄”二字。</string>
+	<key>et_2428</key>
+    <string>{"ico":"tq3.png"}</string>
+	<key>2428</key>
+	<string>云天青：
+		可我知道，夙玉一直没有忘记那个人……她临死前的几天，被冰寒侵体，心魔深种，已经六亲不认，却忽尔清醒了一瞬，只求我一件事，便是把灵光藻玉放在她身边作为陪葬。</string>
+	<key>et_2429</key>
+    <string>{"ico":"tq3.png"}</string>
+	<key>2429</key>
+	<string>云天青：
+		我知道，灵光藻玉这世上只有两块，是打开琼华派禁地大门的秘钥，她与师兄于禁地修炼双剑时各持一块，对她来说，有着不凡的意义……</string>
+	<key>et_2430</key>
+    <string>{"ico":"th6.png"}</string>
+	<key>2430</key>
+	<string>云天河：
+		……那，孩儿把那块玉带出墓室，不是会让娘很伤心？</string>
+	<key>et_2431</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2431</key>
+	<string>云天青：
+		无妨，夙玉她已转世去了，再也不会为任何人伤心。</string>
+	<key>et_2432</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2432</key>
+	<string>云天河：
+		……为什么？娘不像你一样，等着玄霄呢？</string>
+	<key>et_2433</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2433</key>
+	<string>云天青：
+		……夙玉曾告诉我，她这一世活得太累，耗了太多心力，若是死了，一定会很快投胎，让一切重新开始，把这一世的喜怒哀乐通通忘记。她是个说到做到的人，早就已经入了轮回吧……</string>
+	<key>et_2434</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2434</key>
+	<string>云天河：
+		……</string>
+	<key>et_2435</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2435</key>
+	<string>慕容紫英：
+		云前辈……你刚才所说，曾经救下一个年幼的妖，指的可是柳梦璃？</string>
+	<key>et_2436</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2436</key>
+	<string>云天青：
+		不错，你们……竟也认识璃儿？</string>
+	<key>et_2437</key>
+	<string>{"ico":"zy4.png"}</string>
+	<key>2437</key>
+	<string>慕容紫英：
+		她是妖！？但是为何她……</string>
+	<key>et_2438</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2438</key>
+	<string>云天青：
+		哈，你这小子，真是无聊得很，一看就知道是琼华派教出来的！什么人啊妖啊，有必要分那么清楚吗？</string>
+	<key>et_2439</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2439</key>
+	<string>慕容紫英：
+		前辈……</string>
+	<key>et_2440</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2440</key>
+	<string>云天青：
+		你看看这鬼界，一旦阳寿尽了，都是鬼魂，不分人与妖，说不定你今世是人，来世便要做妖，那你一直坚持的东西岂不可笑？！</string>
+	<key>et_2441</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2441</key>
+	<string>慕容紫英：
+		……！今世是人，来世做妖……</string>
+	<key>et_2442</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2442</key>
+	<string>云天青：
+		小子，你自己慢慢想去吧，最好想得通透点！</string>
+	<key>et_2443</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2443</key>
+	<string>慕容紫英：
+		……</string>
+	<key>et_2444</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>2444</key>
+	<string>韩菱纱：
+		（今世是人，来世做妖……紫英……他的心里一定很不好受吧？）</string>
+	<key>et_2445</key>
+    <string>{}</string>
+	<key>2445</key>
+	<string>
+心里最后一丝幻想也被打破，梦璃真的是妖……我又当如何做……</string>
+	<key>et_2446</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2446</key>
+	<string>云天青：
+		天河，告诉爹，你又是如何认识璃儿的？</string>
+	<key>et_2447</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2447</key>
+	<string>云天河：
+		孩儿是在寿阳认识她的，后来我们一起去了琼华派，可是……妖界来时，她却跳进了那个入口，失踪了……</string>
+	<key>et_2448</key>
+    <string>{"ico":"tq1.png"}</string>
+	<key>2448</key>
+	<string>云天青：
+		……妖比人早慧，或许她已经找回记忆了……</string>
+	<key>et_2449</key>
+    <string>{"ico":"tq2.png"}</string>
+	<key>2449</key>
+	<string>云天青：
+		不对！！没有双剑网缚，璃儿怎有机会回妖界？！就算望舒剑重回琼华派，剑未苏醒，他们根本用不了啊！</string>
+	<key>et_2450</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2450</key>
+	<string>云天河：
+		爹？</string>
+	<key>et_2451</key>
+    <string>{"ico":"tq2.png"}</string>
+	<key>2451</key>
+	<string>云天青：
+		不可能、这不可能，除非有个人，与夙玉一般……</string>
+	<key>et_2452</key>
+    <string>{"ico":"tq2.png"}</string>
+	<key>2452</key>
+	<string>云天青：
+		姑娘，你——！！</string>
+	<key>et_2453</key>
+    <string>{"ico":"th4.png","bk":"bk119.png"}</string>
+	<key>2453</key>
+	<string>云天河：
+		爹！爹怎么突然不见了——</string>
+	<key>et_2454</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2454</key>
+	<string>？？：
+		快走！快走！</string>
+	<key>et_2455</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2455</key>
+	<string>云天河：
+		什么？！</string>
+	<key>et_2456</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2456</key>
+	<string>？？：
+		无常殿已经把转轮镜台的灵力暂时消去了，他们发现你们了！</string>
+	<key>et_2457</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2457</key>
+	<string>云天河：
+		那我爹——</string>
+	<key>et_2458</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2458</key>
+	<string>？？：
+		走吧，他不会再出现了……</string>
+	<key>et_2459</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2459</key>
+	<string>云天河：
+		爹……他不会有事吧？</string>
+	<key>et_2460</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2460</key>
+	<string>？？：
+		有事的是你们！马上就会有大批的鬼卒追过来了，转轮镜台是不许私会鬼魂的。</string>
+	<key>et_2461</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2461</key>
+	<string>云天河：
+		但是……</string>
+	<key>et_2462</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2462</key>
+	<string>？？：
+		别但是了！抓紧时间，往南面的出口走，就可以去放逐渊了，那里是孤魂野鬼聚集之地，鬼卒也不容易搜寻，你们快来！我在那里等你们！</string>
+		
+	<key>et_2463</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2463</key>
+	<string>韩菱纱：
+		现在怎么办……？</string>
+	<key>et_2464</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2464</key>
+	<string>云天河：
+		那个人……不是让我们去南边找他吗？</string>
+	<key>et_2465</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>2465</key>
+	<string>韩菱纱：
+		可是……我都没有见到大伯……</string>
+	<key>et_2466</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2466</key>
+	<string>慕容紫英：
+		不能再等了，我们已经惊动鬼界，再不走就来不及了！</string>
+	<key>et_2467</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2467</key>
+	<string>云天河：
+		……走吧……爹好像还有很重要的话想说，最后也没有说，就不见了……</string>
+	<key>et_2468</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>2468</key>
+	<string>韩菱纱：
+		大伯……</string>
+		
+	<key>et_2469</key>
+    <string>{"ico":"rk.png","bk":"bk123.png","tag":"第七章 放逐之渊","music":"snd/wxsj.mp3"}</string>
+	<key>2469</key>
+	<string>？？：
+		你们可算来了！</string>
+	<key>et_2470</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2470</key>
+	<string>？？：
+		快点快点，穿过放逐渊，就是冥河，那条河上常有青竹船往来阴阳两界，你们到了那里，就跳上河边的船，一路回去人间吧！</string>
+	<key>et_2471</key>
+	<string>{"ico":"zy2.png"}</string>
+	<key>2471</key>
+	<string>慕容紫英：
+		谢谢……你是？你为何会帮我们？</string>
+	<key>et_2472</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2472</key>
+	<string>壬癸：
+		哈哈，我叫壬癸，这也算好人有好报吧，你们还记不记得即墨的夏元辰？</string>
+	<key>et_2473</key>
+	<string>{"ico":"zy4.png"}</string>
+	<key>2473</key>
+	<string>慕容紫英：
+		你是夏书生的朋友？</string>
+	<key>et_2474</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2474</key>
+	<string>壬癸：
+		非也，我只是刚巧认识他的养女。</string>
+	<key>et_2475</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2475</key>
+	<string>韩菱纱：
+		莲宝？！</string>
+	<key>et_2476</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2476</key>
+	<string>壬癸：
+		没错、没错！说起来，我和那女人，对了，她这一世叫作“莲宝”，也已经有六世的交情了！</string>
+	<key>et_2477</key>
+    <string>{"ico":"ls3.png"}</string>
+	<key>2477</key>
+	<string>韩菱纱：
+		哎？六世？</string>
+	<key>et_2478</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2478</key>
+	<string>壬癸：
+		她前前后后死了六次，都是我去勾她的魂啊，后来我发觉那女人呆呆笨笨的，就不由得关照起她来了。</string>
+	<key>et_2479</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2479</key>
+	<string>壬癸：
+		她可真是个傻女人，明明和前世的恋人缘分都已经尽了，偏偏还不死心，转世六次，都要陪在他身边，有时是树、有时是鸟，总之没一次是人，到了这一世成了人，偏偏又是个痴儿……</string>
+	<key>et_2480</key>
+    <string>{"ico":"ls3.png"}</string>
+	<key>2480</key>
+	<string>韩菱纱：
+		慢慢慢慢——慢！你说、你说前世的恋人，难道莲宝就是静兰？！是夏书生的恋人转世？！</string>
+	<key>et_2481</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2481</key>
+	<string>壬癸：
+		没错、没错！小姑娘你真聪明，一点就通！</string>
+	<key>et_2482</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2482</key>
+	<string>壬癸：
+		我啊，就是放不开她，时常去看她，虽然她不做鬼时，也不记得我……</string>
+	<key>et_2483</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2483</key>
+	<string>壬癸：
+		上回我见你们救了她，这一次才会帮你们！</string>
+	<key>et_2484</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>2484</key>
+	<string>韩菱纱：
+		……她……肯定很痛苦吧，夏书生也不再认得她了，为什么……还要纠缠生生世世……</string>
+	<key>et_2485</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2485</key>
+	<string>壬癸：
+		唉，你问我，我又怎么知道，做鬼太久，早忘记做人时的感觉了。</string>
+	<key>et_2486</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2486</key>
+	<string>壬癸：
+		你们人的情爱本来就没什么道理可言，明知不可为，偏要去做的事，恐怕比天上的星星还多！</string>
+	<key>et_2487</key>
+    <string>{"ico":"ls2.png"}</string>
+	<key>2487</key>
+	<string>韩菱纱：
+		……</string>
+	<key>et_2488</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2488</key>
+	<string>壬癸：
+		不说这个了，你们快走吧，我帮得了一时，帮不了一世啊！</string>
+	<key>et_2489</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2489</key>
+	<string>慕容紫英：
+		多谢，今日的恩情无以为报——</string>
+	<key>et_2490</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2490</key>
+	<string>壬癸：
+		不用不用～小事一桩，有什么可报的！</string>
+	<key>et_2491</key>
+    <string>{"ico":"rk.png"}</string>
+	<key>2491</key>
+	<string>壬癸：
+		不过嘛，你们要是方便，记得去了阳间多烧些纸钱给我！鬼差的俸禄也太少了，大家都是叫苦连天。</string>
+	<key>et_2492</key>
+    <string>{"ico":"th3.png"}</string>
+	<key>2492</key>
+	<string>云天河：
+		纸钱……？啥东西？</string>
+	<key>et_2493</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2493</key>
+	<string>慕容紫英：
+		有机会再说给你听，我们先离开这里吧！</string>
+		
+	<key>et_2494</key>
+    <string>{"ico":"ls1.png","bk":"bk121.png"}</string>
+	<key>2494</key>
+	<string>韩菱纱：
+		那边！真的有船哎！</string>
+	<key>et_2495</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2495</key>
+	<string>慕容紫英：
+		我们上船。</string>
+	<key>et_2496</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2496</key>
+	<string>云天河：
+		好！</string>
+		
+	<key>et_2497</key>
+    <string>{"ico":"ls2.png","bk":"bk122.png","tag":"第七章 冥河"}</string>
+	<key>2497</key>
+	<string>韩菱纱：
+		……这个划船的人好奇怪，一句话都不说，却愿意帮我们，应该是壬癸的朋友吧？</string>
+	<key>et_2498</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2498</key>
+	<string>云天河：
+		不知道……</string>
+	<key>et_2499</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2499</key>
+	<string>慕容紫英：
+		……</string>
+	<key>et_2500</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2500</key>
+	<string>云天河：
+		紫英，你在想什么？是不是……很在意梦璃是妖？</string>
+	<key>et_2501</key>
+    <string>{"ico":"ls5.png"}</string>
+	<key>2501</key>
+	<string>韩菱纱：
+		（天呐！笨死了，哪壶不开提哪壶！）</string>
+	<key>et_2502</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2502</key>
+	<string>慕容紫英：
+		……想不到……我竟与一个妖相处了这么久，而且毫无所觉……</string>
+	<key>et_2503</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2503</key>
+	<string>云天河：
+		可是，在意这种事根本没啥用吧？我爹说的话，你不也听到了？</string>
+	<key>et_2504</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2504</key>
+	<string>慕容紫英：
+		……我不知道……该怎么做才是对的，就像那个时候向掌门要水灵珠，似乎是我错了，但究竟错在哪里，却一点都不明白……</string>
+	<key>et_2505</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2505</key>
+	<string>云天河：
+		不一样，那个时候根本是小气掌门的错吧！</string>
+	<key>et_2506</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2506</key>
+	<string>云天河：
+		我觉得……要是你不知道该怎么办，干脆先什么都别想了，一切等我们找到梦璃再说。</string>
+	<key>et_2507</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2507</key>
+	<string>慕容紫英：
+		嗯……</string>
+	<key>et_2508</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2508</key>
+	<string>韩菱纱：
+		你们看！那边有亮光，是不是快到人间了？</string>
+	<key>et_2509</key>
+    <string>{"ico":"ls2.png","bk":"bk124.png"}</string>
+	<key>2509</key>
+	<string>韩菱纱：
+		（咦？这个人……）</string>
+	<key>et_2510</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2510</key>
+	<string>慕容紫英：
+		多谢相助，我等感激不尽，能否告知尊驾姓名？</string>
+	<key>et_2511</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2511</key>
+	<string>划船人：
+		……</string>
+	<key>et_2512</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2512</key>
+	<string>慕容紫英：
+		……如此，是我冒昧了。</string>
+	<key>et_2513</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2513</key>
+	<string>云天河：
+		他不愿意说就算了吧，大不了我们也帮他多烧点那个什么纸钱。</string>
+	<key>et_2514</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2514</key>
+	<string>韩菱纱：
+		你……把头抬起来，让我看一看好吗？</string>
+	<key>et_2515</key>
+	<string>{"ico":"zy4.png"}</string>
+	<key>2515</key>
+	<string>慕容紫英：
+		菱纱？</string>
+	<key>et_2516</key>
+	<string>{}</string>
+	<key>2516</key>
+	<string>划船人：
+		……</string>
+	<key>et_2517</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2517</key>
+	<string>韩菱纱：
+		你、你不敢吗？！你到底是谁？</string>
+	<key>et_2518</key>
+	<string>{}</string>
+	<key>2518</key>
+	<string>划船人：
+		…………</string>
+	<key>et_2519</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2519</key>
+	<string>韩菱纱：
+		……</string>
+	<key>et_2520</key>
+	<string>{"ico":"hbk.png","music":"snd/ws.mp3"}</string>
+	<key>2520</key>
+	<string>划船人：
+		……唉，丫头，你还是这么精灵，真拿你没办法……</string>
+	<key>et_2521</key>
+    <string>{"ico":"ls3.png"}</string>
+	<key>2521</key>
+	<string>韩菱纱：
+		伯父，真的是你？！怎么可能？！</string>
+	<key>et_2522</key>
+	<string>{"ico":"zy4.png"}</string>
+	<key>2522</key>
+	<string>慕容紫英：
+		……！</string>
+	<key>et_2523</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>2523</key>
+	<string>韩菱纱：
+		伯父，为什么你会在这里？为什么你要装作不认识我？要不是、要不是我认出你的轮廓……</string>
+	<key>et_2524</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2524</key>
+	<string>韩北旷：
+		丫头，你就当作没看见伯父好不好？</string>
+	<key>et_2525</key>
+    <string>{"ico":"ls7.png"}</string>
+	<key>2525</key>
+	<string>韩菱纱：
+		不好！我明明看见了！你都不知道，我有多想你，在转轮镜台的时候，我以为你已经转世去了，所以才不出现……</string>
+	<key>et_2526</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2526</key>
+	<string>韩北旷：
+		傻丫头，我要是转世，今天不就救不了你了？</string>
+	<key>et_2527</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2527</key>
+	<string>韩菱纱：
+		……伯父，你说什么救不了我？为什么你会在这里划船？</string>
+	<key>et_2528</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2528</key>
+	<string>韩北旷：
+		……不止是我……几乎所有韩家人，死后都会在鬼界做苦役……我便是负责摆渡这青竹船，必要时往来人鬼两界……</string>
+	<key>et_2529</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>2529</key>
+	<string>韩菱纱：
+		苦役？那是什么？他们怎么能让你做这种事呢？！</string>
+	<key>et_2530</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2530</key>
+	<string>韩北旷：
+		…………</string>
+	<key>et_2531</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2531</key>
+	<string>韩菱纱：
+		伯父，你说嘛！告诉我好不好？</string>
+	<key>et_2532</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2532</key>
+	<string>韩北旷：
+		丫头，我刚才不想与你相认，就是在犹豫要不要告诉你一些事，对你来讲，现在就知道这些，未免过于沉重了……</string>
+	<key>et_2533</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>2533</key>
+	<string>韩菱纱：
+		伯父，到底是怎么回事？！我要知道！</string>
+	<key>et_2534</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2534</key>
+	<string>韩北旷：
+		唉……韩氏世代盗墓，总以为人已入土，墓中器皿当可拿来救助活人，但如今你来了鬼界，应该知晓，鬼也如活人一般，有自己的感情、自己的种种思念……</string>
+	<key>et_2535</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2535</key>
+	<string>韩北旷：
+		我们一族惊扰死者，不仅生死薄上阳寿短暂，很多都只活到二三十岁，即便死后，也一样要做苦役来赎罪，待到罪孽偿清，才可再入轮回了……</string>
+	<key>et_2536</key>
+    <string>{"ico":"ls7.png"}</string>
+	<key>2536</key>
+	<string>韩菱纱：
+		竟然、竟然这样……</string>
+	<key>et_2537</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>2537</key>
+	<string>韩菱纱：
+		也就是说……我一直在找的长生之法，根本没有用？不管我怎么努力，也不能让族人活得更长久一些……</string>
+	<key>et_2538</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2538</key>
+	<string>韩北旷：
+		丫头，我知道你很努力了，但是有些东西，冥冥之中自有安排，不是你一个人能够争得过……</string>
+	<key>et_2539</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>2539</key>
+	<string>韩菱纱：
+		那，爹和娘呢？他们在哪？</string>
+	<key>et_2540</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2540</key>
+	<string>韩北旷：
+		……自然也在鬼界的其他地方赎罪。</string>
+	<key>et_2541</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>2541</key>
+	<string>韩菱纱：
+		……</string>
+	<key>et_2542</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2542</key>
+	<string>韩北旷：
+		丫头，你老实告诉我，你是不是一直很气自己爹娘？觉得他们待你不好？</string>
+	<key>et_2543</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>2543</key>
+	<string>韩菱纱：
+		我……</string>
+	<key>et_2544</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2544</key>
+	<string>韩北旷：
+		唉，他们啊，知道自己多半命不长久，所以才故意对你冷淡，就是怕你依赖惯了，万一双亲离世，会太伤心，这世上又哪有爹娘不喜欢自己的孩子呢？</string>
+	<key>et_2545</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>2545</key>
+	<string>韩菱纱：
+		伯父，你说的、都是真的吗？！</string>
+	<key>et_2546</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2546</key>
+	<string>韩北旷：
+		当然是真的！记得你还小的时候，你爹每天晚上非要在床边看你睡着了，他才肯睡，他就是有股傻劲，总觉得不多看几眼，多唤你几声名字，以后就没机会了……</string>
+	<key>et_2547</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>2547</key>
+	<string>韩菱纱：
+		……真是个傻爹爹，还有娘，也好笨！</string>
+	<key>et_2548</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>2548</key>
+	<string>韩菱纱：
+		人活一辈子，本来就够短暂了，他们还要在意这在意那，害我伤心了好多年……</string>
+	<key>et_2549</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2549</key>
+	<string>韩北旷：
+		……丫头……你真的长大了，看事情有自己的想法了……</string>
+	<key>et_2550</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2550</key>
+	<string>韩北旷：
+		……似乎、也结识了很好的朋友……旁边这两位都是吧？</string>
+	<key>et_2551</key>
+    <string>{"ico":"th2.png"}</string>
+	<key>2551</key>
+	<string>云天河：
+		对啊，我和菱纱是很要好的朋友，呵呵。</string>
+	<key>et_2552</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2552</key>
+	<string>慕容紫英：
+		晚辈慕容紫英，刚才多有失礼了。</string>
+	<key>et_2553</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2553</key>
+	<string>韩北旷：
+		慕容？难道是大燕国的遗族？</string>
+	<key>et_2554</key>
+	<string>{"ico":"zy4.png"}</string>
+	<key>2554</key>
+	<string>慕容紫英：
+		……！前辈如何得知？</string>
+	<key>et_2555</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2555</key>
+	<string>韩北旷：
+		唉，我也是脑中灵光一闪而过，想到很久以前有一对夫妇，前去轮回井投胎……眉目间和你很有几分神似……而且慕容这个姓可不多见，曾是燕国的大家之姓……</string>
+	<key>et_2556</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2556</key>
+	<string>韩北旷：
+		你爹……是不是叫慕容承？</string>
+	<key>et_2557</key>
+	<string>{"ico":"zy4.png"}</string>
+	<key>2557</key>
+	<string>慕容紫英：
+		……正是家父。</string>
+	<key>et_2558</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2558</key>
+	<string>韩北旷：
+		那就没错了。</string>
+	<key>et_2559</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2559</key>
+	<string>慕容紫英：
+		…………</string>
+	<key>et_2560</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2560</key>
+	<string>韩北旷：
+		你也不用太过伤心，你爹和你娘神色平和，生前应该是过得很安泰。</string>
+	<key>et_2561</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2561</key>
+	<string>韩北旷：
+		只是他们似乎有些遗憾，没能在死之前再见自己的小儿子一面，说是因为那孩子年幼时体弱，家里不但请来道士替他批命取名，更是将他送去了仙山上修行，但愿他能活得长命百岁。</string>
+	<key>et_2562</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2562</key>
+	<string>慕容紫英：
+		…………</string>
+	<key>et_2563</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2563</key>
+	<string>韩北旷：
+		鬼界有种说法，叫作生前种种隔世抛，与其一直挂念，不如在心里希望过世的亲人朋友，投胎以后能够一生顺遂……</string>
+	<key>et_2564</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2564</key>
+	<string>慕容紫英：
+		……多谢前辈指点，晚辈……晚辈都明白……</string>
+	<key>et_2565</key>
+	<string>{}</string>
+	<key>2565</key>
+	<string>
+寻仙问道……平安顺遂……梦璃当日说的没错……</string>
+	<key>et_2566</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>2566</key>
+	<string>韩菱纱：
+		（哪有那么容易看透，紫英你又在逞强了……不然为什么要露出那种悲伤的神情……）</string>
+	<key>et_2567</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2567</key>
+	<string>韩北旷：
+		唉，是我该谢谢你们，一直照顾我家丫头。</string>
+	<key>et_2568</key>
+    <string>{"ico":"ls5.png"}</string>
+	<key>2568</key>
+	<string>韩菱纱：
+		伯父，你说什么呢……旁边这个倒也罢了，后面的那个啊，可是我一直在照顾他呀！</string>
+	<key>et_2569</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2569</key>
+	<string>韩北旷：
+		哈哈，不管怎样，伯父今天能见到你，觉得很高兴……</string>
+	<key>et_2570</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2570</key>
+	<string>韩菱纱：
+		我也是……伯父，你先别走，再多和我说些话好不好？</string>
+	<key>et_2571</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2571</key>
+	<string>韩北旷：
+		……时候差不多，你们该回阳间了。</string>
+	<key>et_2572</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2572</key>
+	<string>韩菱纱：
+		伯父，我会告诉族人，让他们别再去惊扰死者了……不过有机会的话，我还是要去找长生之法。</string>
+	<key>et_2573</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2573</key>
+	<string>韩北旷：
+		丫头，别总那样辛苦，多为自己想想吧。</string>
+	<key>et_2574</key>
+	<string>{"ico":"hbk.png"}</string>
+	<key>2574</key>
+	<string>韩北旷：
+		你出落得这么漂亮，记得找个好相公嫁了！我看你身后两个都不错啊！哈哈！</string>
+	<key>et_2575</key>
+    <string>{"ico":"ls9.png"}</string>
+	<key>2575</key>
+	<string>韩菱纱：
+		伯父！</string>
+	
+	<key>et_2576</key>
+	<string>{"ico":"zy1.png","bk":"bk125.png","tag":"第七章 心愿","music":"snd/cljf.mp3"}</string>
+	<key>2576</key>
+	<string>慕容紫英：
+		……看来……我们已经回到人间了，这里似乎是蜀中的鬼城酆都。</string>
+	<key>et_2577</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>2577</key>
+	<string>韩菱纱：
+		……伯父……呜……</string>
+	<key>et_2578</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2578</key>
+	<string>云天河：
+		菱纱，你、你别哭了……</string>
+	<key>et_2579</key>
+    <string>{"ico":"th6.png"}</string>
+	<key>2579</key>
+	<string>云天河：
+		你这样哭，我也好难过……</string>
+	<key>et_2580</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>2580</key>
+	<string>韩菱纱：
+		你……你又难过什么？</string>
+	<key>et_2581</key>
+    <string>{"ico":"th6.png"}</string>
+	<key>2581</key>
+	<string>云天河：
+		去了趟鬼界，听到那些事情，我好像变得都不是我了……</string>
+	<key>et_2582</key>
+    <string>{"ico":"th6.png"}</string>
+	<key>2582</key>
+	<string>云天河：
+		……原来，娘最喜欢的人，不是爹，而是……</string>
+	<key>et_2583</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>2583</key>
+	<string>韩菱纱：
+		我也觉得……为什么许多事情……和原本想的完全不一样……</string>
+	<key>et_2584</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2584</key>
+	<string>慕容紫英：
+		……走吧，我们回琼华派去，也不知道门派里到底如何了。</string>
+	<key>et_2585</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2585</key>
+	<string>云天河：
+		嗯，我们还要去救梦璃。</string>
+	<key>et_2586</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2586</key>
+	<string>韩菱纱：
+		……天河，等一下。</string>
+	<key>et_2587</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2587</key>
+	<string>云天河：
+		怎么了……？</string>
+	<key>et_2588</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2588</key>
+	<string>韩菱纱：
+		我想……你陪我去做一件事好吗？</string>
+	<key>et_2589</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2589</key>
+	<string>云天河：
+		啥？很急吗？</string>
+	<key>et_2590</key>
+    <string>{"ico":"ls5.png"}</string>
+	<key>2590</key>
+	<string>韩菱纱：
+		哎，问那么多干嘛，来就是了，反正很重要的！</string>
+	<key>et_2591</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2591</key>
+	<string>慕容紫英：
+		什么事？不需要我帮忙吗？</string>
+	<key>et_2592</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2592</key>
+	<string>韩菱纱：
+		嗯……你来也好……</string>
+	<key>et_2593</key>
+    <string>{"ico":"ls2.png"}</string>
+	<key>2593</key>
+	<string>韩菱纱：
+		不，紫英你还是别来了……</string>
+	<key>et_2594</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2594</key>
+	<string>慕容紫英：
+		到底何事？</string>
+	<key>et_2595</key>
+    <string>{"ico":"ls2.png"}</string>
+	<key>2595</key>
+	<string>韩菱纱：
+		其实……刚才在城里的时候，我想了很久，想伯父说的那些话，我决定了却自己的一个心愿，以后就再也不盗墓了。</string>
+	<key>et_2596</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2596</key>
+	<string>云天河：
+		意思就是……还要去盗一次？</string>
+	<key>et_2597</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2597</key>
+	<string>韩菱纱：
+		那是有原因的嘛～你、可以陪我去吗？</string>
+	<key>et_2598</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2598</key>
+	<string>云天河：
+		不行！</string>
+	<key>et_2599</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2599</key>
+	<string>韩菱纱：
+		为什么？</string>
+	<key>et_2600</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2600</key>
+	<string>云天河：
+		我虽然不是很懂，但也知道，盗墓不是好事，对你不好，会减你的寿命，所以不能去。</string>
+	<key>et_2601</key>
+    <string>{"ico":"ls5.png"}</string>
+	<key>2601</key>
+	<string>韩菱纱：
+		哪有这么严重……就去一次！以前那么多年都这样过了，还在乎这一次吗？</string>
+	<key>et_2602</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2602</key>
+	<string>云天河：
+		不行！你的命就算是减了一个月、一天也不行！</string>
+	<key>et_2603</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2603</key>
+	<string>云天河：
+		为啥突然要去？！再说梦璃的事也还没——</string>
+	<key>et_2604</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>2604</key>
+	<string>韩菱纱：
+		哼！别总是梦璃、梦璃的，我当然明白梦璃的事很重要！但我也不是胡闹。</string>
+	<key>et_2605</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>2605</key>
+	<string>韩菱纱：
+		只要这件事一办完，我们马上就回琼华派，去妖界找梦璃！</string>
+	<key>et_2606</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2606</key>
+	<string>慕容紫英：
+		……何等大事，一定要在这个时候去办？你却又不肯说清楚因果……</string>
+	<key>et_2607</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2607</key>
+	<string>慕容紫英：
+		菱纱，攸关你的生死，你要想明白，不可儿戏。</string>
+	<key>et_2608</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2608</key>
+	<string>云天河：
+		是啊，菱纱，你平时就很爱玩，但也别拿自己的命来玩啊！</string>
+	<key>et_2609</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>2609</key>
+	<string>韩菱纱：
+		你当我是在玩？</string>
+	<key>et_2610</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>2610</key>
+	<string>韩菱纱：
+		你们都以为我是说疯话？！</string>
+	<key>et_2611</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2611</key>
+	<string>云天河：
+		…………</string>
+	<key>et_2612</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2612</key>
+	<string>慕容紫英：
+		…………</string>
+	<key>et_2613</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>2613</key>
+	<string>韩菱纱：
+		好，两个大男人婆婆妈妈的不肯去，我自己去总行了吧？！</string>
+	<key>et_2614</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2614</key>
+	<string>云天河：
+		等等！你别走！</string>
+	<key>et_2615</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>2615</key>
+	<string>韩菱纱：
+		我干嘛要理你！</string>
+	<key>et_2616</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>2616</key>
+	<string>韩菱纱：
+		你们不愿意陪我，还不许我自己去，那干脆把我打昏，直接扛回琼华派算了！</string>
+	<key>et_2617</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2617</key>
+	<string>云天河：
+		话不能这么说，总之你不能——</string>
+	<key>et_2618</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>2618</key>
+	<string>韩菱纱：
+		哼！</string>
+	<key>et_2619</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>2619</key>
+	<string>韩菱纱：
+		紫英你、干嘛妨碍我？！</string>
+	<key>et_2620</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2620</key>
+	<string>慕容紫英：
+		……那件事，你一定要做？</string>
+	<key>et_2621</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>2621</key>
+	<string>韩菱纱：
+		对！你们不去，我一个人也能办成，大不了死在那边，横竖也就是一条命。</string>
+	<key>et_2622</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2622</key>
+	<string>韩菱纱：
+		那是一件很重要的事，一个很重要的心愿，如果我的阳寿真的很短，那我一定……要在死之前做到……</string>
+	<key>et_2623</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2623</key>
+	<string>云天河：
+		……你！</string>
+	<key>et_2624</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2624</key>
+	<string>韩菱纱：
+		而且去妖界会很危险……我只想……此生不要留下遗憾……</string>
+	<key>et_2625</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2625</key>
+	<string>云天河：
+		不行不行，话不能这么说，不管你怎么说都不行！</string>
+	<key>et_2626</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2626</key>
+	<string>慕容紫英：
+		……好吧，我去。</string>
+	<key>et_2627</key>
+    <string>{"ico":"th4.png"}</string>
+	<key>2627</key>
+	<string>云天河：
+		啊？！</string>
+	<key>et_2628</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2628</key>
+	<string>慕容紫英：
+		与其让你一人涉险，倒不如我跟去……</string>
+	<key>et_2629</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2629</key>
+	<string>韩菱纱：
+		真的？！</string>
+	<key>et_2630</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2630</key>
+	<string>韩菱纱：
+		哈，那就这么说定了，还是小紫英最明事理。</string>
+	<key>et_2631</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2631</key>
+	<string>云天河：
+		这怎么行？我不干！</string>
+	<key>et_2632</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2632</key>
+	<string>韩菱纱：
+		喂，紫英都已经答应了，你还找碴啊？</string>
+	<key>et_2633</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2633</key>
+	<string>慕容紫英：
+		莫要误会，我并未答应你什么，只是跟你同去，免得你胡闹，反而令自己身陷险境。</string>
+	<key>et_2634</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2634</key>
+	<string>慕容紫英：
+		如果此行有任何损阴德之事，我会立刻阻止你！</string>
+	<key>et_2635</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2635</key>
+	<string>云天河：
+		……</string>
+	<key>et_2636</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2636</key>
+	<string>云天河：
+		…………</string>
+	<key>et_2637</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2637</key>
+	<string>云天河：
+		………………</string>
+	<key>et_2638</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2638</key>
+	<string>云天河：
+		为啥女孩子会这么麻烦啊啊啊？不顺你的意就要闹闹闹！</string>
+	<key>et_2639</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2639</key>
+	<string>云天河：
+		烦死我了～～～烦死我了～～～烦死我了～～～！！</string>
+	<key>et_2640</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2640</key>
+	<string>云天河：
+		一个不见了，一个明明知道会减寿命还要去盗墓，我真是搞不懂女孩子在想什么！</string>
+	<key>et_2641</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2641</key>
+	<string>韩菱纱：
+		嘻，这么说，你也同意啰？</string>
+	<key>et_2642</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2642</key>
+	<string>云天河：
+		………………</string>
+	<key>et_2643</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2643</key>
+	<string>云天河：
+		唉，还是以前在山上打猎的时候最好，没那么多烦心事……</string>
+	<key>et_2644</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2644</key>
+	<string>云天河：
+		（真想回山上……）</string>
+	<key>et_2645</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2645</key>
+	<string>韩菱纱：
+		好啦，别臭着一张脸，想吓谁啊，反正我当你答应了。</string>
+	<key>et_2646</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>2646</key>
+	<string>韩菱纱：
+		走吧！那个地方叫封神陵，在陈州的北面，因为悬浮于半空，常人根本不能靠近，好在我们几个没问题，御剑过去就好了！</string>
+	<key>et_2647</key>
+    <string>{"ico":"th1.png"}</string>
+	<key>2647</key>
+	<string>云天河：
+		我……我实在是……都不知道该说什么了……</string>
+		
+	<key>et_2648</key>
+	<string>{"ico":"ls1.png","bk":"bk126.png","music":"snd/wxsj.mp3"}</string>
+	<key>2648</key>
+	<string>韩菱纱：
+		嘻嘻，果然找到了！</string>
+	<key>et_2649</key>
+	<string>{"ico":"zy4.png"}</string>
+	<key>2649</key>
+	<string>慕容紫英：
+		……！</string>
+	<key>et_2650</key>
+	<string>{"ico":"th4.png"}</string>
+	<key>2650</key>
+	<string>云天河：
+		这是……？！</string>
+	<key>et_2651</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2651</key>
+	<string>韩菱纱：
+		怎么样？这把弓很漂亮吧？就算静静地在那里，都能感觉到一股好强的灵力！应该就是我曾祖父提过的神弓了！</string>
+	<key>et_2652</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2652</key>
+	<string>韩菱纱：
+		这把弓天河你拿着一定很帅～</string>
+	<key>et_2653</key>
+	<string>{"ico":"th4.png","bk":"bk127.png"}</string>
+	<key>2653</key>
+	<string>云天河：
+		啊？！……原来……原来你说要来这里取个东西，是为我？！</string>
+	<key>et_2654</key>
+	<string>{"ico":"ls2.png"}</string>
+	<key>2654</key>
+	<string>韩菱纱：
+		什、什么，谁为了你！少往自己脸上贴金！</string>
+	<key>et_2655</key>
+	<string>{"ico":"ls2.png"}</string>
+	<key>2655</key>
+	<string>韩菱纱：
+		我只不过觉得这次去妖界，一定会有大事发生，你拿着它，也算多一份力量，对我们几个都有好处！</string>
+	<key>et_2656</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2656</key>
+	<string>云天河：
+		是、是吗？</string>
+	<key>et_2657</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2657</key>
+	<string>韩菱纱：
+		是啊…………</string>
+	<key>et_2658</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2658</key>
+	<string>韩菱纱：
+		不过……你硬要说成是为了你，那我、我也没办法，谁让我们几个人里面，只有你是用弓的，哼，便宜你了。</string>
+	<key>et_2659</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2659</key>
+	<string>云天河：
+		哦……</string>
+	<key>et_2660</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2660</key>
+	<string>韩菱纱：
+		咦？！</string>
+	<key>et_2661</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2661</key>
+	<string>云天河：
+		…………</string>
+	<key>et_2662</key>
+	<string>{"ico":"ls4.png"}</string>
+	<key>2662</key>
+	<string>韩菱纱：
+		我没看错吧？野人也会眼眶湿润呀～</string>
+	<key>et_2663</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2663</key>
+	<string>云天河：
+		…………</string>
+	<key>et_2664</key>
+	<string>{"ico":"ls4.png"}</string>
+	<key>2664</key>
+	<string>韩菱纱：
+		在心里感动就好了，可别真的流下眼泪啊，男儿有泪不轻弹嘛……</string>
+	<key>et_2665</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2665</key>
+	<string>云天河：
+		哪有……哪有眼泪……你看错了……</string>
+	<key>et_2666</key>
+	<string>{"ico":"ls4.png"}</string>
+	<key>2666</key>
+	<string>韩菱纱：
+		你喜欢这个礼物，我就很开心了。</string>
+	<key>et_2667</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2667</key>
+	<string>云天河：
+		这把弓真的很不错，但是……</string>
+	<key>et_2668</key>
+	<string>{"ico":"ls3.png"}</string>
+	<key>2668</key>
+	<string>韩菱纱：
+		什么……？</string>
+	<key>et_2669</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2669</key>
+	<string>云天河：
+		……早知道来这里是要拿弓，我死都不会让你来……</string>
+	<key>et_2670</key>
+	<string>{"ico":"ls3.png"}</string>
+	<key>2670</key>
+	<string>韩菱纱：
+		为什么？</string>
+	<key>et_2671</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2671</key>
+	<string>云天河：
+		世上再好的弓，也只是一把弓，根本不值得拿你的命来换，哪怕只是一个月、几天……都不值得……</string>
+	<key>et_2672</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2672</key>
+	<string>韩菱纱：
+		……你……要是真的这么想，就好好地用这把弓吧……你答应我，永远把它带在身边，就算有一天你用不着了，也要带着……</string>
+	<key>et_2673</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2673</key>
+	<string>云天河：
+		好，我答应你！</string>
+	<key>et_2674</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2674</key>
+	<string>韩菱纱：
+		你总是说……我对你很好很好，其实那些都没什么……</string>
+	<key>et_2675</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2675</key>
+	<string>韩菱纱：
+		可是，有了这把弓……不管以后你和谁在一起，不管我是不是已经死了……你偶尔念着我对你的好，我就会很开心了……</string>
+	<key>et_2676</key>
+	<string>{"ico":"th4.png"}</string>
+	<key>2676</key>
+	<string>云天河：
+		什么叫我“跟谁在一起”，那个“谁”又是谁啊？</string>
+	<key>et_2677</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2677</key>
+	<string>韩菱纱：
+		哎，不管是谁啦，总之我跟你约定了。</string>
+	<key>et_2678</key>
+	<string>{"ico":"ls8.png"}</string>
+	<key>2678</key>
+	<string>韩菱纱：
+		（……你可以有资格去喜欢一个人，但我却不能……我的阳寿可能……我是没有资格去喜欢别人的……）</string>
+	<key>et_2679</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2679</key>
+	<string>云天河：
+		你别说这种话，你一定会活很久很久的，有我保护你，一定没关系的！</string>
+	<key>et_2680</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2680</key>
+	<string>韩菱纱：
+		嗯，傻瓜……</string>
+	<key>et_2681</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2681</key>
+	<string>云天河：
+		我……</string>
+	<key>et_2682</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2682</key>
+	<string>韩菱纱：
+		不管我还有多少时间，一定要记得我这个好朋友，好吗？</string>
+	<key>et_2683</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2683</key>
+	<string>云天河：
+		好朋友……我知道……我怎么可能忘记…………</string>
+	<key>et_2684</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2684</key>
+	<string>慕容紫英：
+		…………</string>
+	<key>et_2685</key>
+	<string>{}</string>
+	<key>2685</key>
+	<string>
+好朋友……菱纱对天河的心思，又怎会是好朋友……</string>
+	<key>et_2686</key>
+	<string>{"ico":"ls2.png"}</string>
+	<key>2686</key>
+	<string>韩菱纱：
+		……对不起哦，紫英，我都没有想到什么好东西，是你适用的……</string>
+	<key>et_2687</key>
+	<string>{"ico":"zy2.png","goto":2689}</string>
+	<key>2687</key>
+	<string>慕容紫英：
+		适用的东西…………</string>
+	<key>et_2689</key>
+	<string>{}</string>
+	<key>2689</key>
+	<string>
+我本就不缺什么，若是她再为我去行盗墓之事，又怎么可以？</string>
+	<key>et_2690</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2690</key>
+	<string>慕容紫英：
+		不必……神兵利器，我并不稀罕，但你须记得自己的誓言，往后不可再因盗墓折去阳寿，这才是最重要的。</string>
+	<key>et_2691</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2691</key>
+	<string>慕容紫英：
+		今日之行我并不认同，但……如若取此弓会有任何报应，慕容紫英为朋友心甘情愿。</string>
+	<key>et_2692</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2692</key>
+	<string>韩菱纱：
+		紫英，谢谢你……</string>
+	<key>et_2693</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2693</key>
+	<string>慕容紫英：
+		快去将弓取下吧，然后速速离开此地，以免夜长梦多。</string>
+	<key>et_2694</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2694</key>
+	<string>韩菱纱：
+		嗯！</string>
+	<key>et_2695</key>
+	<string>{}</string>
+	<key>2695</key>
+	<string>
+待她转身去拿神弓时，我却突然想起，她曾经交给我的那个九龙缚丝剑穗......</string>
+	<key>et_2696</key>
+	<string>{}</string>
+	<key>2696</key>
+	<string>
+原本打算找掌门商议将九龙剑和剑穗转交给菱纱之事，后来诸事繁多，便耽搁了下来。</string>
+	<key>et_2697</key>
+	<string>{}</string>
+	<key>2697</key>
+	<string>
+现今掌门对菱纱他们如此态度，此事恐怕……</string>
+	<key>et_2698</key>
+	<string>{}</string>
+	<key>2698</key>
+	<string>
+如今想来，九龙缚丝剑穗应当早已随葬燕国皇陵，菱纱难道……也是……</string>
+	<key>et_2699</key>
+	<string>{}</string>
+	<key>2699</key>
+	<string>
+若是如此，那她的寿命缩减，也当算此剑穗一份……</string>
+	<key>et_2700</key>
+	<string>{}</string>
+	<key>2700</key>
+	<string>
+本想将剑穗还予她，但倘若她道出剑穗真是从燕国皇陵盗出……她在我面前又将如何自处？</string>
+	<key>et_2701</key>
+	<string>{}</string>
+	<key>2701</key>
+	<string>
+伸出的手，就这样僵在半空中……</string>
+	<key>et_2702</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2702</key>
+	<string>慕容紫英：
+		（也罢，既然她已不记得此事，我也当做不知吧……）</string>
+
+	<key>et_2703</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2703</key>
+	<string>韩菱纱：
+		拿到了，走吧！</string>
+	<key>et_2704</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2704</key>
+	<string>慕容紫英：
+		你日后不但不可再去盗墓，也应多做善事，累积功德，于你有益无害。</string>
+	<key>et_2705</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2705</key>
+	<string>韩菱纱：
+		知道～小紫英又在说教了！</string>
+	<key>et_2706</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2706</key>
+	<string>韩菱纱：
+		走啦，回琼华派去！我们刚才走过的地方，应该只是封神陵的冰山一角，这里还藏着许多秘密，要是太深入，可能就出不去了，早早回头为妙。</string>
+		
+	<key>et_2707</key>
+	<string>{"ico":"zy1.png","bk":"bk128.png","music":"snd/kld.mp3","tag":"第八章 卷云台"}</string>
+	<key>2707</key>
+	<string>慕容紫英：
+		奇怪……为何妖风散去了不少，入口所散发出来的妖力似乎比之前要弱……</string>
+	<key>et_2708</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2708</key>
+	<string>云天河：
+		对啊，没有像上回一样，冲出很多道光……</string>
+	<key>et_2709</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2709</key>
+	<string>云天河：
+		不管了，反正先冲进去再说！</string>
+	<key>et_2710</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2710</key>
+	<string>慕容紫英：
+		…………</string>
+	<key>et_2711</key>
+	<string>{}</string>
+	<key>2711</key>
+	<string>
+临到妖界入口，脚下的步子却越发沉重起来。</string>
+	<key>et_2712</key>
+	<string>{"ico":"ls2.png"}</string>
+	<key>2712</key>
+	<string>韩菱纱：
+		……紫英，一路上我都忍住不问……可现在已经在妖界入口了，你……是不是仍然没办法放开梦璃是妖的事……</string>
+	<key>et_2713</key>
+	<string>{}</string>
+	<key>2713</key>
+	<string>
+我微微摇头。</string>
+	<key>et_2714</key>
+	<string>{}</string>
+	<key>2714</key>
+	<string>
+这个问题，我又何尝没有自问过，可是——</string>
+	<key>et_2715</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2715</key>
+	<string>慕容紫英：
+		……我……不知道。</string>
+	<key>et_2716</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2716</key>
+	<string>慕容紫英：
+		或许在真正见到梦璃之前，我都无法想像，也不知要如何面对她……</string>
+	<key>et_2717</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2717</key>
+	<string>云天河：
+		……</string>
+	<key>et_2718</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2718</key>
+	<string>慕容紫英：
+		我十几年来在此修行，我的师弟、师妹、师侄，还有所有的长辈，都在这里……</string>
+	<key>et_2719</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2719</key>
+	<string>慕容紫英：
+		若是琼华派和妖界兵刃相向，我绝不会坐看本派弟子死伤……</string>
+	<key>et_2720</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2720</key>
+	<string>慕容紫英：
+		何况……彼此之间早已结下血海深仇，我们此去妖界，恐怕亦是凶多吉少……</string>
+	<key>et_2721</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2721</key>
+	<string>云天河：
+		为什么一定要打？不能让妖界离开吗？！</string>
+	<key>et_2722</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2722</key>
+	<string>云天河：
+		我虽然不像紫英你，有很多师兄、师弟，但也不想看你和菱纱、还有怀朔、璇玑出什么事啊！</string>
+	<key>et_2723</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2723</key>
+	<string>云天河：
+		爹说过，只要不再用双剑网住妖界，妖界就会离开了！</string>
+	<key>et_2724</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2724</key>
+	<string>慕容紫英：
+		……羲和、望舒双剑此刻正在掌门和玄霄师叔手中，要让他们罢手，谈何容易？</string>
+	<key>et_2725</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2725</key>
+	<string>云天河：
+		不试试怎么知道，也许会有办法的。</string>
+	<key>et_2726</key>
+	<string>{"ico":"ls2.png"}</string>
+	<key>2726</key>
+	<string>韩菱纱：
+		我觉得，天河的想法也不是没有道理。</string>
+	<key>et_2727</key>
+	<string>{}</string>
+	<key>2727</key>
+	<string>
+我却知道，他们所说的这些办法，恐怕根本无法实现。</string>
+	<key>et_2728</key>
+	<string>{}</string>
+	<key>2728</key>
+	<string>
+若是妖界真有办法摆脱双剑束缚，这么多日以来就不会死守结界毫无动静。</string>
+	<key>et_2729</key>
+	<string>{}</string>
+	<key>2729</key>
+	<string>
+十九年前妖界一战就未曾避免，十九年后的战争也一触即发。</string>
+	<key>et_2730</key>
+	<string>{}</string>
+	<key>2730</key>
+	<string>
+明知梦璃是妖，在妖界应无大碍。可是为何……自己却还是甘愿走这一遭？</string>
+	<key>et_2731</key>
+	<string>{}</string>
+	<key>2731</key>
+	<string>
+我扪心自问，如此不顾琼华门规，冒如此凶险前去妖界，是否值得？</string>
+	<key>et_2732</key>
+	<string>{"ico":"ls2.png"}</string>
+	<key>2732</key>
+	<string>韩菱纱：
+		进去妖界之后，我们见机行事吧，要是见了梦璃，能找到其他法子化解这场争斗，就再好不过了。</string>
+	<key>et_2733</key>
+	<string>{}</string>
+	<key>2733</key>
+	<string>
+脑海里想过无数遍，想出了许多不去妖界的理由，却没有一条能说服自己。</string>
+	<key>et_2734</key>
+	<string>{}</string>
+	<key>2734</key>
+	<string>
+或许……或许我也只是要亲眼见到她，亲口问她一句话，才会死心。</string>
+	<key>et_2735</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2735</key>
+	<string>慕容紫英：
+		…………</string>
+	<key>et_2736</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2736</key>
+	<string>慕容紫英：
+		……我们进去吧。</string>
+		
+	<key>et_2737</key>
+	<string>{"bk":"bk129.png","music":"snd/slsw.mp3","tag":"第八章 妖界之主"}</string>
+	<key>2737</key>
+	<string>瞳幽：
+		……！！你们！是怎么穿过结界的？！</string>
+	<key>et_2738</key>
+	<string>{}</string>
+	<key>2738</key>
+	<string>瞳寂：
+		蓝衣白衫！他们是琼华派的人！！</string>
+	<key>et_2739</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2739</key>
+	<string>韩菱纱：
+		哎？！等等，我们不是——</string>
+	<key>et_2740</key>
+	<string>{}</string>
+	<key>2740</key>
+	<string>瞳幽：
+		不管你们如何穿过结界！琼华派的就要受死！</string>
+	<key>et_2741</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2741</key>
+	<string>韩菱纱：
+		等等！你们听我把话说完呀！</string>
+	<key>et_2742</key>
+	<string>{"ico":"zy1.png","mask":"mask1.png"}</string>
+	<key>2742</key>
+	<string>慕容紫英：
+		小心！！</string>
+	<key>et_2743</key>
+	<string>{"ico":"ls1.png","bk":"bk130.png"}</string>
+	<key>2743</key>
+	<string>韩菱纱：
+		呼~幸好我的“无忧梦铃”扔的早，劳烦你们就睡会儿吧。</string>
+	<key>et_2744</key>
+	<string>{"ico":"ls3.png"}</string>
+	<key>2744</key>
+	<string>韩菱纱：
+		慢着！紫英，他们都昏过去了，怎么可以痛下杀手呢？！说不定还是梦璃的族人。</string>
+	<key>et_2745</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2745</key>
+	<string>慕容紫英：
+		族人……</string>
+		
+	<key>et_2746</key>
+	<string>{"ico":"gx.png","bk":"bk131.png"}</string>
+	<key>2746</key>
+	<string>？？：
+		婵幽大人说的没错，果然有人毫发无伤地穿过结界。</string>
+	<key>et_2747</key>
+	<string>{"ico":"gx.png"}</string>
+	<key>2747</key>
+	<string>？？：
+		你们，闯入我幻瞑界，便该做好有来无回的准备！！</string>
+	<key>et_2748</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2748</key>
+	<string>云天河：
+		这个人……好强的杀气……菱纱，你先退后！</string>
+	<key>et_2749</key>
+	<string>{"ico":"ls3.png"}</string>
+	<key>2749</key>
+	<string>韩菱纱：
+		可是，为什么要打？！我们不是敌人啊！</string>
+	<key>et_2750</key>
+	<string>{"ico":"gx.png"}</string>
+	<key>2750</key>
+	<string>？？：
+		拖延时间，莫非是在等其他援手？</string>
+	<key>et_2751</key>
+	<string>{"ico":"gx.png"}</string>
+	<key>2751</key>
+	<string>？？：
+		休想如愿！</string>
+	<key>et_2752</key>
+    <string>{"ico":"ml3.png"}</string>
+	<key>2752</key>
+	<string>柳梦璃：
+		归邪将军，请住手！</string>
+	<key>et_2753</key>
+    <string>{"bk":"bk132.png"}</string>
+	<key>2753</key>
+	<string>
+一个熟悉的身影朝这边款款而来。</string>
+	<key>et_2754</key>
+    <string>{}</string>
+	<key>2754</key>
+	<string>
+每一步，都和记忆中一样轻盈。</string>
+	<key>et_2755</key>
+	<string>{"ico":"gx.png"}</string>
+	<key>2755</key>
+	<string>归邪：
+		少主？！您怎么来了？</string>
+	<key>et_2756</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2756</key>
+	<string>柳梦璃：
+		我听说有人穿过了结界，所以来看看……</string>
+	<key>et_2757</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2757</key>
+	<string>柳梦璃：
+		将军，他们是我的朋友，请不要伤害他们！</string>
+	<key>et_2758</key>
+	<string>{"ico":"gx.png"}</string>
+	<key>2758</key>
+	<string>归邪：
+		……</string>
+	<key>et_2759</key>
+	<string>{"ico":"th2.png"}</string>
+	<key>2759</key>
+	<string>云天河：
+		梦璃，你、你没事吧？</string>
+	<key>et_2759</key>
+    <string>{"ico":"ml4.png"}</string>
+	<key>2759</key>
+	<string>柳梦璃：
+		云公子，我……</string>
+	<key>et_2760</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2760</key>
+	<string>韩菱纱：
+		好梦璃，你怎么能一声不吭就跑了？你知道我有多担心吗？</string>
+	<key>et_2761</key>
+    <string>{"ico":"ml4.png"}</string>
+	<key>2761</key>
+	<string>柳梦璃：
+		对不起，我当日也是情非得已，我不知道要如何向你们解释……</string>
+	<key>et_2762</key>
+    <string>{}</string>
+	<key>2762</key>
+	<string>
+自始至终，她的目光都没有在我身上停留片刻。</string>
+	<key>et_2763</key>
+    <string>{}</string>
+	<key>2763</key>
+	<string>
+而我虽然看着她和天河、菱纱交谈，却不知道如何开口……</string>
+
+	<!--选项-->
+	<key>et_2764</key>
+    <string>{"role":999,"choose":[{"key":"chs2764_0"},{"key":"chs2764_1"}]}</string>
+	<key>chs2764_0</key>  
+    <string>……你，是属于此界的妖？</string>
+	<key>chs2764_1</key>  
+    <string>…………</string>
+	
+	<key>et_2765</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2765_0</key>
+	<string>慕容紫英：
+		……你，是属于此界的妖？</string>
+	<key>2765_1</key>
+	<string>慕容紫英：
+		………………</string>
+	
+	<key>et_2766</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2766_0</key>
+	<string>柳梦璃：
+		嗯……不错。</string>
+	<key>2766_1</key>
+	<string>柳梦璃：
+		………………</string>
+	
+	<key>et_2767</key>
+    <string>{}</string>
+	<key>2767_0</key>
+	<string>
+她终于把目光移了过来，可是在双目对上的那一瞬间又移开。</string>
+	<key>2767_1</key>
+	<string>
+她终于把目光移了过来，可是在双目对上的那一瞬间又移开。</string>
+
+	<key>et_2768</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2768_0</key>
+	<string>柳梦璃：
+		我乃是幻瞑界族长的女儿。</string>
+	<key>2768_1</key>
+	<string>柳梦璃：
+		……我回到这里，是因为我是幻瞑界，族长的女儿。</string>
+	
+	<key>et_2769</key>
+	<string>{"ico":"zy4.png"}</string>
+	<key>2769</key>
+	<string>慕容紫英：
+		……！</string>
+		
+	<key>et_2770</key>
+    <string>{}</string>
+	<key>2770</key>
+	<string>
+她的话语掷地有声……她是妖……而且还是妖族之长的女儿……</string>
+
+	<key>et_2771</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2771</key>
+	<string>柳梦璃：
+		十九年前在妖界和琼华派大战之时，我尚且年幼，差点死于琼华派弟子之手，幸好云叔救了我，把我送去人间……</string>
+	<key>et_2772</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2772</key>
+	<string>柳梦璃：
+		不知是否妖界临近的缘故，这段原本很模糊的记忆，在那天突然变得清晰起来……大战在即，我不可能抛下自己的族人，所以一定要回来。</string>
+	<key>et_2773</key>
+	<string>{}</string>
+	<key>2773</key>
+	<string>
+即使听到她亲口承认自己是妖……听到她道出十九年前的因由……但我还是妖问出那句话……</string>
+		
+	<key>et_2774</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2774</key>
+	<string>慕容紫英：
+		以妖类而言，你修为不算精深，为何连二位长老都无法觉察你的身份？</string>
+	<key>et_2775</key>
+	<string>{}</string>
+	<key>2775</key>
+	<string>
+这个问题，我在鬼界时也没有从云前辈那里得到答案……虽然明知毫无用处，但是于我而言，却是重要的问题……</string>
+	<key>et_2776</key>
+	<string>{}</string>
+	<key>2776</key>
+	<string>
+我想知道……她既然是妖，我身为修仙之人，却为何从未察觉过妖气……</string>
+	<key>et_2777</key>
+	<string>{}</string>
+	<key>2777</key>
+	<string>
+即使，只有那一点点的可能性，她会不会并不是妖？……就算这是我用来自欺欺人的借口，也罢。</string>
+	<key>et_2778</key>
+    <string>{"ico":"ml4.png"}</string>
+	<key>2778</key>
+	<string>柳梦璃：
+		………………</string>
+	<key>et_2779</key>
+	<string>{}</string>
+	<key>2779</key>
+	<string>
+可是，她却没有回答我，而是选择了沉默。</string>
+	<key>et_2780</key>
+	<string>{"ico":"gx.png"}</string>
+	<key>2780</key>
+	<string>归邪：
+		少主，属下不敬，只不过即便是少主的朋友，毕竟是“人”，进入幻瞑界中，并不妥当！</string>
+	<key>et_2781</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2781</key>
+	<string>柳梦璃：
+		我知道，所以我要让他们去幻瞑宫拜见我娘，如何行止，由娘来定夺。若是娘怪罪下来，一切罪责由我承担。</string>
+	<key>et_2782</key>
+	<string>{"ico":"gx.png"}</string>
+	<key>2782</key>
+	<string>归邪：
+		……是。</string>
+	<key>et_2783</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2783</key>
+	<string>柳梦璃：
+		你们来此一事，我要先去禀报我娘，也就是幻瞑界之主……</string>
+	<key>et_2784</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2784</key>
+	<string>柳梦璃：
+		我们等一下就在旋梦底层的幻瞑宫相见吧。</string>
+		
+	<key>et_2785</key>
+	<string>{"ico":"ls8.png","bk":"bk133.png"}</string>
+	<key>2785</key>
+	<string>韩菱纱：
+		那个……真的是梦璃吗？</string>
+	<key>et_2786</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2786</key>
+	<string>云天河：
+		当然是！一眼就能认出来吧……</string>
+	<key>et_2787</key>
+	<string>{"ico":"ls8.png"}</string>
+	<key>2787</key>
+	<string>韩菱纱：
+		哎，我说的不是那种啦，总觉得……她虽然看起来没有变，可是偏偏离我们好远……</string>
+	<key>et_2788</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2788</key>
+	<string>云天河：
+		也对。她怎么了？对我们好冷淡……</string>
+	<key>et_2789</key>
+	<string>{}</string>
+	<key>2789</key>
+	<string>
+……此地是妖界，她身为妖界少主……自然不能与人太过亲近。</string>
+	<key>et_2790</key>
+	<string>{}</string>
+	<key>2790</key>
+	<string>
+然而她真的打算，就此与我们形同陌路吗？</string>
+	<key>et_2791</key>
+	<string>{}</string>
+	<key>2791</key>
+	<string>
+与其在这里徘徊不定，不如先跟上去再决定。</string>
+		
+	<key>et_2792</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2792</key>
+	<string>慕容紫英：
+		一切的事情，恐怕只有她能告诉我们，不妨等下见面再说。</string>
+		
+	<key>et_2792</key>
+	<string>{"ico":"cy2.png","bk":"bk134.png","music":"snd/ahm.mp3","tag":"妖界之主"}</string>
+	<key>2792</key>
+	<string>婵幽：
+		璃儿，你说的朋友……便是这几人？</string>
+	<key>et_2793</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2793</key>
+	<string>柳梦璃：
+		……正是。</string>
+	<key>et_2794</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2794</key>
+	<string>柳梦璃：
+		这位便是我娘，也是幻瞑界的主人。</string>
+	<key>et_2795</key>
+	<string>{"ico":"cy2.png"}</string>
+	<key>2795</key>
+	<string>婵幽：
+		哼，岂有此理！</string>
+	<key>et_2796</key>
+    <string>{"ico":"ml4.png"}</string>
+	<key>2796</key>
+	<string>柳梦璃：
+		……娘？</string>
+	<key>et_2797</key>
+	<string>{"ico":"cy2.png"}</string>
+	<key>2797</key>
+	<string>婵幽：
+		璃儿，你愿意回到我族，我十分高兴，但想不到你竟把“人”都带进了幻瞑宫！</string>
+	<key>et_2798</key>
+    <string>{"ico":"ml4.png"}</string>
+	<key>2798</key>
+	<string>柳梦璃：
+		娘！他们、他们是我的朋友，不是敌人……</string>
+	<key>et_2799</key>
+    <string>{}</string>
+	<key>2799</key>
+	<string>
+宝座上的女人，用冰冷目光的扫过我的全身。</string>
+	<key>et_2800</key>
+	<string>{"ico":"cy2.png"}</string>
+	<key>2800</key>
+	<string>婵幽：
+		不是敌人？莫非我看错了，那个穿蓝衣、背剑匣的，不是昆仑琼华派的人？！</string>
+	<key>et_2801</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2801</key>
+	<string>慕容紫英：
+		……！</string>
+	<key>et_2802</key>
+    <string>{}</string>
+	<key>2802</key>
+	<string>
+她朝我望来，眼中有一丝担忧，又转而对她的母亲低下头。</string>
+	<key>et_2803</key>
+    <string>{"ico":"ml4.png"}</string>
+	<key>2803</key>
+	<string>柳梦璃：
+		……他……他与其他人不一样的。</string>
+	<key>et_2804</key>
+    <string>{}</string>
+	<key>2804</key>
+	<string>
+看到到她那么担心我，感受到一丝暖意。</string>
+	<key>et_2805</key>
+	<string>{"ico":"cy2.png"}</string>
+	<key>2805</key>
+	<string>婵幽：
+		不一样……他和别人有什么不同？</string>
+	<key>et_2806</key>
+    <string>{"ico":"ml4.png"}</string>
+	<key>2806</key>
+	<string>柳梦璃：
+		他……………………</string>
+	<key>et_2807</key>
+	<string>{"ico":"cy2.png"}</string>
+	<key>2807</key>
+	<string>婵幽：
+		璃儿，我确实很感激当年救了你的那个人，他将你送给可靠之人抚养，更赠你宝物帝女翡翠，以掩盖身上妖气……没有他，我们母女又何来日后重逢！</string>
+	<key>et_2808</key>
+	<string>{"ico":"cy2.png"}</string>
+	<key>2808</key>
+	<string>婵幽：
+		但是，人终究是人！你要与人为伍，也要先想清楚，他们是不是真的接纳你！还是将你当作异类来看！</string>
+	<key>et_2809</key>
+    <string>{}</string>
+	<key>2809</key>
+	<string>
+……帝女翡翠……这就是她没有妖气的原因……？</string>
+	<key>et_2810</key>
+    <string>{}</string>
+	<key>2810</key>
+	<string>
+这么简单一个问题，没想到我在鬼界、妖界追寻如此之久，最后……却是被她母亲这样轻易的一笔带过……</string>
+	<key>et_2811</key>
+    <string>{}</string>
+	<key>2811</key>
+	<string>
+心中最后一点零星之火，终于熄灭了。</string>
+	<key>et_2812</key>
+	<string>{"ico":"ls1.png"}</string>
+	<key>2812</key>
+	<string>韩菱纱：
+		不是的！我们真的是把梦璃当作好朋友，才不在乎她的身份！</string>
+	<key>et_2813</key>
+	<string>{"ico":"cy2.png"}</string>
+	<key>2813</key>
+	<string>婵幽：
+		哦？那你们倒是说来听听，区区三个人，便敢胆大包天闯入此地，到底是为了什么？莫非仗着梦璃是幻瞑界少主，就以为能得到她的庇护？</string>
+	<key>et_2814</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2814</key>
+	<string>云天河：
+		我们不知道梦璃是什么少主，来这里也只不过因为她忽然离开，我们担心她遇到危险，现在看她没事，也就放心了。</string>
+	<key>et_2815</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2815</key>
+	<string>柳梦璃：
+		云公子……</string>
+	<key>et_2816</key>
+	<string>{"ico":"cy2.png"}</string>
+	<key>2816</key>
+	<string>婵幽：
+		……你们如何穿过入口结界的？</string>
+	<key>et_2817</key>
+	<string>{"ico":"cy2.png"}</string>
+	<key>2817</key>
+	<string>婵幽：
+		自从十九年前，被那些可憎之人攻到幻瞑宫前，我便立下决心，妖界若能不亡，我定要在入口布下强大结界，让擅闯之人不得好死！但你们几个……竟能毫发无伤地穿过？</string>
+	<key>et_2818</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2818</key>
+	<string>云天河：
+		我们去了鬼界……</string>
+	<key>et_2819</key>
+    <string>{"ico":"ml3.png"}</string>
+	<key>2819</key>
+	<string>柳梦璃：
+		鬼界！……</string>
+	<key>et_2820</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>2820</key>
+	<string>云天河：
+		取了一种叫翳影枝的东西，听说只要有了它，天底下大多数地方都能随便来去。</string>
+	<key>et_2821</key>
+	<string>{"ico":"cy2.png"}</string>
+	<key>2821</key>
+	<string>婵幽：
+		哦，那可真不简单。</string>
+	<key>et_2822</key>
+	<string>{"ico":"cy2.png"}</string>
+	<key>2822</key>
+	<string>婵幽：
+		既然诸位为我女儿煞费苦心，只是担心她的安危，那眼见她平安无事，就请回吧。</string>
+	<key>et_2823</key>
+    <string>{"ico":"ml6.png"}</string>
+	<key>2823</key>
+	<string>柳梦璃：
+		娘！</string>
+	<key>et_2824</key>
+	<string>{"ico":"cy2.png","goto":2826}</string>
+	<key>2824</key>
+	<string>婵幽：
+		如何？你舍不得吗？是舍不得他们全部？还是舍不得其中哪一个呢？</string>
+	<key>et_2826</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2826</key>
+	<string>慕容紫英：
+		…………</string>
+	<key>et_2827</key>
+    <string>{"ico":"ml2.png"}</string>
+	<key>2827</key>
+	<string>柳梦璃：
+		娘……女儿想带他们去里幻瞑宫，让他们知晓当年之事……</string>
+	<key>et_2828</key>
+	<string>{"ico":"cy2.png"}</string>
+	<key>2828</key>
+	<string>婵幽：
+		放肆！里幻瞑宫为妖界重地，连本族也很少入内，你，要带三个外人前去？</string>
+	<key>et_2829</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2829</key>
+	<string>柳梦璃：
+		娘，我求求您，云公子的爹就是当年救了我的云叔啊！</string>
+	<key>et_2830</key>
+	<string>{"ico":"cy1.png"}</string>
+	<key>2830</key>
+	<string>婵幽：
+		哦？他竟是那人的孩子？</string>
+	<key>et_2831</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2831</key>
+	<string>柳梦璃：
+		嗯……幻瞑昆仑之战，云公子一定也是满腹疑惑，我只想让他看看当年之事……</string>
+	<key>et_2832</key>
+	<string>{"ico":"cy1.png"}</string>
+	<key>2832</key>
+	<string>婵幽：
+		……璃儿，你该不会想以此借口将他们留下来吧？</string>
+	<key>et_2833</key>
+    <string>{"ico":"ml3.png"}</string>
+	<key>2833</key>
+	<string>柳梦璃：
+		…………</string>
+	<key>et_2834</key>
+	<string>{"ico":"zy4.png"}</string>
+	<key>2834</key>
+	<string>慕容紫英：
+		…………</string>
+	<key>et_2835</key>
+	<string>{"ico":"cy1.png"}</string>
+	<key>2835</key>
+	<string>婵幽：
+		……我族向来恩怨分明……</string>
+	<key>et_2836</key>
+	<string>{"ico":"cy1.png"}</string>
+	<key>2836</key>
+	<string>婵幽：
+		好吧，璃儿，看在他爹对我们母女有恩的份上，我便依你一次，但这几人若有不轨之心，我定不饶恕！</string>
+	<key>et_2837</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2837</key>
+	<string>柳梦璃：
+		谢谢娘！</string>
+		
+	<key>et_2838</key>
+    <string>{"bk":"bk135.png","tag":"玄霄梦境"}</string>
+	<key>2838</key>
+	<string>
+她带我们来到殿外，却欲言又止。</string>
+	<key>et_2839</key>
+    <string>{}</string>
+	<key>2839</key>
+	<string>
+还是菱纱先打破了沉默。</string>
+	<key>et_2840</key>
+    <string>{"ico":"ls2.png"}</string>
+	<key>2840</key>
+	<string>韩菱纱：
+		梦璃，你要带我们去哪里？</string>
+	<key>et_2841</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2841</key>
+	<string>柳梦璃：
+		是一个可以重现梦境的地方，我想，你们看过之后便会明白，幻瞑昆仑之战的那些渊源。</string>
+	<key>et_2842</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2842</key>
+	<string>慕容紫英：
+		……与琼华派相关？</string>
+	<key>et_2843</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2843</key>
+	<string>柳梦璃：
+		紫英……我知道，你对妖的厌恶、十几年来根深蒂固的想法，并非一朝一夕可以改变……</string>
+	<key>et_2844</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2844</key>
+	<string>柳梦璃：
+		去了里幻暝宫，我会告诉你们一些当年往事……</string>
+	<key>et_2845</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2845</key>
+	<string>柳梦璃：
+		……或许，你会明白，人自然有人的想法，但我们也有我们的无奈……</string>
+	<key>et_2846</key>
+    <string>{}</string>
+	<key>2846</key>
+	<string>
+……她是为了让我看到过去的真相，才要带我们去里幻瞑宫？</string>
+	<key>et_2847</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2847</key>
+	<string>慕容紫英：
+		……</string>
+	<key>et_2848</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>2848</key>
+	<string>慕容紫英：
+		……我明白了。</string>
+	<key>et_2849</key>
+	<string>{"ico":"zy1.png"}</string>
+	<key>2849</key>
+	<string>慕容紫英：
+		梦璃，请你把当年往事原原本本地告诉我，我要弄清楚，还有什么是我不知道的隐情……</string>
+	<key>et_2850</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2850</key>
+	<string>柳梦璃：
+		嗯……谢谢你，紫英，你愿意这么说，我已经很开心、很开心了……</string>
+		
+	<key>et_2851</key>
+    <string>{"ico":"ls2.png","bk":"bk136.png"}</string>
+	<key>2851</key>
+	<string>韩菱纱：
+		啊！那些光球是什么？好漂亮……</string>
+	<key>et_2852</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2852</key>
+	<string>柳梦璃：
+		那是……许多人的梦。</string>
+	<key>et_2853</key>
+    <string>{"ico":"ml1.png"}</string>
+	<key>2853</key>
+	<string>柳梦璃：
+		幻瞑界乃是“梦貘”一族，我们能够往来于梦中，以吞吃人的梦境为食。</string>
 </dict>

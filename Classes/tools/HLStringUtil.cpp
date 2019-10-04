@@ -353,6 +353,7 @@ void Save(int index)
 		UserDefault->setStringForKey(music, spIns->m_music);
 		UserDefault->setIntegerForKey(chs, spIns->m_lastChoose);
 		UserDefault->setStringForKey(tm, GetCurTime());
-		UserDefault->setStringForKey(tag, spIns->m_tag);
+		if(!spIns->m_tag.empty())
+			UserDefault->setStringForKey(tag, spIns->m_tag);
 	}
 }
