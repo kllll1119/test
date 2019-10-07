@@ -116,7 +116,7 @@ void SplashScene::InitAllUI()
 	//lab->setColor(Color3B(255,255,255));
 	m_labTalk->SetOverCallBack(std::bind(&SplashScene::TalkOverCB, this, std::placeholders::_1));
 
-	m_labTalk->setOriginalPosition(Vec2(173, 132));
+	m_labTalk->setOriginalPosition(Vec2(173, 135));
 	this->addChild(m_labTalk, ZORDER_WZ);
 
 
