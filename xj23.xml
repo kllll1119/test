@@ -14641,7 +14641,7 @@
     <string>{"ico":"ls1.png"}</string>
 	<key>2641</key>
 	<string>韩菱纱：
-		嘻，这么说，你也同意啰？</string>
+		嘻，这么说，你也同意了？</string>
 	<key>et_2642</key>
     <string>{"ico":"th1.png"}</string>
 	<key>2642</key>
@@ -15084,7 +15084,7 @@
 	<string>{}</string>
 	<key>2730</key>
 	<string>
-明知梦璃是妖，在妖界应无大碍。可是为何……自己却还是甘愿走这一遭？</string>
+明知梦璃是妖，在妖界应无大碍。也知道此行凶险万分。可是为何……自己却还是甘愿走这一遭？</string>
 	<key>et_2731</key>
 	<string>{}</string>
 	<key>2731</key>
@@ -15163,12 +15163,12 @@
 		族人……</string>
 		
 	<key>et_2746</key>
-	<string>{"ico":"gx.png","bk":"bk131.png"}</string>
+	<string>{}</string>
 	<key>2746</key>
 	<string>？？：
 		婵幽大人说的没错，果然有人毫发无伤地穿过结界。</string>
 	<key>et_2747</key>
-	<string>{"ico":"gx.png"}</string>
+	<string>{"ico":"gx.png","bk":"bk131.png"}</string>
 	<key>2747</key>
 	<string>？？：
 		你们，闯入我幻瞑界，便该做好有来无回的准备！！</string>
@@ -15328,7 +15328,7 @@
 	<string>{}</string>
 	<key>2773</key>
 	<string>
-即使听到她亲口承认自己是妖……听到她道出十九年前的因由……但我还是妖问出那句话……</string>
+即使听到她亲口承认自己是妖……听到她道出十九年前的因由……但我还是要问出那句话……</string>
 		
 	<key>et_2774</key>
 	<string>{"ico":"zy6.png"}</string>
@@ -15584,7 +15584,7 @@
 	<string>婵幽：
 		既然诸位为我女儿煞费苦心，只是担心她的安危，那眼见她平安无事，就请回吧。</string>
 	<key>et_2823</key>
-    <string>{"ico":"ml6.png"}</string>
+    <string>{"ico":"ml4.png"}</string>
 	<key>2823</key>
 	<string>柳梦璃：
 		娘！</string>
