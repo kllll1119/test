@@ -1,7 +1,7 @@
 ﻿<dict>
 	<!--event:{"role":999,"ico":"","bk":"","music":"","wav":"","item":"","shark":5,"mask":"mask1.png","bktime":0,"mv":1.5,"bkx":10,"bky":10,"goto":0,"choose":[{"key":"chs15_0","bk":"","goto":0},{"key":"chs15_1","bk":"","goto":0}]}-->
 	<key>debug_start</key>
-	<string>0</string><!--2047-->
+	<string>0</string><!--3391-->
 	
 	<key>first</key>
     <string>这一次…请给他们一个圆满的结局！</string>
@@ -12629,7 +12629,7 @@
     <string>{"ico":"zy4.png"}</string>
 	<key>2248</key>
 	<string>慕容紫英：
-		……！</string>
+		（雨润法术无效）……！</string>
 		
 	<key>et_2249</key>
     <string>{"ico":"cl.png"}</string>
@@ -17896,7 +17896,7 @@
 ……………………</string>
 
 	<key>et_3280</key>
-	<string>{"ico":"zy6.png","bk":"bk168.png","music":"snd/dl_fk.mp3","tag":"第九章 终章"}</string>
+	<string>{"ico":"zy6.png","bk":"bk168.png","music":"snd/dl_fk.mp3","tag":"第九章 离别"}</string>
 	<key>3280</key>
 	<string>慕容紫英：
 		（怀朔，我已按照你的遗愿，将你的骨灰收敛……）</string>
@@ -18451,7 +18451,173 @@
 	<string>柳梦璃：
 		……这……便是……违誓的……天谴……</string>
 	<key>et_3390</key>
-    <string>{"mv":0.5,"shark":10}</string>
+    <string>{"mv":0.5,"shark":10,"end":1}</string>
 	<key>3390</key>
 	<string>达成结局——违誓天谴</string>
+	
+	<key>et_3391</key>
+    <string>{"ico":"ls3.png","bk":"月牙村","tag":","tag":"第九章 步虚词"}</string>
+	<key>3391</key>
+	<string>韩菱纱：
+		这儿是……月牙村？</string>
+	<key>et_3392</key>
+	<string>{"ico":"th4.png"}</string>
+	<key>3392</key>
+	<string>云天河：
+		妖界看不见了……梦璃她……真的走了……</string>
+	<key>et_3393</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>3393</key>
+	<string>慕容紫英：
+		…………</string>
+	<key>et_3394</key>
+	<string>{"ico":"th4.png"}</string>
+	<key>3394</key>
+	<string>云天河：
+		以前在山上一切都很自在，爹对生死离别也看得很淡……</string>
+	<key>et_3395</key>
+	<string>{"ico":"th4.png"}</string>
+	<key>3395</key>
+	<string>云天河：
+		但我现在不一样了，也许这就是伤心吧……</string>
+	<key>et_3396</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>3396</key>
+	<string>韩菱纱：
+		天河，你别难过了……</string>
+	<key>et_3397</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>3397</key>
+	<string>韩菱纱：
+		……至少，还有另一个“梦璃”陪着我们，就算……她也只是一场梦…………如果……如果在琼华派和幻瞑界之间发生的那些事，也能像做梦一样，醒来之后发觉全是假的，那该有多好……</string>
+	<key>et_3398</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>3398</key>
+	<string>慕容紫英：
+		人生已如枕梁一梦，我们所以为的“幻境”，说不定仅是梦中之梦，生死则是一场更大的梦。</string>
+	<key>et_3399</key>
+    <string>{"ico":"ls3.png"}</string>
+	<key>3399</key>
+	<string>韩菱纱：
+		紫英……？</string>
+	<key>et_3400</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>3400</key>
+	<string>慕容紫英：
+		没什么，只是忽然想起了以前宗炼师公说过的话，历经这么多事，我才明白其中的那种无奈……</string>
+	<key>et_3401</key>
+	<string>{"ico":"zy6.png"}</string>
+	<key>3401</key>
+	<string>慕容紫英：
+		现在妖界已隐去身形，梦璃和她的族人在一起，她在那里应当无恙……</string>
+	<key>et_3402</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>3402</key>
+	<string>韩菱纱：
+		紫英你还好吧……</string>
+	<key>et_3403</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3403</key>
+	<string>慕容紫英：
+		无论如何，我们还有许多事要做，不能一直耽于感伤……眼前便要将水灵珠交给月牙村的村长。<string>
+	<key>et_3404</key>
+    <string>{"ico":"ls3.png"}</string>
+	<key>3404</key>
+	<string>韩菱纱：
+		啊，对了！那个人……玄霄他把水灵珠给了天河，这么说来，这里真的能再一次变成绿洲了？！<string>
+	<key>et_3405</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3405</key>
+	<string>慕容紫英：
+		到底要如何做，等一下再问村长吧。<string>
+	<key>et_3406</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>3406</key>
+	<string>韩菱纱：
+		我这就去告诉村长！<string>
+	<key>et_3407</key>
+    <string>{}</string>
+	<key>3407</key>
+	<string>
+菱纱走后——<string>
+	<key>et_3408</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3408</key>
+	<string>慕容紫英：
+		天河，接下来你如何打算？是否去找……玄霄师叔？<string>
+	<key>et_3409</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3409</key>
+	<string>云天河：
+		当然！我要夺回望舒剑！</string>
+	<key>et_3410</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3410</key>
+	<string>慕容紫英：
+		……但是，以师叔如今之能，就算你我倾尽全力，只怕也难动他分毫……<string>
+	<key>et_3411</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3411</key>
+	<string>云天河：
+		打不过也要打！不然菱纱——</string>
+	<key>et_3412</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3412</key>
+	<string>云天河：
+		我绝对不能再伤心一次，我不要！</string>
+	<key>et_3413</key>
+	<string>{}</string>
+	<key>3413</key>
+	<string>
+正在此时，只见菱纱急匆匆地赶过来，神色有些凝重。</string>
+	<key>et_3414</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>3414</key>
+	<string>韩菱纱：
+		天河！紫英！<string>
+	<key>et_3415</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>3415</key>
+	<string>韩菱纱：
+		我们……<string>
+	<key>et_3416</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3416</key>
+	<string>慕容紫英：
+		发生何事？！<string>
+	<key>et_3417</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>3417</key>
+	<string>韩菱纱：
+		我们……来晚了……村长、还有其他人……他们已经离开了月牙村……<string>
+	<key>et_3418</key>
+    <string>{"ico":"zy4.png"}</string>
+	<key>3418</key>
+	<string>慕容紫英：
+		……！何时走的？！<string>
+	<key>et_3419</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>3419</key>
+	<string>韩菱纱：
+		看村长的留书，有一个多月了……他说很感激我们，可是……村里人没办法再等下去了……以前从村里出去的人经商赚了钱，带着商队回来接他们……他们最终还是放弃了，决定穿过沙漠，去绿洲生活……<string>
+	<key>et_3420</key>
+	<string>{"ico":"th4.png"}</string>
+	<key>3420</key>
+	<string>云天河：
+		……都走了？…………也好，他们能过得比以前好……</string>
+	<key>et_3421</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>3421</key>
+	<string>韩菱纱：
+		……梦璃走了，月牙村的人也走了，到头来以为能够做成的事，一件都做不成……<string>
+	<key>et_3422</key>
+	<string>{"ico":"th4.png"}</string>
+	<key>3422</key>
+	<string>云天河：
+		…………</string>
+	<key>et_3423</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3423</key>
+	<string>慕容紫英：
+		琼华派所有人……身在昆仑，受人敬仰，却无法泽被山脚下的百姓，如此大过，枉被称为“剑仙”……<string>
 </dict>
