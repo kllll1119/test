@@ -1682,7 +1682,7 @@
 数月之后——</string>
 
 	<key>et_271</key>
-    <string>{"role":9,"ico":"hs1.png","bk":"bk12.png","music":"snd/wxsj.mp3","tag":"第二章 九龙剑"}</string>
+    <string>{"role":9,"ico":"hs1.png","bk":"bk12.png","music":"snd/wxsj.mp3","tag":"第一章 九龙剑"}</string>
 	<key>271</key>
 	<string>怀朔：
 		紫英师叔，掌门让你前往万安殿。</string>
@@ -1867,7 +1867,7 @@
 		……是。</string>
 	
 	<key>et_302</key>
-    <string>{"bk":"bk14.png","music":"snd/qpl.mp3","tag":"第二章 心结"}</string>
+    <string>{"bk":"bk14.png","music":"snd/qpl.mp3","tag":"第一章 心结"}</string>
 	<key>302</key>
 	<string>
 （片刻，御剑飞行到了陈州，先去看看法阵吧。）</string>
@@ -2259,7 +2259,7 @@
 三年后——</string>
 		
 	<key>et_367</key>
-    <string>{"bk":"bk19.png","music":"snd/xxmj.mp3","tag":"第三章 昆仑道"}</string>
+    <string>{"bk":"bk19.png","music":"snd/xxmj.mp3","tag":"第二章 昆仑道"}</string>
 	<key>367</key>
 	<string>
 昆仑山的顶峰上，永远是白皑皑的积雪，千年不化，仿佛脱离了时光的侵蚀，永恒不变的是冰冷、纯净、庄严、空虚。</string>
@@ -2367,7 +2367,7 @@
 “上清破云剑”</string>
 
 	<key>et_385</key>
-    <string>{"bk":"bk24.png","tag":"第三章 再次相见"}</string>
+    <string>{"bk":"bk24.png","tag":"第二章 再次相见"}</string>
 	<key>385</key>
 	<string>
 待我除去妖物，转身望去时，竟真的看到了那个熟悉的身影。</string>
@@ -2612,7 +2612,7 @@
 …………</string>
 
 	<key>et_426</key>
-    <string>{"role":1,"ico":"zy1.png","bk":"bk48.png","music":"snd/qya.mp3","tag":"第三章 收徒"}</string>
+    <string>{"role":1,"ico":"zy1.png","bk":"bk48.png","music":"snd/qya.mp3","tag":"第二章 收徒"}</string>
 	<key>426</key>
 	<string>慕容紫英：
 		（柳姑娘，究竟为何回来琼华？）</string>
@@ -3501,7 +3501,7 @@
     <string>后山</string>
 	
 	<key>et_569</key>
-    <string>{"role":1,"ico":"zy2.png","tag":"第三章 叹沧桑"}</string>
+    <string>{"role":1,"ico":"zy2.png","tag":"第二章 叹沧桑"}</string>
 	<key>569</key>
 	<string>慕容紫英：
 		（也不在这边……莫非是下山去了？）</string>
@@ -3693,7 +3693,7 @@
 片刻之后——</string>
 
 	<key>et_600</key>
-    <string>{"role":8,"ico":"sy1.png","bk":"bk10.png","music":"snd/qya.mp3","tag":"第三章 亲传弟子"}</string>
+    <string>{"role":8,"ico":"sy1.png","bk":"bk10.png","music":"snd/qya.mp3","tag":"第二章 亲传弟子"}</string>
 	<key>600</key>
 	<string>夙瑶：
 		紫英，你要说的便是此事？</string>
@@ -4238,7 +4238,7 @@
 		……我们也去看看吧。</string>
 		
 	<key>et_689</key>
-    <string>{"ico":"xx1_1.png","bk":"bk40.png","music":"snd/qlx.mp3","tag":"第三章 后山禁地"}</string>
+    <string>{"ico":"xx1_1.png","bk":"bk40.png","music":"snd/qlx.mp3","tag":"第二章 后山禁地"}</string>
 	<key>689</key>
 	<string>？？
 		……又有人闯入，今天可真是热闹。</string>
@@ -4690,7 +4690,7 @@
 翌日早晨——</string>
 
 	<key>et_764</key>
-    <string>{"role":1,"ico":"zy1.png","bk":"bk48.png","music":"snd/fgqt.mp3","tag":"第三章 早课"}</string>
+    <string>{"role":1,"ico":"zy1.png","bk":"bk48.png","music":"snd/fgqt.mp3","tag":"第二章 早课"}</string>
 	<key>764</key>
 	<string>慕容紫英：
 		（早课前先要去哪里？）</string>
@@ -5192,7 +5192,7 @@
 当天夜里——</string>
 
 	<key>et_901</key>
-    <string>{"bk":"bk44.png","music":"snd/msxj.mp3","tag":"第三章 心事难明"}</string>
+    <string>{"bk":"bk44.png","music":"snd/msxj.mp3","tag":"第二章 心事难明"}</string>
 	<key>901</key>
 	<string>
 我本欲前往思返谷告诉云天河子时已过，可以出谷了。</string>
@@ -5722,7 +5722,7 @@
 还是不要打搅她了，回房休息吧。</string>
 
 	<key>et_989</key>
-    <string>{"role":1,"ico":"zy2.png","bk":"bk49.png","music":"snd/fgqt.mp3","tag":"第四章 三寒器"}</string>
+    <string>{"role":1,"ico":"zy2.png","bk":"bk49.png","music":"snd/fgqt.mp3","tag":"第三章 三寒器"}</string>
 	<key>989</key>
 	<string>慕容紫英：
 		（昨夜一直没听到云天河他们回房的动静。）</string>
@@ -5970,7 +5970,7 @@
 		那我们这就出发吧。</string>
 		
 	<key>et_1030</key>
-    <string>{"role":4,"ico":"ls1_1.png","bk":"bk53.png","music":"snd/ysms.mp3","tag":"第四章 隐居长老"}</string>
+    <string>{"role":4,"ico":"ls1_1.png","bk":"bk53.png","music":"snd/ysms.mp3","tag":"第三章 隐居长老"}</string>
 	<key>1030</key>
 	<string>韩菱纱：
 		……这里好漂亮啊……</string>
@@ -6455,7 +6455,7 @@
 半个时辰后——</string>
 
 	<key>et_1188</key>
-    <string>{"role":4,"ico":"ls3_1.png","bk":"bk35.png","tag":"第四章 为祸一方"}</string>
+    <string>{"role":4,"ico":"ls3_1.png","bk":"bk35.png","tag":"第三章 为祸一方"}</string>
 	<key>1188</key>
 	<string>韩菱纱：
 		你们都到了？抱歉抱歉，我睡过头了！</string>
@@ -6906,7 +6906,7 @@
 一个时辰后——</string>
 
 	<key>et_1267</key>
-    <string>{"role":4,"ico":"ls1_1.png","bk":"bk57.png","music":"snd/ysms.mp3","tag":"第四章 万家同庆"}</string>
+    <string>{"role":4,"ico":"ls1_1.png","bk":"bk57.png","music":"snd/ysms.mp3","tag":"第三章 万家同庆"}</string>
 	<key>1267</key>
 	<string>韩菱纱：
 		小紫英，你刚刚好厉害哦！那只臭狐狸被你吓的浑身发抖呢。</string>
@@ -7776,7 +7776,7 @@
 月光下，度过了美好的一天。</string>
 	
 	<key>et_1428</key>
-    <string>{"role":4,"ico":"th3_1.png","bk":"bk35.png","music":"snd/fgqt.mp3","tag":"第四章 义结金兰"}</string>
+    <string>{"role":4,"ico":"th3_1.png","bk":"bk35.png","music":"snd/fgqt.mp3","tag":"第三章 义结金兰"}</string>
 	<key>1428</key>
 	<string>云天河：
 		终于到了~快走！我想马上去找玄霄，告诉他好消息！</string>
@@ -8142,7 +8142,7 @@
 一夜过去——</string>
 
 	<key>et_1490</key>
-    <string>{"role":1,"ico":"zy1.png","bk":"bk35.png","music":"snd/fgqt.mp3","tag":"第五章 神农仆众"}</string>
+    <string>{"role":1,"ico":"zy1.png","bk":"bk35.png","music":"snd/fgqt.mp3","tag":"第四章 神农仆众"}</string>
 	<key>1490</key>
 	<string>慕容紫英：
 		你们……气色为何都如此之差？</string>
@@ -8322,7 +8322,7 @@
 		谢谢……我们走吧，洞口就在前面。</string>
 		
 	<key>et_1520</key>
-    <string>{"ico":"chj1.png","bk":"bk80.png","music":"snd/qlx.mp3","tag":"第五章 月幽之境"}</string>
+    <string>{"ico":"chj1.png","bk":"bk80.png","music":"snd/qlx.mp3","tag":"第四章 月幽之境"}</string>
 	<key>1520</key>
 	<string>楚寒镜：
 		怎么有生人在此？！</string>
@@ -8652,7 +8652,7 @@
 		太好了，我们快拿回去给她们吧！</string>
 		
 	<key>et_1575</key>
-    <string>{"role":4,"ico":"th1_1.png","bk":"bk83.png","music":"snd/qlx.mp3","tag":"第五章 升仙"}</string>
+    <string>{"role":4,"ico":"th1_1.png","bk":"bk83.png","music":"snd/qlx.mp3","tag":"第四章 升仙"}</string>
 	<key>1575</key>
 	<string>云天河：
 		看！是这个吧？</string>
@@ -9012,7 +9012,7 @@
 		我们……回琼华吧。</string>
 		
 	<key>et_1636</key>
-    <string>{"role":10,"ico":"xj1.png","bk":"bk87.png","music":"snd/qhpjq.mp3","tag":"第六章 非愿"}</string>
+    <string>{"role":10,"ico":"xj1.png","bk":"bk87.png","music":"snd/qhpjq.mp3","tag":"第四章 非愿"}</string>
 	<key>1636</key>
 	<string>璇玑：
 		师叔！不好了、不好了！</string>
@@ -9318,7 +9318,7 @@
 当天夜里——</string>
 
 	<key>et_1686</key>
-    <string>{"role":4,"ico":"th1_1.png","bk":"bk94.png","music":"snd/dl_fk.mp3","tag":"第六章 约定"}</string>
+    <string>{"role":4,"ico":"th1_1.png","bk":"bk94.png","music":"snd/dl_fk.mp3","tag":"第四章 月下之约"}</string>
 	<key>1686</key>
 	<string>云天河：
 		……月亮好大，像个饼……</string>
@@ -9660,7 +9660,7 @@
 翌日——</string>
 
 	<key>et_1743</key>
-    <string>{"bk":"bk6_0.png","music":"snd/yghy.mp3","tag":"第七章 水中妖界"}</string>
+    <string>{"bk":"bk6_0.png","music":"snd/yghy.mp3","tag":"第五章 水中妖界"}</string>
 	<key>1743</key>
 	<string>渔民甲：
 		醒醒！你醒醒啊！</string>
@@ -9900,7 +9900,7 @@
 		你们快看，那是……</string>
 		
 	<key>et_1783</key>
-    <string>{"role":4,"ico":"ls3_1.png","bk":"bk97.png","tag":"第七章 相争难休"}</string>
+    <string>{"role":4,"ico":"ls3_1.png","bk":"bk97.png","tag":"第五章 相争难休"}</string>
 	<key>1783</key>
 	<string>韩菱纱：
 		呀~是愧米他们。</string>
@@ -10223,7 +10223,7 @@
 一个时辰后——</string>
 
 	<key>et_1836</key>
-    <string>{"role":2,"ico":"ml1_1.png","bk":"bk6_0.png","music":"snd/xnc.mp3","tag":"第七章 寿阳"}</string>
+    <string>{"role":2,"ico":"ml1_1.png","bk":"bk6_0.png","music":"snd/xnc.mp3","tag":"第五章 神秘贡品"}</string>
 	<key>1836</key>
 	<string>柳梦璃：
 		……</string>
@@ -10621,7 +10621,7 @@
 		你的事忙完了？</string>
 		
 	<key>et_1901</key>
-    <string>{"role":2,"ico":"ml1_1.png","tag":"第七章 神秘贡品"}</string>
+    <string>{"role":2,"ico":"ml1_1.png"}</string>
 	<key>1901</key>
 	<string>柳梦璃：
 		嗯，女儿和爹说完正事，就去后院查看了这次的贡品。</string>
@@ -10711,7 +10711,7 @@
 ………………</string>
 
 	<key>et_1916</key>
-    <string>{"bk":"bk102.png","music":"snd/char.mp3","tag":"第七章 蒙面人"}</string>
+    <string>{"bk":"bk102.png","music":"snd/char.mp3","tag":"第五章 解开心结"}</string>
 	<key>1916</key>
 	<string>
 刚过桥头的时候，竟然看到了一个熟悉的身影。</string>
@@ -11137,7 +11137,7 @@
 一夜过去——</string>
 
 	<key>et_1987</key>
-    <string>{"bk":"bk16.png","music":"snd/hmxy_bd.mp3","tag":"第七章 再起波澜"}</string>
+    <string>{"bk":"bk16.png","music":"snd/hmxy_bd.mp3","tag":"第六章 再起波澜"}</string>
 	<key>1987</key>
 	<string>柳府侍女：
 		慕容公子，小姐刚醒，请您去房中一见。</string>
@@ -11423,7 +11423,7 @@
 我再不及多想，转身准备赶往琼华。</string>
 
 	<key>et_2033</key>
-    <string>{"ico":"xj1.png","bk":"bk35.png","music":"snd/jnyj_bz.mp3","tag":"第七章 仙妖乱"}</string>
+    <string>{"ico":"xj1.png","bk":"bk35.png","music":"snd/jnyj_bz.mp3","tag":"第六章 仙妖乱"}</string>
 	<key>2033</key>
 	<string>璇玑：
 		师叔！师叔！你可算回来了！</string>
@@ -11661,7 +11661,7 @@
 
 
 	<key>et_2080</key>
-    <string>{"ico":"zy4.png","bk":"bk110.png","music":"snd/qhpjq.mp3","tag":"第七章 往事"}</string>
+    <string>{"ico":"zy4.png","bk":"bk110.png","music":"snd/qhpjq.mp3","tag":"第六章 往事"}</string>
 	<key>2080</key>
 	<string>慕容紫英：
 		……掌门？</string>
@@ -17333,12 +17333,12 @@
 	<string>慕容紫英：
 		…………</string>
 	<key>et_3170</key>
-	<string>{"ico":"zy6.png"}</string>
+	<string>{}</string>
 	<key>3170</key>
 	<string>
 见到站在掌门身后的璇玑，我的脑海中便回想着怀朔刚刚的话语……</string>
 	<key>et_3171</key>
-	<string>{"ico":"zy6.png"}</string>
+	<string>{}</string>
 	<key>3171</key>
 	<string>
 我不知她得知怀朔之事……会露出怎样的神情……</string>
@@ -18456,7 +18456,7 @@
 	<string>达成结局——违誓天谴</string>
 	
 	<key>et_3391</key>
-    <string>{"ico":"ls3.png","bk":"月牙村","tag":","tag":"第九章 步虚词"}</string>
+    <string>{"ico":"ls3.png","bk":"bk36.png","music":"snd/xjwq.mp3","tag":"第九章 步虚词"}</string>
 	<key>3391</key>
 	<string>韩菱纱：
 		这儿是……月牙村？</string>
@@ -18616,8 +18616,254 @@
 	<string>云天河：
 		…………</string>
 	<key>et_3423</key>
-    <string>{"ico":"zy1.png"}</string>
+    <string>{"ico":"zy6.png"}</string>
 	<key>3423</key>
 	<string>慕容紫英：
 		琼华派所有人……身在昆仑，受人敬仰，却无法泽被山脚下的百姓，如此大过，枉被称为“剑仙”……<string>
+	<key>et_3424</key>
+    <string>{"ico":"ls8.png"}</string>
+	<key>3424</key>
+	<string>韩菱纱：
+		紫英……<string>
+	<key>et_3425</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3425</key>
+	<string>云天河：
+		菱纱，让紫英送你去播仙镇吧，你太累了，好好睡上一觉——</string>
+	<key>et_3426</key>
+    <string>{"ico":"ls2.png"}</string>
+	<key>3426</key>
+	<string>韩菱纱：
+		那你呢？<string>
+	<key>et_3427</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3427</key>
+	<string>云天河：
+		我回琼华派，去找玄霄。</string>
+	<key>et_3428</key>
+    <string>{"ico":"ls3.png"}</string>
+	<key>3428</key>
+	<string>韩菱纱：
+		什么？！<string>
+	<key>et_3429</key>
+    <string>{"ico":"ls7.png"}</string>
+	<key>3429</key>
+	<string>韩菱纱：
+		不可以，你别去，你根本不是他的对手！<string>
+	<key>et_3430</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3430</key>
+	<string>云天河：
+		……</string>
+	<key>et_3431</key>
+    <string>{"ico":"ls7.png"}</string>
+	<key>3431</key>
+	<string>韩菱纱：
+		你不是答应过我？要一起回青鸾峰吗？是骗人的？！<string>
+	<key>et_3432</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3432</key>
+	<string>云天河：
+		我说话算话，不过得先抢回望舒剑，玄霄他们再用那把剑，你会没命的……</string>
+	<key>et_3433</key>
+    <string>{"ico":"ls7.png"}</string>
+	<key>3433</key>
+	<string>韩菱纱：
+		我早说了，不稀罕什么命长命短，你别去！<string>
+	<key>et_3434</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3434</key>
+	<string>云天河：
+		……但我稀罕。</string>
+	<key>et_3435</key>
+    <string>{"ico":"ls7.png"}</string>
+	<key>3435</key>
+	<string>韩菱纱：
+		你…………<string>
+	<key>et_3436</key>
+    <string>{"ico":"ls7.png"}</string>
+	<key>3436</key>
+	<string>韩菱纱：
+		你！你一定要去的话，我宁可马上就死了，也不要你赔上一条命！<string>
+	<key>et_3437</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3437</key>
+	<string>云天河：
+		你乱说什么！</string>
+	<key>et_3438</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3438</key>
+	<string>慕容紫英：
+		你们，休要再争！<string>
+	<key>et_3439</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3439</key>
+	<string>慕容紫英：
+		菱纱所言极是，硬闯琼华派乃是下策，以卵击石，于事无补。<string>
+	<key>et_3440</key>
+	<string>{"ico":"th6.png"}</string>
+	<key>3440</key>
+	<string>云天河：
+		那要怎么办？！难道就不管菱纱——</string>
+	<key>et_3441</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3441</key>
+	<string>慕容紫英：
+		唯今之计，我们不如先去清风涧寻两位长老，问问他们有无他法。<string>
+	<key>et_3442</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3442</key>
+	<string>云天河：
+		我不去！他们根本就是帮着玄霄的！明明知道用望舒剑对菱纱不好，却一直瞒我们！到现在还会管菱纱的死活吗？说不定他们已经去琼华派找玄霄了！</string>
+	<key>et_3443</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3443</key>
+	<string>慕容紫英：
+		……两位长老行事，或许亦有苦衷，他们十九年来愧疚难安，一心要助师叔破冰，所以才……<string>
+	<key>et_3444</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3444</key>
+	<string>慕容紫英：
+		假若长老真是心如铁石、是非不分，为何要传授菱纱心法，又将“红魄”交给菱纱，还在我们欲往幻瞑界时多番指点？<string>
+	<key>et_3445</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3445</key>
+	<string>云天河：
+		……那又怎样？对不起一个人，就可以为他做任何事，为他不顾别人的命吗？玄霄重要，菱纱就什么都不是？</string>
+	<key>et_3446</key>
+    <string>{"ico":"ls2.png"}</string>
+	<key>3446</key>
+	<string>韩菱纱：
+		…………<string>
+	<key>et_3447</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3447</key>
+	<string>慕容紫英：
+		……好！就算你心中忿忿难平，也该想想菱纱吧？<string>
+	<key>et_3448</key>
+	<string>{"ico":"th4.png"}</string>
+	<key>3448</key>
+	<string>云天河：
+		……！</string>
+	<key>et_3449</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3449</key>
+	<string>慕容紫英：
+		姑且不论两位长老是否已去往琼华派，我只当去清风涧一试运气。<string>
+	<key>et_3450</key>
+	<string>{"ico":"th3.png"}</string>
+	<key>3450</key>
+	<string>云天河：
+		…………</string>
+	<key>et_3451</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>3451</key>
+	<string>韩菱纱：
+		你们……你们都别再说了……就这样，大家一起回青鸾峰不好吗？<string>
+	<key>et_3452</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>3452</key>
+	<string>韩菱纱：
+		天河，就像你讲的……在青阳长老、重光长老的心里，玄霄的份量远远胜过我，你气他们心有偏袒，一定要把人命分个孰重孰轻……<string>
+	<key>et_3453</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>3453</key>
+	<string>韩菱纱：
+		既然人命无贵贱，我一条命，你一条命，为什么还要去找玄霄……<string>
+	<key>et_3454</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>3454</key>
+	<string>韩菱纱：
+		你以为能活久一点，我一定会高兴吗？就算真的夺回了望舒剑，万一你和紫英有什么……我、我一辈子都不会开心的！<string>
+	<key>et_3455</key>
+	<string>{"ico":"th6.png"}</string>
+	<key>3455</key>
+	<string>云天河：
+		菱纱……</string>
+	<key>et_3456</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>3456</key>
+	<string>韩菱纱：
+		算我求你……不要让我这么难过好不好……<string>
+	<key>et_3457</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3457</key>
+	<string>云天河：
+		对不起……对不起…………</string>
+	<key>et_3458</key>
+    <string>{"ico":"ls1.png"}</string>
+	<key>3458</key>
+	<string>韩菱纱：
+		算我求你……不要让我这么难过好不好……<string>
+	<key>et_3459</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3459</key>
+	<string>云天河：
+		……那个……走吧，我们去清风涧……</string>
+	<key>et_3460</key>
+    <string>{"ico":"ls6.png"}</string>
+	<key>3460</key>
+	<string>韩菱纱：
+		你？！<string>
+	<key>et_3461</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3461</key>
+	<string>云天河：
+		我不会就这样去找玄霄了，不过……还是得想办法救你。紫英说两位长老也许会有办法，不管怎样，都要去一趟清风涧！</string>
+	<key>et_3462</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3462</key>
+	<string>慕容紫英：
+		算一下时日，琼华派应该还未以双剑做成剑柱。我们不要贸然行事，留存实力，此事未必没有转机。<string>
+	<key>et_3463</key>
+    <string>{"ico":"ls5.png"}</string>
+	<key>3463</key>
+	<string>韩菱纱：
+		……嗯……但是太危险的事，千万别去做……<string>
+	<key>et_3464</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3464</key>
+	<string>云天河：
+		放心吧！都已经答应你了，我们又不去琼华派。</string>
+	<key>et_3465</key>
+    <string>{"ico":"ls5.png"}</string>
+	<key>3465</key>
+	<string>韩菱纱：
+		哼，不单是去找玄霄，其他危险的事也不许做！<string>
+	<key>et_3466</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3466</key>
+	<string>云天河：
+		好好好，都听你的就是……</string>
+		
+	<key>et_3467</key>
+    <string>{"ico":"ls3.png","bk":"清风涧重光","music":"snd/","tag":"第九章 步虚词终"}</string>
+	<key>3467</key>
+	<string>韩菱纱：
+		呀——！那是……重光长老？！<string>
+	<key>et_3468</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3468</key>
+	<string>慕容紫英：
+		长老！重光长老！！<string>
+	<key>et_3469</key>
+    <string>{"ico":"ls3.png"}</string>
+	<key>3469</key>
+	<string>韩菱纱：
+		你、你是……？！怎么会……？<string>
+	<key>et_3470</key>
+    <string>{"ico":"zy4.png"}</string>
+	<key>3470</key>
+	<string>慕容紫英：
+		……青阳……长老？<string>
+	<key>et_3471</key>
+    <string>{"ico":"qy1.png"}</string>
+	<key>3471</key>
+	<string>青阳：
+		不必惊惶，不过是功力尽散，看来垂老矣矣罢了。</string>
+	<key>et_3472</key>
+    <string>{"ico":"zy4.png"}</string>
+	<key>3472</key>
+	<string>慕容紫英：
+		长老……到底、到底发生了什么事？为什么会这样？！<string>
 </dict>
