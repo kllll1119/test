@@ -17899,7 +17899,7 @@
 	<string>{"ico":"zy6.png","bk":"bk168.png","music":"snd/dl_fk.mp3","tag":"第九章 离别"}</string>
 	<key>3280</key>
 	<string>慕容紫英：
-		（怀朔，我已按照你的遗愿，将你的骨灰收敛……）</string>
+		（怀朔，我按照你的遗愿，将你的骨灰收敛……）</string>
 	<key>et_3281</key>
 	<string>{"ico":"zy6.png"}</string>
 	<key>3281</key>
@@ -17934,7 +17934,7 @@
 	<string>{"ico":"cy1.png"}</string>
 	<key>3287</key>
 	<string>婵幽：
-		世事难料，璃儿你刚回来不久，却已经要担起这样的重任。</string>
+		……我要谢谢你们几个，在琼华派攻进来时，对我族施以援手。</string>
 	<key>et_3288</key>
 	<string>{"ico":"th2.png"}</string>
 	<key>3288</key>
@@ -17992,7 +17992,7 @@
 		幻瞑界便是我族故乡，我族宁可灭亡，也不会离开这里的……</string>
 		
 	<key>et_3299</key>
-	<string>{"ico":"zy4.png","bk":"bk170.png"}</string>
+	<string>{"ico":"zy6.png","bk":"bk170.png"}</string>
 	<key>3299</key>
 	<string>慕容紫英：
 		梦璃……</string>
@@ -18017,12 +18017,12 @@
 	<string>柳梦璃：
 		……紫英，谢谢你。</string>
 	<key>et_3304</key>
-	<string>{"ico":"zy4.png"}</string>
+	<string>{"ico":"zy6.png"}</string>
 	<key>3304</key>
 	<string>慕容紫英：
 		（你可是谢我……不出言挽留你？）</string>
 	<key>et_3305</key>
-	<string>{"ico":"zy4.png"}</string>
+	<string>{"ico":"zy6.png"}</string>
 	<key>3305</key>
 	<string>慕容紫英：
 		（然而你可知……我却不想如此……并不想要你这个谢字……）</string>
@@ -18037,17 +18037,17 @@
 	<string>柳梦璃：
 		……………………我的……挚友。</string>
 	<key>et_3308</key>
-	<string>{"ico":"zy4.png"}</string>
+	<string>{"ico":"zy6.png"}</string>
 	<key>3308</key>
 	<string>慕容紫英：
 		（挚友……到最后……你终于还是……）</string>
 	<key>et_3309</key>
-	<string>{"ico":"zy4.png"}</string>
+	<string>{"ico":"zy6.png"}</string>
 	<key>3309</key>
 	<string>慕容紫英：
 		（我唯一能做的……只有成全你的决心……）</string>
 	<key>et_3310</key>
-	<string>{"ico":"zy4.png"}</string>
+	<string>{"ico":"zy6.png"}</string>
 	<key>3310</key>
 	<string>慕容紫英：
 		……我也一样。</string>
@@ -18057,7 +18057,7 @@
 	<string>
 这句话说出口……却是无比艰涩。</string>
 	<key>et_3312</key>
-	<string>{"ico":"zy4.png"}</string>
+	<string>{"ico":"zy6.png"}</string>
 	<key>3312</key>
 	<string>慕容紫英：
 		保重！</string>
@@ -18088,7 +18088,7 @@
 	<string>婵幽：
 		既然种种烦恼，都是由想或念而起，将烦恼的根源消去，岂不是一了百了？</string>
 	<key>et_3318</key>
-	<string>{"ico":"zy4.png"}</string>
+	<string>{"ico":"zy1.png"}</string>
 	<key>3318</key>
 	<string>慕容紫英：
 		（因爱故生忧，因爱故生怖……）</string>
@@ -18103,7 +18103,7 @@
 	<string>云天河：
 		要是把这些都忘了，虽然不会难过，可是脑子里有一块地方都是空的，还有什么意思？</string>
 	<key>et_3321</key>
-	<string>{"ico":"zy4.png"}</string>
+	<string>{"ico":"zy6.png"}</string>
 	<key>3321</key>
 	<string>慕容紫英：
 		…………</string>
@@ -18128,7 +18128,7 @@
 	<string>奚仲：
 		婵幽大人，梦见樽已经取来。</string>
 	<key>et_3326</key>
-    <string>{"ico":"cy1.png"}</string>
+    <string>{"ico":"cy1.png","wav":"wav/fs3.wav"}</string>
 	<key>3326</key>
 	<string>婵幽：
 		万灵悉来，神光映幽！引诸方想愿，入梦见之樽——无中而出、虚空即有！！</string>
@@ -18136,7 +18136,7 @@
 	<string>{"ico":"ls3.png","bk":"bk172.png"}</string>
 	<key>3327</key>
 	<string>韩菱纱：
-		梦璃你……你你要当幻瞑界主人？</string>
+		怎么会……有两个梦璃？！</string>
 	<key>et_3328</key>
     <string>{"ico":"cy1.png"}</string>
 	<key>3328</key>
@@ -18158,7 +18158,7 @@
 	<string>婵幽：
 		她不过是一场幻梦，当你们渐渐淡忘璃儿，梦就醒了，她也会消散无踪。</string>
 	<key>et_3332</key>
-    <string>{"ico":"ml4.png"}</string>
+    <string>{"ico":"ml1.png"}</string>
 	<key>3332</key>
 	<string>柳梦璃：
 		……娘，谢谢您！</string>
@@ -18178,7 +18178,7 @@
 	<string>婵幽：
 		好了，随我过来祭坛，我要正式传位于你！</string>
 	<key>et_3336</key>
-	<string>{"ico":"zy4.png"}</string>
+	<string>{"ico":"zy6.png"}</string>
 	<key>3336</key>
 	<string>慕容紫英：
 		（梦璃…………）</string>
@@ -18274,17 +18274,17 @@
 …………</string>
 
 	<key>et_3355</key>
-    <string>{"ico":"ml4.png","bk":"bk174"}</string>
+    <string>{"ico":"ml4.png","bk":"bk174.png"}</string>
 	<key>3355</key>
 	<string>柳梦璃：
-		……我这就让奚仲送你们会人间。</string>
+		……我这就让奚仲送你们回人间。</string>
 	<key>et_3356</key>
     <string>{"ico":"xz.png"}</string>
 	<key>3356</key>
 	<string>奚仲：
 		…………</string>
 	<key>et_3357</key>
-	<string>{"ico":"zy1.png"}</string>
+	<string>{"ico":"zy6.png"}</string>
 	<key>3357</key>
 	<string>慕容紫英：
 		…………</string>
@@ -18300,7 +18300,7 @@
 		诸位请随我来。</string>
 	<key>et_3360</key>
 	<string>{"ico":"ls8.png"}</string>
-	<key>3327</key>
+	<key>3360</key>
 	<string>韩菱纱：
 		梦璃……再见了……</string>
 	<key>et_3361</key>
@@ -19781,4 +19781,240 @@
 	<key>3654</key>
 	<string>慕容紫英：
 		我知道，我会全力而为。</string>
+	<key>et_3655</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3655</key>
+	<string>云天河：
+		紫英……</string>
+	<key>et_3656</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3656</key>
+	<string>慕容紫英：
+		还有其他事？</string>
+	<key>et_3657</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3657</key>
+	<string>云天河：
+		……紫英，你害怕过吗？</string>
+	<key>et_3658</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3658</key>
+	<string>慕容紫英：
+		…………为何这样问？</string>
+	<key>et_3659</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3659</key>
+	<string>云天河：
+		……我以前，总是天不怕地不怕……觉得就像爹说的，堂堂男子汉，没什么可惊怕的……</string>
+	<key>et_3660</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3660</key>
+	<string>云天河：
+		可是现在……我好像变得胆小了，会害怕很多事……我怕这辈子真的再也不能见到梦璃，怕我们阻止不了玄霄…………我更怕……救不了菱纱，她会死…………</string>
+	<key>et_3661</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3661</key>
+	<string>云天河：
+		原来，天底下有这么多的事，我没办法做到……不是所有事情，尽全力做就会好了…………</string>
+	<key>et_3662</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3662</key>
+	<string>慕容紫英：
+		天河，你我皆是凡人，生老病死、一世的结果，冥冥之中恐怕已有天意安排……人，要怎么与天争？</string>
+	<key>et_3663</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3663</key>
+	<string>云天河：
+		天意……你们都说是“天意”，那为什么爹和娘要说“我命在我，不在天地”？</string>
+	<key>et_3664</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3664</key>
+	<string>云天河：
+		……爹就算拼尽全力，也救不了娘的时候，是不是就像我现在对着菱纱，什么都做不到，恨自己一点用都没有……</string>
+	<key>et_3665</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3665</key>
+	<string>慕容紫英：
+		天河，你问的这些……实在太难回答，就算是阅遍人生的老者也不一定说得清楚……</string>
+	<key>et_3666</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3666</key>
+	<string>慕容紫英：
+		我自问并不畏惧世间强权，自己的生死也可相轻，若是用我一命，能换菱纱一命，我定会毫不犹豫。</string>
+	<key>et_3667</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3667</key>
+	<string>慕容紫英：
+		但是有些事情，我知道……我们只能祈求所谓的天意……</string>
+	<key>et_3668</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3668</key>
+	<string>云天河：
+		……</string>
+	<key>et_3669</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3669</key>
+	<string>慕容紫英：
+		你也累了，先歇息一下，我尽快读通师公的手记，说不定一切还有转机。</string>
+	<key>et_3670</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3670</key>
+	<string>云天河：
+		我不睡，我陪着菱纱。</string>
+	<key>et_3671</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3671</key>
+	<string>慕容紫英：
+		……师公，但愿您已经找到阻止双剑宿主的办法……这一切即使是天意，难道就不能给予凡人一点眷顾吗……</string>
+		
+	<key>et_3672</key>
+	<string>{"bk":"bk_null.png"}</string>
+	<key>3672</key>
+	<string>
+当天傍晚——</string>
+	<key>et_3673</key>
+	<string>{"ico":"th1.png","bk":"木屋夜.png"}</string>
+	<key>3673</key>
+	<string>云天河：
+		紫英，怎么样？手记看完了吗？</string>
+	<key>et_3674</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3674</key>
+	<string>云天河：
+		那有没有找到阻止宿主的办法？！</string>
+	<key>et_3675</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3675</key>
+	<string>慕容紫英：
+		…………</string>
+	<key>et_3676</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3676</key>
+	<string>云天河：
+		怎么了？为什么不说话？</string>
+	<key>et_3677</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3677</key>
+	<string>云天河：
+		你摇头……是没找到……？</string>
+	<key>et_3678</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3678</key>
+	<string>慕容紫英：
+		…………并非没有，只不过……</string>
+	<key>et_3679</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3679</key>
+	<string>云天河：
+		只不过什么？你快说呀！</string>
+	<key>et_3680</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3680</key>
+	<string>慕容紫英：
+		那方法难于登天，尤其对你我而言……</string>
+	<key>et_3681</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3681</key>
+	<string>云天河：
+		到底是什么？只要有办法，就一定能办到的，你告诉我！</string>
+	<key>et_3682</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3682</key>
+	<string>慕容紫英：
+		……好吧，我说出来，但你听后，切不可乱了心神，一定要冷静。</string>
+	<key>et_3683</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3683</key>
+	<string>云天河：
+		好！</string>
+	<key>et_3684</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3684</key>
+	<string>慕容紫英：
+		羲和、望舒剑成之后，与幻瞑界的大战开始之前，宗炼师公已隐约觉得双剑力量过于霸道，随着玄霄师叔和夙玉前辈不断修行有成，师公此念愈发强烈。</string>
+	<key>et_3685</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3685</key>
+	<string>慕容紫英：
+		尽管由昆仑山上白日飞升，乃是凡人梦寐以求的美好夙愿，但所谓物极必反，若是琼华双剑的力量失去控制，则羲和宿主可能堕入嗜血狂乱之道，望舒宿主则会变得冷酷凶残……</string>
+	<key>et_3686</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3686</key>
+	<string>云天河：
+		……！嗜血乱狂……现在的玄霄不就是……</string>
+	<key>et_3687</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3687</key>
+	<string>慕容紫英：
+		师公将这些话告诉了玄霄师叔和夙玉前辈，命他们二人修炼时务必循规蹈矩，不可躁进，以免走火入魔，引发祸事。</string>
+	<key>et_3688</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3688</key>
+	<string>慕容紫英：
+		怎料与幻瞑界一战，双剑失去其一，师叔受阳炎所扰，变得暴躁异常，更是狂性大发，将数名弟子打成重伤……</string>
+	<key>et_3689</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3689</key>
+	<string>慕容紫英：
+		凡此种种，似乎都应验了师公当初的忧虑，令他万分痛心，双剑既可以是飞升的灵器，也可以成为起祸的凶器！</string>
+	<key>et_3690</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3690</key>
+	<string>慕容紫英：
+		师公他决心找出当宿主失控时，封印双剑力量的办法。</string>
+	<key>et_3691</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3691</key>
+	<string>云天河：
+		他找到了是吗？要怎么做才能封印住？！</string>
+	<key>et_3692</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3692</key>
+	<string>慕容紫英：
+		……“宿主殪，则双剑亡”，这便是师公留下的话。</string>
+	<key>et_3693</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3693</key>
+	<string>云天河：
+		这……什么意思？是说……要让宿主“死”？……</string>
+	<key>et_3694</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3694</key>
+	<string>慕容紫英：
+		宿主若死其一，则他持有的剑将会陷入长眠，双剑缺一，自然无法再用……</string>
+	<key>et_3695</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3695</key>
+	<string>云天河：
+		可是……这只是说要怎样阻止双剑，根本没说能不能让宿主恢复正常啊……</string>
+	<key>et_3696</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3696</key>
+	<string>慕容紫英：
+		……我想，师公他直至过世，并未真正找到将双剑之祸消于无形的办法……</string>
+	<key>et_3697</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3697</key>
+	<string>云天河：
+		啊？！</string>
+	<key>et_3698</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3698</key>
+	<string>慕容紫英：
+		……玄霄师叔之所以在夙玉前辈离开后，变得狂暴难以自控，乃是因为他二人共同修炼双剑……</string>
+	<key>et_3699</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3699</key>
+	<string>慕容紫英：
+		而菱纱令望舒剑复苏，如今师叔与掌门不断催动望舒之力，未经修炼的宿主只能元神不断受损，一再被寒冰之气所扰……</string>
+	<key>et_3700</key>
+	<string>{"ico":"th1.png"}</string>
+	<key>3700</key>
+	<string>云天河：
+		……！！</string>
+	<key>et_3701</key>
+    <string>{"ico":"zy1.png"}</string>
+	<key>3701</key>
+	<string>慕容紫英：
+		师公还说，宿主持剑，则力量异常强大，要将其杀死谈何容易，寻常修行之人与之交手，必会被阳炎烈火或冷凝寒冰所伤，除非有人……能够抵御这两种力量……</string>
 </dict>
