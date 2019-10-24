@@ -1,0 +1,59 @@
+//init
+Size visibleSize = Director::getInstance()->getVisibleSize();
+	Vec2 origin = Director::getInstance()->getVisibleOrigin();
+
+	auto item1 = MenuItemImage::create("Demo1/item1_0.png", "Demo1/item1_1.png", CC_CALLBACK_1(GameScene::menuItem1Callback, this));
+	auto item2 = MenuItemImage::create("Demo1/item2_0.png", "Demo1/item2_1.png", CC_CALLBACK_1(GameScene::menuItem2Callback, this));
+	auto item3 = MenuItemImage::create("Demo1/item1_0.png", "Demo1/item1_1.png", CC_CALLBACK_1(GameScene::menuItem3Callback, this));
+	auto item4 = MenuItemImage::create("Demo1/item2_0.png", "Demo1/item2_1.png", CC_CALLBACK_1(GameScene::menuItem4Callback, this));
+	auto item5 = MenuItemImage::create("Demo1/item1_0.png", "Demo1/item1_1.png", CC_CALLBACK_1(GameScene::menuItem5Callback, this));
+
+	RotateMenu *menu = RotateMenu::create();
+
+	menu->addMenuItem(item1);
+	menu->addMenuItem(item2);
+	menu->addMenuItem(item3);
+	menu->addMenuItem(item4);
+	menu->addMenuItem(item5);
+
+	menu->setPosition(visibleSize / 2);
+	this->addChild(menu, 2);
+
+
+//click
+void GameScene::hideAllSprite() {
+	for (auto p : sprite) {
+		if (p->isVisible())
+			p->setVisible(false);
+	}
+}
+
+void GameScene::menuItem1Callback(cocos2d::Ref* pSender)
+{
+	hideAllSprite();
+	sprite[0]->setVisible(true);
+}
+
+void GameScene::menuItem2Callback(cocos2d::Ref* pSender)
+{
+	hideAllSprite();
+	sprite[1]->setVisible(true);
+}
+
+void GameScene::menuItem3Callback(cocos2d::Ref* pSender)
+{
+	hideAllSprite();
+	sprite[2]->setVisible(true);
+}
+
+void GameScene::menuItem4Callback(cocos2d::Ref* pSender)
+{
+	hideAllSprite();
+	sprite[3]->setVisible(true);
+}
+
+void GameScene::menuItem5Callback(cocos2d::Ref* pSender)
+{
+	hideAllSprite();
+	sprite[4]->setVisible(true);
+}
