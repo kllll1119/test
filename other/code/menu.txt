@@ -1,0 +1,28 @@
+菜单（图片，文字，开关）：https://blog.csdn.net/ellis1970/article/details/79184357
+
+文字菜单
+MenuItemFont* arr[5] = { 0 };
+	for (int i = 0; i < 5; ++i)
+	{
+		MenuItemFont* menuItemFont = MenuItemFont::create("MenuItemFont", CC_CALLBACK_1(GameScene::menuItemCallback, this));
+		menuItemFont->setColor(Color3B(255, 255, 255));
+		menuItemFont->setUserData((void*)i);
+		arr[i] = menuItemFont;
+		menuItemFont->setPosition(0,100-50*i);
+	}
+	
+	Menu* pMenu = Menu::create(arr[0], arr[1], arr[2], arr[3], arr[4], NULL);
+
+pMenu->setPosition(visibleSize.width/2, visibleSize.height/2);
+	this->addChild(pMenu);
+
+///
+void GameScene::menuItemCallback(cocos2d::Ref* pSender)
+{
+	MenuItemFont* p = (MenuItemFont*)pSender;
+	if (p)
+	{
+		int menu_id = (int)p->getUserData();
+		int i = menu_id;
+	}
+}
