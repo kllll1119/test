@@ -170,7 +170,8 @@ void SplashScene::InitAllUI()
 
 	//保存
 	m_btnSave = Button::create("save.png", "save.png");
-	m_btnSave->setPosition(Vec2(visibleSize.width - 60, visibleSize.height - 60));
+	m_btnSave->setPosition(Vec2(visibleSize.width - m_btnSave->getContentSize().width,
+		visibleSize.height - m_btnSave->getContentSize().height));
 	m_btnSave->setAnchorPoint(Vec2(0, 0));
 	m_btnSave->addTouchEventListener(CC_CALLBACK_2(SplashScene::BtnSave, this));
 	this->addChild(m_btnSave, ZORDER_CHOOSE);

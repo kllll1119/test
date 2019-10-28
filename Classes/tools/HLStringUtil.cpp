@@ -202,10 +202,14 @@ bool GetEventInfoEx(int event, ST_EventInfo& info)
 	std::string ico = "";
 	if (readdoc.HasMember("ico"))
 		ico = readdoc["ico"].GetString();
+	if (!ico.empty() && ico.find(".png") == -1)
+		ico += ".png";
 
 	std::string bk = "";
 	if (readdoc.HasMember("bk"))
 		bk = readdoc["bk"].GetString();
+	if (!bk.empty() && bk.find(".png") == -1)
+		bk += ".png";
 
 	std::string music = "";
 	if (readdoc.HasMember("music"))
@@ -222,6 +226,8 @@ bool GetEventInfoEx(int event, ST_EventInfo& info)
 	std::string mask = "";
 	if (readdoc.HasMember("mask"))
 		mask = readdoc["mask"].GetString();
+	if (!mask.empty() && mask.find(".png") == -1)
+		mask += ".png";
 
 	if (readdoc.HasMember("tag"))
 		info.tag = readdoc["tag"].GetString();
@@ -271,6 +277,8 @@ bool GetEventInfoEx(int event, ST_EventInfo& info)
 				if (arraydoc.HasMember("bk"))
 				{
 					info.bk = arraydoc["bk"].GetString();
+					if (!info.bk.empty() && info.bk.find(".png") == -1)
+						info.bk += ".png";
 				}
 				if (arraydoc.HasMember("key"))
 				{
