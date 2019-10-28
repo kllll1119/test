@@ -17288,7 +17288,7 @@
 		我们去出口！找琼华派的人、找掌门！让他们不要再对付幻瞑界！</string>
 
 	<key>et_3160</key>
-	<string>{"ico":"ml3.png","bk":"bk160.png","music":"snd/jnyj_bz.mp3","tag":"第八章 诀别"}</string>
+	<string>{"ico":"ml3.png","bk":"bk160.png","music":"snd/jnyj_bz.mp3"}</string>
 	<key>3160</key>
 	<string>柳梦璃：
 		归邪将军！</string>
@@ -17896,7 +17896,7 @@
 ……………………</string>
 
 	<key>et_3280</key>
-	<string>{"ico":"zy6.png","bk":"bk168.png","music":"snd/dl_fk.mp3","tag":"第九章 离别"}</string>
+	<string>{"ico":"zy6.png","bk":"bk168.png","music":"snd/dl_fk.mp3","tag":"第九章 诀别"}</string>
 	<key>3280</key>
 	<string>慕容紫英：
 		（怀朔，我按照你的遗愿，将你的骨灰收敛……）</string>
@@ -17981,7 +17981,7 @@
 	<string>柳梦璃：
 		娘刚才都已经说了……</string>
 	<key>et_3297</key>
-	<string>{"ico":"th4.png"}</string>
+	<string>{"ico":"th6.png"}</string>
 	<key>3297</key>
 	<string>云天河：
 		为什么一定要走？妖界都已经变成这样，难道不可以让大家一起去人间生活？</string>
@@ -18073,7 +18073,7 @@
 	<string>婵幽：
 		不如我将你们彼此间的记忆通通消去，日后再无想念，自然也就不会伤心——</string>
 	<key>et_3315</key>
-	<string>{"ico":"th4.png"}</string>
+	<string>{"ico":"th1.png"}</string>
 	<key>3315</key>
 	<string>云天河：
 		不要！我们不愿意忘了梦璃！</string>
@@ -18088,17 +18088,17 @@
 	<string>婵幽：
 		既然种种烦恼，都是由想或念而起，将烦恼的根源消去，岂不是一了百了？</string>
 	<key>et_3318</key>
-	<string>{"ico":"zy1.png"}</string>
+	<string>{"ico":"zy6.png"}</string>
 	<key>3318</key>
 	<string>慕容紫英：
 		（因爱故生忧，因爱故生怖……）</string>
 	<key>et_3319</key>
-	<string>{"ico":"th4.png"}</string>
+	<string>{"ico":"th6.png"}</string>
 	<key>3319</key>
 	<string>云天河：
 		以后我们想到梦璃，也许会很伤心，因为她又不在我身边……但是我也会想到，大家还在一起时，很多开心的事……</string>
 	<key>et_3320</key>
-	<string>{"ico":"th4.png"}</string>
+	<string>{"ico":"th1.png"}</string>
 	<key>3320</key>
 	<string>云天河：
 		要是把这些都忘了，虽然不会难过，可是脑子里有一块地方都是空的，还有什么意思？</string>
@@ -18128,12 +18128,12 @@
 	<string>奚仲：
 		婵幽大人，梦见樽已经取来。</string>
 	<key>et_3326</key>
-    <string>{"ico":"cy1.png","wav":"wav/fs3.wav"}</string>
+    <string>{"ico":"cy1.png"}</string>
 	<key>3326</key>
 	<string>婵幽：
 		万灵悉来，神光映幽！引诸方想愿，入梦见之樽——无中而出、虚空即有！！</string>
 	<key>et_3327</key>
-	<string>{"ico":"ls3.png","bk":"bk172.png"}</string>
+	<string>{"ico":"ls3.png","bk":"bk172.png","wav":"wav/fs3.wav"}</string>
 	<key>3327</key>
 	<string>韩菱纱：
 		怎么会……有两个梦璃？！</string>
@@ -18456,7 +18456,7 @@
 	<string>达成结局——违誓天谴</string>
 	
 	<key>et_3391</key>
-    <string>{"ico":"ls3.png","bk":"bk36.png","music":"snd/xjwq.mp3","tag":"第九章 步虚词"}</string>
+    <string>{"ico":"ls3.png","bk":"bk36.png","music":"snd/wxsj.mp3","tag":"第九章 步虚词"}</string>
 	<key>3391</key>
 	<string>韩菱纱：
 		这儿是……月牙村？</string>
@@ -18837,7 +18837,7 @@
 		好好好，都听你的就是……</string>
 		
 	<key>et_3467</key>
-    <string>{"ico":"ls3.png","bk":"清风涧重光","music":"snd/","tag":"第九章 步虚词终"}</string>
+    <string>{"ico":"ls3.png","bk":"bk200.png","tag":"第九章 步虚词终"}</string>
 	<key>3467</key>
 	<string>韩菱纱：
 		呀——！那是……重光长老？！</string>
@@ -18852,7 +18852,7 @@
 	<string>韩菱纱：
 		你、你是……？！怎么会……？</string>
 	<key>et_3470</key>
-    <string>{"ico":"zy4.png"}</string>
+    <string>{"ico":"zy4.png","bk":"bk201.png"}</string>
 	<key>3470</key>
 	<string>慕容紫英：
 		……青阳……长老？</string>
@@ -19183,7 +19183,7 @@
 		去吧……我功力已散，阳寿将尽，只求在此静伴老友片刻……</string>
 	
 	<key>et_3536</key>
-    <string>{"ico":"ls8.png","bk":"离开青阳"}</string>
+    <string>{"ico":"ls8.png","bk":"bk199.png"}</string>
 	<key>3536</key>
 	<string>韩菱纱：
 		……青阳长老……留他一个人在这里，真的不要紧吗？</string>
@@ -19284,7 +19284,7 @@
 		…………哼，走啦，猪头……真拿你没办法……</string>
 		
 	<key>et_3556</key>
-	<string>{"ico":"th2.png","bk":"请暖风","music":"snd/","tag":"第十章 欢乐苦短"}</string>
+	<string>{"ico":"th2.png","bk":"bk202.png","music":"snd/fgqt.mp3","tag":"第十章 欢乐苦短"}</string>
 	<key>3556</key>
 	<string>云天河：
 		啊～～～～～～！！</string>
@@ -19465,7 +19465,7 @@
 		走吧、走吧，我们进屋去，不然天河那家伙要来催了！</string>
 	
 	<key>et_3592</key>
-    <string>{"ico":"ls1.png","bk":"小木屋"}</string>
+    <string>{"ico":"ls1.png","bk":"bk203.png"}</string>
 	<key>3592</key>
 	<string>韩菱纱：
 		怎样？找到了吗？</string>
@@ -19486,7 +19486,7 @@
 		哦，好……</string>
 		
 	<key>et_3596</key>
-    <string>{"ico":"ls1.png","bk":"小木屋"}</string>
+    <string>{"ico":"ls1.png","bk":"bk203.png"}</string>
 	<key>3596</key>
 	<string>韩菱纱：
 		没有……真的没有，都翻遍了……</string>
@@ -19737,7 +19737,7 @@
 		……唔…………</string>
 		
 	<key>et_3646</key>
-    <string>{"ico":"zy1.png","bk":"木屋外"}</string>
+    <string>{"ico":"zy1.png","bk":"bk205.png","music":"snd/ahm.mp3"}</string>
 	<key>3646</key>
 	<string>慕容紫英：
 		……菱纱如何？</string>
@@ -19871,9 +19871,9 @@
 	<string>{"bk":"bk_null.png"}</string>
 	<key>3672</key>
 	<string>
-当天傍晚——</string>
+两个时辰后——</string>
 	<key>et_3673</key>
-	<string>{"ico":"th1.png","bk":"木屋夜.png"}</string>
+	<string>{"ico":"th1.png","bk":"bk204.png"}</string>
 	<key>3673</key>
 	<string>云天河：
 		紫英，怎么样？手记看完了吗？</string>
@@ -20133,19 +20133,13 @@
 	<string>云天河：
 		……玄霄…………</string>
 	<key>et_3725</key>
-	<string>{"ico":"th1.png"}</string>
+	<string>{"ico":"th1.png","goto":3727}</string>
 	<key>3725</key>
 	<string>云天河：
 		……大哥……我到底该怎么办？…………</string>
 		
-	<key>et_3726</key>
-	<string>{"bk":"bk_null.png"}</string>
-	<key>3726</key>
-	<string>
-翌日清晨——</string>
-
 	<key>et_3727</key>
-    <string>{"ico":"th1.png","bk":"小木屋","music":"snd/","tag":"第十章 死生悠茫"}</string>
+    <string>{"ico":"th1.png","bk":"bk203.png","music":"snd/wxsj.mp3","tag":"第十章 死生悠茫"}</string>
 	<key>3727</key>
 	<string>云天河：
 		……！菱纱！</string>
@@ -20190,7 +20184,7 @@
 	<string>云天河：
 		好！</string>
 	<key>et_3736</key>
-    <string>{"ico":"ls1.png","bk":"树屋"}</string>
+    <string>{"ico":"ls1.png","bk":"bk206.png"}</string>
 	<key>3736</key>
 	<string>韩菱纱：
 		天河……</string>
@@ -20290,7 +20284,7 @@
 	<string>云天河：
 		…………</string>
 	<key>et_3756</key>
-    <string>{"ico":"ls1.png"}</string>
+    <string>{"ico":"ls1.png","bk":"bk207.png"}</string>
 	<key>3756</key>
 	<string>韩菱纱：
 		出来这么久了，不晓得故乡的亲人有没有盼我回去……</string>
@@ -20561,7 +20555,7 @@
 		我们即刻动身。不知琼华派的结界有无撤去，先御剑飞往播仙镇，到了那里再做打算。</string>
 
 	<key>et_3810</key>
-    <string>{"ico":"ls1.png","bk":"播仙镇","music":"snd/","tag":"第十章 终局"}</string>
+    <string>{"ico":"ls1.png","bk":"bk209.png","music":"snd/cljf.mp3","tag":"第十章 终局"}</string>
 	<key>3810</key>
 	<string>韩菱纱：
 		怎么镇上变得冷清好多？难道出了什么事……？</string>
@@ -20677,7 +20671,7 @@
 		走！去找玄霄！</string>
 
 	<key>et_3833</key>
-    <string>{"ico":"ls1.png","bk":"冰封山门","music":"snd/"}</string>
+    <string>{"ico":"ls1.png","bk":"bk179.png","music":"snd/kld.mp3"}</string>
 	<key>3833</key>
 	<string>韩菱纱：
 		……天啊……琼华派……琼华派怎么会变成这个样子？</string>
@@ -20702,7 +20696,7 @@
 	<string>云天河：
 		那快点找到他们！还来得及——</string>
 	<key>et_3838</key>
-    <string>{"bk":"内部"}</string>
+    <string>{"bk":"bk180.png"}</string>
 	<key>3838</key>
 	<string>虚凉：
 		什么人？！胆敢闯入！</string>
@@ -20858,7 +20852,7 @@
 		好！那现在就去卷云台！</string>
 		
 	<key>et_3869</key>
-    <string>{"ico":"sy1.png","bk":"卷云台"}</string>
+    <string>{"ico":"sy1.png","bk":"bk181.png","music":"snd/xyl.mp3"}</string>
 	<key>3869</key>
 	<string>夙瑶：
 		何人如此大胆！不是吩咐过，任何弟子不可闯入卷云台？！</string>
@@ -20878,7 +20872,7 @@
 	<string>慕容紫英：
 		我们并非来夺望舒剑。</string>
 	<key>et_3873</key>
-	<string>{"ico":"xx1_2.png"}</string>
+	<string>{"ico":"xx1_2.png","bk":"bk182.png","bktime":0}</string>
 	<key>3873</key>
 	<string>玄霄：
 		哦？！不夺望舒剑，难道是……天河，你想通透了，要与我一同飞升？</string>
@@ -20893,7 +20887,7 @@
 	<string>云天河：
 		玄霄，我来这里，是劝你放弃飞升。</string>
 	<key>et_3876</key>
-	<string>{"ico":"xx1_2.png"}</string>
+	<string>{"ico":"xx1_2.png","bk":"bk181.png","bktime":0}</string>
 	<key>3876</key>
 	<string>玄霄：
 		……我未听错吧？此等梦话，今日说来未免大煞风景。</string>
@@ -20903,7 +20897,7 @@
 	<string>云天河：
 		我是说真的……你用双剑飞升，只会害人害己……不为别人，就算为你自己，也不该继续下去！</string>
 	<key>et_3878</key>
-	<string>{"ico":"xx1_2.png"}</string>
+	<string>{"ico":"xx1_2.png","bk":"bk182.png","bktime":0}</string>
 	<key>3878</key>
 	<string>玄霄：
 		这么想要回望舒剑吗？借口拙劣之至！</string>
@@ -20998,7 +20992,7 @@
 	<string>慕容紫英：
 		你——！简直丧心狂乱、是非不分！</string>
 	<key>et_3897</key>
-    <string>{"ico":"zy1.png"}</string>
+    <string>{"ico":"zy1.png","bk":"bk185.png"}</string>
 	<key>3897</key>
 	<string>慕容紫英：
 		掌门！弟子始终不明，您执掌琼华多年，所有行事向来以门派为重，如今之势，楼宇冰封，河水污浊，分明不是正道所趋，掌门为何还要执意飞升？！</string>
@@ -21048,17 +21042,17 @@
 	<string>夙瑶：
 		…………</string>
 	<key>et_3907</key>
-	<string>{"ico":"xx1_2.png"}</string>
+	<string>{"ico":"xx1_2.png","wav":"fs2.wav","bk":"bk184.png"}</string>
 	<key>3907</key>
 	<string>玄霄：
 		哈哈哈！心性成狂、心魔深种！说得好！</string>
 	<key>et_3908</key>
-	<string>{"ico":"xx1_2.png","wav":"fs2.wav"}</string>
+	<string>{"ico":"xx1_2.png"}</string>
 	<key>3908</key>
 	<string>玄霄：
 		我一生清心修道，竟有半生被人视为颠狂！若不做尽狂事，岂非名难副实！！</string>
 	<key>et_3909</key>
-    <string>{"ico":"zy1.png"}</string>
+    <string>{"ico":"zy1.png","wav":"fs2.wav","bk":"bk183.png"}</string>
 	<key>3909</key>
 	<string>慕容紫英：
 		……唔……</string>
@@ -21093,7 +21087,7 @@
 	<string>云天河：
 		玄霄！——</string>
 	<key>et_3916</key>
-	<string>{"ico":"xx1_2.png"}</string>
+	<string>{"ico":"xx1_2.png","bk":"bk186.png"}</string>
 	<key>3916</key>
 	<string>玄霄：
 		趁我未动杀念，通通滚回山下！</string>
@@ -21128,7 +21122,7 @@
 	<string>韩菱纱：
 		……！天河，不要……</string>
 	<key>et_3923</key>
-	<string>{"ico":"xx1_2.png"}</string>
+	<string>{"ico":"xx1_2.png","bk":"bk184.png"}</string>
 	<key>3923</key>
 	<string>玄霄：
 		如我所料，口说不成，便要动手。</string>
@@ -21173,7 +21167,7 @@
 	<string>云天河：
 		……杀气…………没想到我们会有这么一天……</string>
 	<key>et_3932</key>
-	<string>{"ico":"xx1_2.png"}</string>
+	<string>{"ico":"xx1_2.png","music":"snd/swqc.mp3"}</string>
 	<key>3932</key>
 	<string>玄霄：
 		还等什么！一起上吧！</string>
@@ -21279,7 +21273,7 @@
 	<string>夙瑶：
 		那是——昆仑天光！！</string>
 	<key>et_3953</key>
-	<string>{"ico":"xx1_2.png"}</string>
+	<string>{"ico":"xx1_2.png","bk":"bk187.png"}</string>
 	<key>3953</key>
 	<string>玄霄：
 		飞升的最后时刻已至！哈哈哈哈——！</string>
@@ -21349,7 +21343,7 @@
 	<string>云天河：
 		你——！我根本不是这样想！</string>
 	<key>et_3967</key>
-	<string>{"ico":"xx1_2.png"}</string>
+	<string>{"ico":"xx1_2.png","bk":"bk188.png"}</string>
 	<key>3967</key>
 	<string>玄霄：
 		休要得意！即便我没有你融合阴阳的修为，但双剑力量何其强悍霸道，若是全力施为——</string>
@@ -21364,7 +21358,7 @@
 	<string>慕容紫英：
 		天河，小心！这力量——</string>
 	<key>et_3970</key>
-    <string>{"ico":"sy1.png"}</string>
+    <string>{"ico":"sy1.png","bk":"bk189.png"}</string>
 	<key>3970</key>
 	<string>夙瑶：
 		我来助你。</string>
@@ -21410,7 +21404,7 @@
 		好！拼了！</string>
 		
 	<key>et_3979</key>
-    <string>{"ico":"sy1.png"}</string>
+    <string>{"ico":"sy1.png","bk":"bk190.png"}</string>
 	<key>3979</key>
 	<string>夙瑶：
 		……唔……</string>
@@ -21526,12 +21520,12 @@
 		顽固至此，我便成全了你！</string>
 
 	<key>et_4002</key>
-	<string>{"ico":"xx1_2.png","wav":"wav/dl.wav"}</string>
+	<string>{"ico":"xx1_2.png","music":"snd/xyl.mp3","wav":"wav/dl.wav"}</string>
 	<key>4002</key>
 	<string>玄霄：
 		……！何人阻我！</string>
 	<key>et_4003</key>
-	<string>{}</string>
+	<string>{"bk":"bk194.png"}</string>
 	<key>4003</key>
 	<string>？？：
 		本座乃天帝驾下九天玄女，奉命相传神界旨意。</string>
@@ -21676,7 +21670,7 @@
 	<string>夙瑶：
 		…………原来如此……原来如此…………</string>
 	<key>et_4032</key>
-    <string>{"ico":"sy1.png"}</string>
+    <string>{"ico":"sy1.png","bk":"bk193.png"}</string>
 	<key>4032</key>
 	<string>夙瑶：
 		……夙瑶知错，甘心受罚。</string>
@@ -21691,7 +21685,7 @@
 	<string>玄霄：
 		夙瑶！！</string>
 	<key>et_4035</key>
-    <string>{"ico":"ls3.png"}</string>
+    <string>{"ico":"ls3.png","bk":"bk196.png"}</string>
 	<key>4035</key>
 	<string>韩菱纱：
 		那是……？好多光……往东方飞去了……</string>
@@ -21746,7 +21740,7 @@
 	<string>九天玄女：
 		天意难违！</string>
 	<key>et_4046</key>
-	<string>{"ico":"xx1_2.png"}</string>
+	<string>{"ico":"xx1_2.png","bk":"bk195.png"}</string>
 	<key>4046</key>
 	<string>玄霄：
 		哈哈哈！难怪说“天地不仁，以万物为刍狗”！果然无情无义，草菅人命！</string>
@@ -21771,7 +21765,7 @@
 	<string>玄霄：
 		神界自许为天、自比为地，如此天地，令人不齿！！</string>
 	<key>et_4051</key>
-	<string>{"ico":"xx1_2.png"}</string>
+	<string>{"ico":"xx1_2.png","bk":"bk191.png"}</string>
 	<key>4051</key>
 	<string>玄霄：
 		玄霄以命立誓！！苍天弃吾、吾宁成魔——！！</string>
@@ -21791,12 +21785,12 @@
 	<string>玄霄：
 		哈哈！不错！待我成魔，定要杀上天庭，将之夷为平地！！若是怕了，劝你们快快将我除去！！</string>
 	<key>et_4055</key>
-	<string>{"ico":"jt.png","wav":"wav/dl.wav"}</string>
+	<string>{"ico":"jt.png"}</string>
 	<key>4055</key>
 	<string>九天玄女：
 		玄霄！你心魔已成！本座先将你打入东海漩涡最深之处，另禀天帝，再议生杀！</string>
 	<key>et_4055</key>
-	<string>{"ico":"xx1_2.png"}</string>
+	<string>{"ico":"xx1_2.png","bk":"bk192.png","wav":"wav/dl.wav"}</string>
 	<key>4055</key>
 	<string>玄霄：
 		唔！……</string>
@@ -21851,7 +21845,7 @@
 	<string>云天河：
 		等一下！我不明白什么意思啊——！</string>
 	<key>et_4066</key>
-    <string>{"ico":"zy1.png"}</string>
+    <string>{"ico":"zy1.png","bk":"bk197.png"}</string>
 	<key>4066</key>
 	<string>慕容紫英：
 		掌门……</string>
@@ -21871,7 +21865,7 @@
 	<string>慕容紫英：
 		掌门！</string>
 	<key>et_4070</key>
-	<string>{"ico":"xx1_2.png"}</string>
+	<string>{"ico":"xx1_2.png","bk":"bk192.png"}</string>
 	<key>4070</key>
 	<string>玄霄：
 		我不甘心！我怎能甘心！！</string>
@@ -21946,7 +21940,7 @@
 	<string>玄霄：
 		言尽于此，如何行止，你自己想清楚！以凡人之躯承受神器的威力，定会付出代价！</string>
 	<key>et_4085</key>
-    <string>{"ico":"th1.png"}</string>
+    <string>{"ico":"th1.png","bk":"bk198.png"}</string>
 	<key>4085</key>
 	<string>云天河：
 		代价……</string>
@@ -21961,55 +21955,115 @@
 	<string>韩菱纱：
 		玄霄和这把入魔之剑，不知是谁驾驭了谁……</string>
 	<key>et_4088</key>
-    <string>{"ico":"th1.png"}</string>
+    <string>{"ico":"th1.png","shark":5}</string>
 	<key>4088</key>
 	<string>云天河：
 		天火降下！！！</string>
 	<key>et_4089</key>
-    <string>{"ico":"zy1.png"}</string>
+    <string>{"ico":"zy1.png","shark":30}</string>
 	<key>4089</key>
 	<string>慕容紫英：
 		天河、菱纱，我们快御剑离开！</string>
 		
 	<key>et_4090</key>
-    <string>{"ico":"zy1.png"}</string>
+    <string>{"ico":"zy1.png","bk":"bk210.png","mv":1}</string>
 	<key>4090</key>
 	<string>慕容紫英：
 		唔！……</string>
 	<key>et_4091</key>
-    <string>{"ico":"ls1.png"}</string>
+    <string>{"ico":"ls1.png","mv":1}</string>
 	<key>4091</key>
 	<string>韩菱纱：
 		啊！……</string>
 	<key>et_4092</key>
-    <string>{"ico":"th1.png"}</string>
+    <string>{"ico":"th1.png","mv":1}</string>
 	<key>4092</key>
 	<string>云天河：
 		菱纱！紫英！你们受伤了？！</string>
-
+		
 	<key>et_4093</key>
-    <string>{}</string>
+    <string>{"mv":1,"shark":10,"bk":"bk211.png"}</string>
 	<key>4093</key>
-	<string>
-百年之后</string>
+	<string></string>
 	<key>et_4094</key>
-    <string>{"ico":"zy1.png"}</string>
+    <string>{"mv":1,"bk":"bk212.png"}</string>
 	<key>4094</key>
+	<string></string>
+	<key>et_4095</key>
+    <string>{"mv":1,"bk":"bk213.png"}</string>
+	<key>4095</key>
+	<string></string>
+	<key>et_4096</key>
+    <string>{"mv":1,"bk":"bk214.png"}</string>
+	<key>4096</key>
+	<string></string>
+	<key>et_4097</key>
+    <string>{"mv":1,"bk":"bk215.png"}</string>
+	<key>4097</key>
+	<string></string>
+	<key>et_4098</key>
+    <string>{"mv":1,"bk":"bk216.png"}</string>
+	<key>4098</key>
+	<string></string>
+	<key>et_4099</key>
+    <string>{"mv":1,"bk":"bk217.png"}</string>
+	<key>4099</key>
+	<string></string>
+	<key>et_4100</key>
+    <string>{"mv":1,"bk":"bk_null.png"}</string>
+	<key>4100</key>
+	<string></string>
+
+	<key>et_4101</key>
+    <string>{"mv":1,"music":"snd/jmsg.mp3","bk":"bk218.png"}</string>
+	<key>4101</key>
+	<string></string>
+	<key>et_4102</key>
+    <string>{"mv":1,"bk":"bk219.png"}</string>
+	<key>4102</key>
+	<string></string>
+	<key>et_4103</key>
+    <string>{,"bk":"bk220.png"}</string>
+	<key>4103</key>
 	<string>慕容紫英：
 		……你来了。</string>
-	<key>et_4095</key>
-    <string>{"ico":"ml4.png"}</string>
-	<key>4095</key>
+	<key>et_4104</key>
+    <string>{}</string>
+	<key>4104</key>
 	<string>柳梦璃：
 		紫英……这些年来，过得可好？</string>
-	<key>et_4096</key>
-    <string>{"ico":"zy1.png"}</string>
-	<key>4096</key>
+	<key>et_4105</key>
+    <string>{}</string>
+	<key>4105</key>
 	<string>慕容紫英：
 		……无所谓好或不好，人生一场虚空大梦，韶华白首，不过转瞬。惟有天道恒在，往复循环，不曾更改……</string>
-	<key>et_4097</key>
-    <string>{"ico":"zy1.png"}</string>
-	<key>4097</key>
+	<key>et_4106</key>
+    <string>{}</string>
+	<key>4106</key>
 	<string>慕容紫英：
-		他……他们等你很久了，一定有许多话要说，我先回剑冢……</string>
+		他……他们也等你很久了，一定有许多话要说，我先回剑冢……</string>
+	<key>et_4107</key>
+    <string>{"mv":2,"bk":"bk221.png"}</string>
+	<key>4107</key>
+	<string></string>
+	<key>et_4108</key>
+    <string>{"mv":1,"bk":"bk222.png"}</string>
+	<key>4108</key>
+	<string></string>
+	<key>et_4109</key>
+    <string>{"mv":1,"bk":"bk223.png"}</string>
+	<key>4109</key>
+	<string></string>
+	<key>et_4110</key>
+    <string>{"mv":1,"bk":"bk223.png"}</string>
+	<key>4110</key>
+	<string></string>
+	<key>et_4111</key>
+    <string>{"mv":1,"bk":"bk224.png"}</string>
+	<key>4111</key>
+	<string></string>
+	<key>et_4112</key>
+    <string>{"mv":1,"bk":"bk225.png"}</string>
+	<key>4112</key>
+	<string></string>
 </dict>
