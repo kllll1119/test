@@ -168,18 +168,19 @@ void SaveScene::BtnItemClick(cocos2d::Ref* pSender, Widget::TouchEventType type)
 		{
 			index = (int)pItem->getUserData();
 		}
-		CCLOG("load save,index:%d", index);
-		SimpleAudioEngine::sharedEngine()->playEffect("wav/al.wav");
+		CCLOG("load/save,index:%d", index);
 		if (index >= 0)
 		{
 			if (g_bSave)	//±£´æ
 			{
+				SimpleAudioEngine::sharedEngine()->playEffect("wav/item.wav");
 				Save(index);
 				stopAllActions();
 				Director::getInstance()->popScene();
 			}
 			else  //¶ÁÈ¡
 			{
+				SimpleAudioEngine::sharedEngine()->playEffect("wav/al.wav");
 				auto scene = SplashScene::createScene(index);
 				Director::getInstance()->runWithScene(scene);
 			}

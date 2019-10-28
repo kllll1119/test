@@ -2,6 +2,7 @@
 #include "tools/HLStringUtil.h"
 #include "SimpleAudioEngine.h"
 #include "SaveScene.h"
+#include "TitleScene.h"
 
 using namespace CocosDenshion;
 
@@ -176,8 +177,71 @@ void SplashScene::InitAllUI()
 	m_btnSave->addTouchEventListener(CC_CALLBACK_2(SplashScene::BtnSave, this));
 	this->addChild(m_btnSave, ZORDER_CHOOSE);
 
+	//菜单
+	auto *chnStrings = Dictionary::createWithContentsOfFile("cfg_data.xml");
+	if (chnStrings)
+	{
+		std::string save_game;
+		std::string main_menu;
+		std::string return_game;
+		String* str = static_cast<String*>(chnStrings->objectForKey("save_game"));
+		if (str)
+			save_game = str->getCString();
+		str = static_cast<String*>(chnStrings->objectForKey("main_menu"));
+		if (str)
+			main_menu = str->getCString();
+		str = static_cast<String*>(chnStrings->objectForKey("return_game"));
+		if (str)
+			return_game = str->getCString();
+
+		int indexMenu = 0;
+		arr[indexMenu] = MenuItemFont::create(save_game.c_str(), CC_CALLBACK_1(SplashScene::menuItemCallback, this));
+		arr[indexMenu]->setColor(Color3B(255, 255, 255));
+		arr[indexMenu]->setUserData((void*)indexMenu);
+		arr[indexMenu]->setPosition(0, 100 - 50 * indexMenu);
+
+		++indexMenu;
+		arr[indexMenu] = MenuItemFont::create(main_menu.c_str(), CC_CALLBACK_1(SplashScene::menuItemCallback, this));
+		arr[indexMenu]->setColor(Color3B(255, 255, 255));
+		arr[indexMenu]->setUserData((void*)indexMenu);
+		arr[indexMenu]->setPosition(0, 100 - 50 * indexMenu);
+
+		++indexMenu;
+		arr[indexMenu] = MenuItemFont::create(return_game.c_str(), CC_CALLBACK_1(SplashScene::menuItemCallback, this));
+		arr[indexMenu]->setColor(Color3B(255, 255, 255));
+		arr[indexMenu]->setUserData((void*)indexMenu);
+		arr[indexMenu]->setPosition(0, 100 - 50 * indexMenu);
+		m_pMenu = Menu::create(arr[0], arr[1], arr[2], NULL);
+		m_pMenu->setPosition(visibleSize.width / 2, visibleSize.height / 2);
+		m_pMenu->setVisible(false);
+		this->addChild(m_pMenu, ZORDER_CHOOSE);
+	}
+	
+
 	scheduleUpdate();
 	initok = true;
+}
+
+void SplashScene::menuItemCallback(cocos2d::Ref* pSender)
+{
+	SimpleAudioEngine::sharedEngine()->playEffect("wav/al.wav");
+	m_pMenu->setVisible(false);
+	MenuItemFont* menuItem = (MenuItemFont*)pSender;
+	if (menuItem)
+	{
+		int index = (int)menuItem->getUserData();
+		if (index == 0)
+		{
+			auto scene = SaveScene::createScene(true);
+			Director::getInstance()->runWithScene(scene);
+		}
+		else if (index == 1)
+		{
+			stopAllActions();
+			auto scene = TitleScene::createScene();
+			Director::getInstance()->runWithScene/*replaceScene*/(scene);
+		}
+	}
 }
 
 void SplashScene::FirstGame()
@@ -348,9 +412,10 @@ void SplashScene::BtnSave(cocos2d::Ref* pSender, Widget::TouchEventType type)
 {
 	if (type == Widget::TouchEventType::ENDED)
 	{
-		SimpleAudioEngine::sharedEngine()->playEffect("wav/al.wav");
-		auto scene = SaveScene::createScene(true);
-		Director::getInstance()->runWithScene(scene);
+		m_pMenu->setVisible(true);
+// 		SimpleAudioEngine::sharedEngine()->playEffect("wav/al.wav");
+// 		auto scene = SaveScene::createScene(true);
+// 		Director::getInstance()->runWithScene(scene);
 	}
 }
 

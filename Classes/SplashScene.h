@@ -35,6 +35,8 @@ public:
     // a selector callback
 	void ScreenClick(cocos2d::Ref* pSender);
 
+	void menuItemCallback(cocos2d::Ref* pSender);
+
     void TalkBKClick(cocos2d::Ref* pSender, Widget::TouchEventType type);
 
 	void TalkOverCB(int event);
@@ -97,6 +99,8 @@ private:
 
 	ImageView* m_pBackgroud = NULL;
 
+	MenuItemFont* arr[5];	//²Ëµ¥
+	Menu* m_pMenu;
 	int delay_count = 0;
 };
 
