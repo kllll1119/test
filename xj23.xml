@@ -1,7 +1,7 @@
 ﻿<dict>
 	<!--event:{"role":999,"ico":"","bk":"","music":"","wav":"","item":"","shark":5,"mask":"mask1","bktime":0,"mv":1.5,"bkx":10,"bky":10,"goto":0,"choose":[{"key":"chs15_0","bk":"","goto":0},{"key":"chs15_1","bk":"","goto":0}]}-->
 	<key>debug_start</key>
-	<string>0</string><!--3443-->
+	<string>0</string><!--3451-->
 	
 	<key>first</key>
     <string>这一次…请给他们一个圆满的结局！</string>
@@ -18732,7 +18732,7 @@
 	<string>云天河：
 		……那又怎样？对不起一个人，就可以为他做任何事，为他不顾别人的命吗？玄霄重要，菱纱就什么都不是？</string>
 	<key>et_3446</key>
-    <string>{"ico":"ls2"}</string>
+    <string>{"ico":"ls8"}</string>
 	<key>3446</key>
 	<string>韩菱纱：
 		…………</string>
@@ -18752,7 +18752,7 @@
 	<string>慕容紫英：
 		姑且不论两位长老是否已去往琼华派，我只当去清风涧一试运气。</string>
 	<key>et_3450</key>
-	<string>{"ico":"th3"}</string>
+	<string>{"ico":"th1"}</string>
 	<key>3450</key>
 	<string>云天河：
 		…………</string>
