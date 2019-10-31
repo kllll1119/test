@@ -1,0 +1,7 @@
+﻿<dict>
+	<key>npcs</key>
+	<string>[
+{"id":1,"name":"蛇妖","hp":"200","att":102,"def":100},
+{"id":2,"name":"蓝龙","hp":"300","att":112,"def":110}
+]</string>
+</dict>
