@@ -1,6 +1,6 @@
 #include "AppDelegate.h"
 #include "GameScene.h"
-
+#include "2d/CCNode.h"
 USING_NS_CC;
 
 AppDelegate::AppDelegate() {
@@ -17,11 +17,11 @@ bool AppDelegate::applicationDidFinishLaunching() {
     auto glview = director->getOpenGLView();
     if(!glview) {
         glview = GLViewImpl::create("My Game");
-		glview->setFrameSize(600, 800);
+		glview->setFrameSize(480, 640);
         director->setOpenGLView(glview);
     }
 	//改变分辨率
-	glview->setDesignResolutionSize(600, 800, ResolutionPolicy::EXACT_FIT/*NO_BORDER*/);	//800, 600
+	glview->setDesignResolutionSize(480, 640, ResolutionPolicy::EXACT_FIT/*NO_BORDER*/);	//800, 600
     // turn on display FPS
     director->setDisplayStats(true);
 
@@ -33,7 +33,6 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     // run
     director->runWithScene(scene);
-	
     return true;
 }
 
