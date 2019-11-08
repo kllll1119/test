@@ -2,6 +2,7 @@
 #include <cocos2d.h>
 #include <iostream>
 #include <string>
+#include <map>
 #include <stdlib.h>
 #include <ctype.h>
 #include <2d/CCNode.h>

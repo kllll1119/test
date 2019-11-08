@@ -3,11 +3,12 @@
 //我是刚进公司的菜鸟,如果你有好的思路,欢迎为小弟提供一些意见和交流,谢谢!!
 ///////////////////////////////////////////////
 #include "GameScene.h"
-#include "Player.h"
+#include "GameLogicManager.h"
 
 #define CCPointZero ccp(0,0)
 
-Player* TestPlayer = NULL;
+Player* testPlayer = NULL;
+Player* testEneme = NULL;
 
 GameScene::GameScene(){
 }
@@ -44,7 +45,9 @@ bool GameScene::init(){
 	addChild(Player::create(Player::HERO, 1, 5));
 	addChild(Player::create(Player::HERO, 1, 6));
 	addChild(Player::create(Player::HERO, 1, 7));
-	addChild(Player::create(Player::HERO, 1, 8));
+
+	testPlayer = Player::create(Player::HERO, 1, 8);
+	addChild(testPlayer);
 
 	addChild(Player::create(Player::ENEMY, 2, 0));
 	addChild(Player::create(Player::ENEMY, 2, 1));
@@ -55,8 +58,8 @@ bool GameScene::init(){
 	addChild(Player::create(Player::ENEMY, 2, 6));
 	addChild(Player::create(Player::ENEMY, 2, 7));
 
-	TestPlayer = Player::create(Player::ENEMY, 2, 8);
-	addChild(TestPlayer);
+	testEneme = Player::create(Player::ENEMY, 2, 8);
+	addChild(testEneme);
 
 	testReadNpc();
 
@@ -76,6 +79,19 @@ void GameScene::update(float delta)
 {
 	//CCLOG("update:%.2f", delta);
 	static int count = 0;
-	if (count++ == 50)
-		TestPlayer->Die();
+	count++;
+	if (count%50==0)
+	{
+		int att = 0;
+		bool bj = false;
+		testPlayer->Attack(att, bj);
+	}
+
+	if (count == 100)
+	{
+		int att = 0;
+		bool bj = false;
+		testEneme->Attack(att, bj);
+		//TestPlayer->Die();
+	}
 }
