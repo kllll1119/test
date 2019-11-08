@@ -1,13 +1,19 @@
 #include "Player.h"
 #include "GameLogicManager.h"
 
-#define PLAY_X_SITANCE 70	//x9宫格间距
-#define PLAY_Y_SITANCE 80	//x9宫格间距
+#define PLAY_X_SITANCE 70	//x9宫格x间距
+#define PLAY_Y_SITANCE 80	//x9宫格y间距
 
 #define ATTACK_X_POS 10
 
 Player::Player()
 {
+	m_type = ENEMY;
+	m_sp = 3;				//技能触发回合
+	m_hp = 500;				//血
+	m_attck = 0;			//攻击
+	m_defense = 0;			//防御
+	m_dodge = 0;			//闪避
 }
 
 Player::~Player()
@@ -52,6 +58,12 @@ void Player::InitPlayer()
 	setPosition(position);
 
 	//加载血条
+	m_pLifeBarBK = CCSprite::create("life_bk.png");
+	m_pLifeBarBK->setAnchorPoint(Vec2(0, 0));
+	m_pLifeBarBK->setPosition(Vec2((getContentSize().width-60)/2,0));
+	//m_pLifeBar->CCProgressTimer::create(CCSprite::create("life_bar.png"));
+
+	addChild(m_pLifeBarBK);
 
 	//测试精英怪
 	if (m_pos == 4)
@@ -65,6 +77,8 @@ void Player::InitPlayer()
 
 	//播放存活动画
 	Alive();
+
+	addChild(&fw);
 }
 
 Vec2 Player::GetPostion9()
@@ -126,9 +140,32 @@ void Player::Attack(int& demage, bool& baoji)
 	runAction(m_btnAction);
 }
 
-void Player::OnHurt(int damage, bool baoji)
+bool Player::OnHurt(int damage, bool baoji)
 {
 	//受伤动画
 
+
 	//伤害飘字等
+	Color3B color = Color3B(255, 255, 255);
+	int size = 12;
+	if (baoji)
+	{
+		color = Color3B(255, 127, 40);
+		size = 14;
+	}
+
+	char strDamage[20] = { 0 };
+	snprintf(strDamage, 19, "-%d", damage);
+	int xOff = MakeRandom(-8, 8);
+	int yOff = MakeRandom(-5, 5);
+	fw.showWord(strDamage, Vec2(m_position.x + xOff + getContentSize().width/2,m_position.y+getContentSize().height-25 + yOff), color, size);
+
+	//判断死亡
+	m_hp -= damage;
+	if (m_hp <= 0)
+	{
+		Die();
+		return true;
+	}
+	return false;
 }

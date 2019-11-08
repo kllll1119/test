@@ -82,16 +82,24 @@ void GameScene::update(float delta)
 	count++;
 	if (count%50==0)
 	{
-		int att = 0;
-		bool bj = false;
-		testPlayer->Attack(att, bj);
+		if (testEneme->m_hp > 0)
+		{
+			int att = 0;
+			bool bj = false;
+			testPlayer->Attack(att, bj);
+
+			if(count>200)
+				testEneme->OnHurt(50, true);
+			else
+				testEneme->OnHurt(50, false);
+		}
 	}
 
-	if (count == 100)
-	{
-		int att = 0;
-		bool bj = false;
-		testEneme->Attack(att, bj);
-		//TestPlayer->Die();
-	}
+// 	if (count == 100)
+// 	{
+// 		int att = 0;
+// 		bool bj = false;
+// 		testEneme->Attack(att, bj);
+// 		//TestPlayer->Die();
+// 	}
 }
