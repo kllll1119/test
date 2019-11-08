@@ -55,9 +55,13 @@ void Player::InitPlayer()
 
 	//²âÊÔ¾«Ó¢¹Ö
 	if (m_pos == 4)
-	{
-		setColor(Color3B(255, 250, 150));
-	}
+		setColor(Color3B(255, 127, 39));
+	else if (m_pos == 1)
+		setColor(Color3B(39, 80, 212));
+	else if (m_pos == 2)
+		setColor(Color3B(78, 200, 78));
+	else if (m_pos == 8)
+		setColor(Color3B(255, 127, 39));
 
 	//²¥·Å´æ»î¶¯»­
 	Alive();
@@ -94,12 +98,12 @@ void Player::Alive()
 void Player::Die()
 {
 	stopAllActions();
-	setColor(Color3B(150, 50, 50));
+	setColor(Color3B(255, 80, 39));
 
-	FadeOut* dieAni = FadeOut::create(1.0f);
+	FadeOut* dieAni = FadeOut::create(3.0f);
 	runAction(dieAni);
 	schedule([&](float dt)
 	{
 		removeFromParent();
-	}, 1.f, 1/*CC_REPEAT_FOREVER*/, 0.0f, "MySchedule");
+	}, 3.f, 1/*CC_REPEAT_FOREVER*/, 0.0f, "MySchedule");
 }
