@@ -36,6 +36,12 @@ bool GameScene::init(){
 	m_bk->setAnchorPoint(Vec2(0, 0));
 	this->addChild(m_bk, 0);
 
+	//载入主界面遮挡
+	ImageView* m_bkMan = ImageView::create("bkman.png");
+	m_bkMan->setPosition(Vec2(0, 0));
+	m_bkMan->setAnchorPoint(Vec2(0, 0));
+	this->addChild(m_bkMan, 1);
+
 	//载入角色
 	addChild(Player::create(Player::HERO, 1, 0));
 	addChild(Player::create(Player::HERO, 1, 1));
