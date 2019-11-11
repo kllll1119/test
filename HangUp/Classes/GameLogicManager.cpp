@@ -14,9 +14,9 @@ GameLogicManager* GameLogicManager::instance()
 	return &s_gameManager;
 }
 
-void GameLogicManager::AddPlayer(Player* role)
+void GameLogicManager::AddPlayer(Fighter* role)
 {
-	if (role->m_type == Player::HERO)
+	if (role->m_type == Fighter::HERO)
 	{
 		m_player.emplace(role->m_pos, role);
 	}
@@ -26,9 +26,9 @@ void GameLogicManager::AddPlayer(Player* role)
 	}
 }
 
-void GameLogicManager::RemovePlayer(Player* role)
+void GameLogicManager::RemovePlayer(Fighter* role)
 {
-	map<int, Player*>::iterator iter = m_player.begin();
+	map<int, Fighter*>::iterator iter = m_player.begin();
 	for (; iter != m_player.end(); ++iter)
 	{
 		if (role == iter->second)

@@ -7,8 +7,8 @@
 
 #define CCPointZero ccp(0,0)
 
-Player* testPlayer = NULL;
-Player* testEneme = NULL;
+Fighter* testPlayer = NULL;
+Fighter* testEneme = NULL;
 
 GameScene::GameScene(){
 }
@@ -43,28 +43,28 @@ bool GameScene::init(){
 	this->addChild(m_bkMan, 1);
 
 	//ÔØÈë½ÇÉ«
-	addChild(Player::create(Player::HERO, 1, 0));
-	addChild(Player::create(Player::HERO, 1, 1));
-	addChild(Player::create(Player::HERO, 1, 2));
-	addChild(Player::create(Player::HERO, 1, 3));
-	addChild(Player::create(Player::HERO, 1, 4));
-	addChild(Player::create(Player::HERO, 1, 5));
-	addChild(Player::create(Player::HERO, 1, 6));
-	addChild(Player::create(Player::HERO, 1, 7));
+	addChild(Fighter::create(Fighter::HERO, 1, 0));
+	addChild(Fighter::create(Fighter::HERO, 1, 1));
+	addChild(Fighter::create(Fighter::HERO, 1, 2));
+	addChild(Fighter::create(Fighter::HERO, 1, 3));
+	addChild(Fighter::create(Fighter::HERO, 1, 4));
+	addChild(Fighter::create(Fighter::HERO, 1, 5));
+	addChild(Fighter::create(Fighter::HERO, 1, 6));
+	addChild(Fighter::create(Fighter::HERO, 1, 7));
 
-	testPlayer = Player::create(Player::HERO, 1, 8);
+	testPlayer = Fighter::create(Fighter::HERO, 1, 8);
 	addChild(testPlayer);
 
-	addChild(Player::create(Player::ENEMY, 2, 0));
-	addChild(Player::create(Player::ENEMY, 2, 1));
-	addChild(Player::create(Player::ENEMY, 2, 2));
-	addChild(Player::create(Player::ENEMY, 2, 3));
-	addChild(Player::create(Player::ENEMY, 2, 4));
-	addChild(Player::create(Player::ENEMY, 2, 5));
-	addChild(Player::create(Player::ENEMY, 2, 6));
-	addChild(Player::create(Player::ENEMY, 2, 7));
+	addChild(Fighter::create(Fighter::ENEMY, 2, 0));
+	addChild(Fighter::create(Fighter::ENEMY, 2, 1));
+	addChild(Fighter::create(Fighter::ENEMY, 2, 2));
+	addChild(Fighter::create(Fighter::ENEMY, 2, 3));
+	addChild(Fighter::create(Fighter::ENEMY, 2, 4));
+	addChild(Fighter::create(Fighter::ENEMY, 2, 5));
+	addChild(Fighter::create(Fighter::ENEMY, 2, 6));
+	addChild(Fighter::create(Fighter::ENEMY, 2, 7));
 
-	testEneme = Player::create(Player::ENEMY, 2, 8);
+	testEneme = Fighter::create(Fighter::ENEMY, 2, 8);
 	addChild(testEneme);
 
 	testReadNpc();
@@ -88,7 +88,7 @@ void GameScene::update(float delta)
 	count++;
 	if (count%50==0)
 	{
-		if (testEneme->m_hp > 0)
+		if (testEneme->m_curHp > 0)
 		{
 			int att = 0;
 			bool bj = false;

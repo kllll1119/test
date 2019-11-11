@@ -1,11 +1,6 @@
 #pragma once
 #include "cocos2d.h"
-#include "ui/cocosGUI.h"
-#include "ui/UIWidget.h"
 #include "HTools.h"
-
-USING_NS_CC;
-using namespace ui;
 
 class GameScene : public CCLayer
 {

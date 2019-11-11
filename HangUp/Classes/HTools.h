@@ -9,8 +9,11 @@
 #include "json/document.h"
 #include "json/writer.h"
 #include "json/stringbuffer.h"
+#include "ui/cocosGUI.h"
+#include "ui/UIWidget.h"
 
 USING_NS_CC;
+using namespace ui;
 using namespace std;
 
 #define XML_CH_CFG "hu.xml"

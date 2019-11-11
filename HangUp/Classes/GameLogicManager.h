@@ -1,7 +1,7 @@
 #pragma once
 #include "cocos2d.h"
 #include "HTools.h"
-#include "Player.h"
+#include "Fighter.h"
 
 USING_NS_CC;
 
@@ -21,10 +21,10 @@ private:
 public:
 	static GameLogicManager* instance();
 
-	void AddPlayer(Player* role);			//添加相关信息
-	void RemovePlayer(Player* role);		//删除相关信息
+	void AddPlayer(Fighter* role);			//添加相关信息
+	void RemovePlayer(Fighter* role);		//删除相关信息
 	void ResetPlayer();
 public:
-	map<int,Player*> m_player;	//pos-player
-	map<int,Player*> m_enemy;
+	map<int,Fighter*> m_player;	//pos-Fighter
+	map<int,Fighter*> m_enemy;
 };
