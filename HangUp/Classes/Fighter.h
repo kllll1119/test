@@ -7,13 +7,13 @@ USING_NS_CC;
 class Fighter : public Sprite
 {
 public:
-	enum PlayerType{ HERO=0, ENEMY=1};
+	enum FighterType{ HERO=0, ENEMY=1};
 
 public:
 	Fighter();
 	~Fighter();
 
-	static Fighter* create(PlayerType type, int id, int pos);
+	static Fighter* create(FighterType type, int id, int pos);
 
 	void Alive();
 	void Die();
@@ -22,6 +22,8 @@ public:
 	bool OnHurt(int damage, bool baoji);	//受伤,返回击杀
 
 	void AttackEnd();
+
+	void ResetData();
 private:
 	void InitPlayer();
 	Vec2 GetPostion9();
@@ -36,9 +38,10 @@ public:
 	ImageView*				m_pImageWQ;		//武器
 	ImageView*				m_pImageHurt;	//受伤
 
-	PlayerType m_type;		//类型
+	FighterType m_type;		//类型
 	Vec2 m_position;		//9宫格位置
 
+	int m_attackCount;		//记录攻击次数
 	int m_curHp;			//战斗中当前hp
 
 	//初始属性

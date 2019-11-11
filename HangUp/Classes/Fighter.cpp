@@ -11,16 +11,24 @@ Fighter::Fighter()
 	m_type = ENEMY;
 	m_sp = 3;				//¼¼ÄÜ´¥·¢»ØºÏ
 	m_hp = 500;				//Ñª
-	m_attck = 0;			//¹¥»÷
-	m_defense = 0;			//·ÀÓù
-	m_dodge = 0;			//ÉÁ±Ü
+	m_attck = 50;			//¹¥»÷
+	m_defense = 50;			//·ÀÓù
+	m_dodge = 10;			//ÉÁ±Ü
+	m_attackCount = 0;
+
+	m_pLifeBarBK=NULL;
+	m_pLifeBar = NULL;
+	m_pLifeProgress = NULL;
+
+	m_pImageWQ = NULL;
+	m_pImageHurt = NULL;
 }
 
 Fighter::~Fighter()
 {
 }
 
-Fighter* Fighter::create(PlayerType type, int id,int pos)
+Fighter* Fighter::create(FighterType type, int id,int pos)
 {
 	Fighter* pFighter = new Fighter();
 	if (pFighter)
@@ -31,7 +39,7 @@ Fighter* Fighter::create(PlayerType type, int id,int pos)
 		pFighter->InitPlayer();
 		pFighter->autorelease();
 		pFighter->setAnchorPoint(Vec2(0, 0));
-		_theGameManager->AddPlayer(pFighter);
+		_theGameManager->AddFighter(pFighter);
 		return pFighter;
 	}
 	else
@@ -129,7 +137,7 @@ void Fighter::Alive()
 
 void Fighter::Die()
 {
-	_theGameManager->RemovePlayer(this);
+	_theGameManager->RemoveFighter(this);
 	stopAllActions();
 	//setColor(Color3B(255, 80, 39));
 	setColor(Color3B(78, 200, 78));
@@ -146,6 +154,9 @@ void Fighter::Attack(int& demage, bool& baoji)
 {
 	//ÅÐ¶Ï¼¼ÄÜÆ®×ÖµÈ
 
+	//ÅÐ¶Ï¹¥»÷ÊôÐÔ
+	demage = m_attck;
+
 	//¹¥»÷¶¯»­
 	int attackPos = -ATTACK_X_POS;
 	if (m_type == ENEMY)
@@ -157,11 +168,15 @@ void Fighter::Attack(int& demage, bool& baoji)
 	CCRepeat* m_btnAction = CCRepeat::create(static_cast<CCSequence *>(CCSequence::create(btnmove, btnmove->reverse(), NULL)),1);
 	runAction(m_btnAction);
 
-	m_pImageWQ->setVisible(true);
-	CCRotateBy* rotateBy = CCRotateBy::create(0.2f, -90.f);
-	CCCallFunc* callFunc = CCCallFunc::create(this, callfunc_selector(Fighter::AttackEnd));
-	CCFiniteTimeAction* action = CCSequence::create(rotateBy, callFunc, NULL);
-	m_pImageWQ->runAction(action);
+	if (m_type == HERO && m_pImageWQ)
+	{
+		m_pImageWQ->setVisible(true);
+		CCRotateBy* rotateBy = CCRotateBy::create(0.2f, -90.f);
+		CCCallFunc* callFunc = CCCallFunc::create(this, callfunc_selector(Fighter::AttackEnd));
+		CCFiniteTimeAction* action = CCSequence::create(rotateBy, callFunc, NULL);
+		m_pImageWQ->runAction(action);
+	}
+	++m_attackCount;
 }
 
 bool Fighter::OnHurt(int damage, bool baoji)
@@ -208,4 +223,9 @@ void Fighter::AttackEnd()
 {
 	m_pImageWQ->setVisible(false);
 	m_pImageWQ->setRotation(0);
+}
+
+void Fighter::ResetData()
+{
+	m_attackCount = 0;
 }

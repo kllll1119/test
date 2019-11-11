@@ -7,8 +7,8 @@
 
 #define CCPointZero ccp(0,0)
 
-Fighter* testPlayer = NULL;
-Fighter* testEneme = NULL;
+// Fighter* testPlayer = NULL;
+// Fighter* testEneme = NULL;
 
 GameScene::GameScene(){
 }
@@ -43,31 +43,33 @@ bool GameScene::init(){
 	this->addChild(m_bkMan, 1);
 
 	//ÔØÈë½ÇÉ«
-	addChild(Fighter::create(Fighter::HERO, 1, 0));
-	addChild(Fighter::create(Fighter::HERO, 1, 1));
-	addChild(Fighter::create(Fighter::HERO, 1, 2));
-	addChild(Fighter::create(Fighter::HERO, 1, 3));
-	addChild(Fighter::create(Fighter::HERO, 1, 4));
-	addChild(Fighter::create(Fighter::HERO, 1, 5));
-	addChild(Fighter::create(Fighter::HERO, 1, 6));
-	addChild(Fighter::create(Fighter::HERO, 1, 7));
+// 	addChild(Fighter::create(Fighter::HERO, 1, 0));
+// 	addChild(Fighter::create(Fighter::HERO, 1, 1));
+// 	addChild(Fighter::create(Fighter::HERO, 1, 2));
+// 	addChild(Fighter::create(Fighter::HERO, 1, 3));
+// 	addChild(Fighter::create(Fighter::HERO, 1, 4));
+// 	addChild(Fighter::create(Fighter::HERO, 1, 5));
+// 	addChild(Fighter::create(Fighter::HERO, 1, 6));
+// 	addChild(Fighter::create(Fighter::HERO, 1, 7));
 
-	testPlayer = Fighter::create(Fighter::HERO, 1, 8);
-	addChild(testPlayer);
+// 	testPlayer = Fighter::create(Fighter::HERO, 1, 8);
+// 	addChild(testPlayer);
 
-	addChild(Fighter::create(Fighter::ENEMY, 2, 0));
-	addChild(Fighter::create(Fighter::ENEMY, 2, 1));
-	addChild(Fighter::create(Fighter::ENEMY, 2, 2));
-	addChild(Fighter::create(Fighter::ENEMY, 2, 3));
-	addChild(Fighter::create(Fighter::ENEMY, 2, 4));
-	addChild(Fighter::create(Fighter::ENEMY, 2, 5));
-	addChild(Fighter::create(Fighter::ENEMY, 2, 6));
-	addChild(Fighter::create(Fighter::ENEMY, 2, 7));
+// 	addChild(Fighter::create(Fighter::ENEMY, 2, 0));
+// 	addChild(Fighter::create(Fighter::ENEMY, 2, 1));
+// 	addChild(Fighter::create(Fighter::ENEMY, 2, 2));
+// 	addChild(Fighter::create(Fighter::ENEMY, 2, 3));
+// 	addChild(Fighter::create(Fighter::ENEMY, 2, 4));
+// 	addChild(Fighter::create(Fighter::ENEMY, 2, 5));
+// 	addChild(Fighter::create(Fighter::ENEMY, 2, 6));
+// 	addChild(Fighter::create(Fighter::ENEMY, 2, 7));
 
-	testEneme = Fighter::create(Fighter::ENEMY, 2, 8);
-	addChild(testEneme);
+// 	testEneme = Fighter::create(Fighter::ENEMY, 2, 8);
+// 	addChild(testEneme);
 
-	testReadNpc();
+//	testReadNpc();
+
+	_theGameManager->InitFighter(this, 0);
 
 	scheduleUpdate();
 	return true;
@@ -83,23 +85,24 @@ void GameScene::onExit(){
 
 void GameScene::update(float delta)
 {
+	_theGameManager->GameLogic();
 	//CCLOG("update:%.2f", delta);
-	static int count = 0;
-	count++;
-	if (count%50==0)
-	{
-		if (testEneme->m_curHp > 0)
-		{
-			int att = 0;
-			bool bj = false;
-			testPlayer->Attack(att, bj);
-
-			if(count>200)
-				testEneme->OnHurt(50, true);
-			else
-				testEneme->OnHurt(50, false);
-		}
-	}
+// 	static int count = 0;
+// 	count++;
+// 	if (count%50==0)
+// 	{
+// 		if (testEneme->m_curHp > 0)
+// 		{
+// 			int att = 0;
+// 			bool bj = false;
+// 			testPlayer->Attack(att, bj);
+// 
+// 			if(count>200)
+// 				testEneme->OnHurt(50, true);
+// 			else
+// 				testEneme->OnHurt(50, false);
+// 		}
+// 	}
 
 // 	if (count == 100)
 // 	{
