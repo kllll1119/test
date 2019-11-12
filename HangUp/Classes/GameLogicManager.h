@@ -13,6 +13,12 @@ enum GAME_ACTION
 	EM_PLAYER,
 	EM_ENEMY,
 };
+enum GAME_POS_ORDER
+{
+	POS_TOP,
+	POS_CENTER,
+	POS_BUTTOM
+};
 
 class GameLogicManager
 {

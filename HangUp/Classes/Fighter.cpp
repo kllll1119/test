@@ -10,11 +10,10 @@ Fighter::Fighter()
 {
 	m_type = ENEMY;
 	m_sp = 3;				//¼¼ÄÜ´¥·¢»ØºÏ
-	m_hp = 500;				//Ñª
+	m_hp = 300;				//Ñª
 	m_attck = 50;			//¹¥»÷
 	m_defense = 50;			//·ÀÓù
 	m_dodge = 10;			//ÉÁ±Ü
-	m_attackCount = 0;
 
 	m_pLifeBarBK=NULL;
 	m_pLifeBar = NULL;
@@ -22,6 +21,8 @@ Fighter::Fighter()
 
 	m_pImageWQ = NULL;
 	m_pImageHurt = NULL;
+
+	m_bAttacked = false;
 }
 
 Fighter::~Fighter()
@@ -150,13 +151,16 @@ void Fighter::Die()
 	}, 2.f, 1/*CC_REPEAT_FOREVER*/, 0.0f, "Die");
 }
 
-void Fighter::Attack(int& demage, bool& baoji)
+void Fighter::PreAttack(int turn, int& demage, bool& baoji)
 {
-	//ÅÐ¶Ï¼¼ÄÜÆ®×ÖµÈ
-
 	//ÅÐ¶Ï¹¥»÷ÊôÐÔ
 	demage = m_attck;
 
+	//ÅÐ¶Ï¼¼ÄÜÆ®×ÖµÈ
+}
+
+void Fighter::Attack()
+{
 	//¹¥»÷¶¯»­
 	int attackPos = -ATTACK_X_POS;
 	if (m_type == ENEMY)
@@ -176,7 +180,7 @@ void Fighter::Attack(int& demage, bool& baoji)
 		CCFiniteTimeAction* action = CCSequence::create(rotateBy, callFunc, NULL);
 		m_pImageWQ->runAction(action);
 	}
-	++m_attackCount;
+	m_bAttacked = true;
 }
 
 bool Fighter::OnHurt(int damage, bool baoji)
@@ -219,13 +223,23 @@ bool Fighter::OnHurt(int damage, bool baoji)
 	return false;
 }
 
+void Fighter::ResetData()
+{
+
+}
+
 void Fighter::AttackEnd()
 {
 	m_pImageWQ->setVisible(false);
 	m_pImageWQ->setRotation(0);
 }
 
-void Fighter::ResetData()
+bool Fighter::IsAttacked()
 {
-	m_attackCount = 0;
+	return m_bAttacked;
+}
+
+void Fighter::ResetAttacked()
+{
+	m_bAttacked = false;
 }
