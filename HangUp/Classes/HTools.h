@@ -44,6 +44,16 @@ private:
 	void flowEnd();//飘字结束时的回调（处理）函数，主要用于删除自己	
 };
 
-bool testReadNpc();
+struct ST_FighterAttr
+{
+	int m_hp=100;				//血
+	int m_attck=0;			//攻击
+	int m_defense=0;			//防御
+	int m_dodge=0;			//闪避
+};
+
+ST_FighterAttr GetFighterAttr(int id);
 
 int MakeRandom(int min, int max);
+std::vector<int> MakeRandomIndex1_9(int count);
+std::vector<int> MakeRandomIds(int count,vector<int> ids);

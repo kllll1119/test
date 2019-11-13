@@ -11,7 +11,7 @@ Fighter::Fighter()
 	m_type = ENEMY;
 	m_sp = 3;				//¼¼ÄÜ´¥·¢»ØºÏ
 	m_hp = 300;				//Ñª
-	m_attck = 50;			//¹¥»÷
+	m_attck = 80;			//¹¥»÷
 	m_defense = 50;			//·ÀÓù
 	m_dodge = 10;			//ÉÁ±Ü
 
@@ -29,14 +29,14 @@ Fighter::~Fighter()
 {
 }
 
-Fighter* Fighter::create(FighterType type, int id,int pos)
+Fighter* Fighter::create(FighterType type, int id,int pos9)
 {
 	Fighter* pFighter = new Fighter();
 	if (pFighter)
 	{
 		pFighter->m_type = type;
 		pFighter->m_id = id;
-		pFighter->m_pos = pos;
+		pFighter->m_pos9 = pos9;
 		pFighter->InitPlayer();
 		pFighter->autorelease();
 		pFighter->setAnchorPoint(Vec2(0, 0));
@@ -54,16 +54,24 @@ Fighter* Fighter::create(FighterType type, int id,int pos)
 void Fighter::InitPlayer()
 {
 	//¼ÓÔØÆ¤·ô
-	char playname[20] = { 0 };
-	snprintf(playname, 19, "npc%d.png", m_id);
-	initWithFile(playname);
+	char skinname[20] = { 0 };
+	snprintf(skinname, 19, "npc%d.png", m_id);
+	initWithFile(skinname);
 
 	//¼ÓÔØÎ»ÖÃ
 	Vec2 position = GetPostion9();
 	setPosition(position);
 
 	//¼ÓÔØÊôÐÔ
-	m_curHp = m_hp;
+	ST_FighterAttr attr = GetFighterAttr(m_id);
+	if (attr.m_hp > 0)
+	{
+		m_hp = attr.m_hp;
+		m_attck = attr.m_attck;
+		m_defense = attr.m_defense;
+
+		m_curHp = m_hp;
+	}
 
 	//¼ÓÔØ×°±¸
 	if (m_type == HERO)
@@ -97,7 +105,7 @@ void Fighter::InitPlayer()
 
 	//²âÊÔ¾«Ó¢¹Ö
 	setColor(Color3B(255, 255, 255));
-	if (m_pos == 4)
+	if (m_pos9 == 4)
 		setColor(Color3B(255, 127, 39));
 //  else if (m_pos == 1)
 //  	setColor(Color3B(150,120, 120));
@@ -111,11 +119,11 @@ void Fighter::InitPlayer()
 Vec2 Fighter::GetPostion9()
 {
 	Size visibleSize = Director::getInstance()->getVisibleSize();
-	int xpos = 10 + m_pos%3* PLAY_X_SITANCE;
+	int xpos = 10 + m_pos9 %3* PLAY_X_SITANCE;
 	int ypos = visibleSize.height/2 + 100;
-	if (m_pos >= 3 && m_pos < 6)
+	if (m_pos9/3==1)
 		ypos -= PLAY_Y_SITANCE;
-	else if (m_pos >= 6 && m_pos < 9)
+	else if (m_pos9 / 3 == 2)
 		ypos -= 2 * PLAY_Y_SITANCE;
 	if (m_type == Fighter::HERO)
 	{
@@ -143,18 +151,20 @@ void Fighter::Die()
 	//setColor(Color3B(255, 80, 39));
 	setColor(Color3B(78, 200, 78));
 
-	FadeOut* dieAni = FadeOut::create(2.0f);
+	float dieTime = 1.0f;
+	FadeOut* dieAni = FadeOut::create(dieTime);
 	runAction(dieAni);
 	schedule([&](float dt)
 	{
 		removeFromParent();
-	}, 2.f, 1/*CC_REPEAT_FOREVER*/, 0.0f, "Die");
+	}, dieTime, 1, 0.0f, "Die");//CC_REPEAT_FOREVER
 }
 
 void Fighter::PreAttack(int turn, int& demage, bool& baoji)
 {
+	int attackOffset = MakeRandom(-10, 10);	//¹¥»÷²¨¶¯
 	//ÅÐ¶Ï¹¥»÷ÊôÐÔ
-	demage = m_attck;
+	demage = m_attck + attackOffset;
 
 	//ÅÐ¶Ï¼¼ÄÜÆ®×ÖµÈ
 }
@@ -204,14 +214,17 @@ bool Fighter::OnHurt(int damage, bool baoji)
 		size = 14;
 	}
 
+	int realDamage = damage-m_defense;
+	if (realDamage <= 0)
+		realDamage = 1;
 	char strDamage[20] = { 0 };
-	snprintf(strDamage, 19, "-%d", damage);
+	snprintf(strDamage, 19, "-%d", realDamage);
 	int xOff = MakeRandom(-8, 8);
 	int yOff = MakeRandom(-5, 5);
 	fw.showWord(strDamage, Vec2(m_position.x + xOff + getContentSize().width/2,m_position.y+getContentSize().height-25 + yOff), color, size);
 
 	//ÅÐ¶ÏËÀÍö
-	m_curHp -= damage;
+	m_curHp -= realDamage;
 	float hp_percent = m_curHp/(float)m_hp*100;
 	m_pLifeProgress->setPercentage(hp_percent);
 	if (m_curHp <= 0)

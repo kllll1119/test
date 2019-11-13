@@ -13,7 +13,7 @@ public:
 	Fighter();
 	~Fighter();
 
-	static Fighter* create(FighterType type, int id, int pos);
+	static Fighter* create(FighterType type, int id, int pos9);
 
 	void Alive();
 	void Die();
@@ -50,7 +50,7 @@ public:
 
 	//初始属性
 	int m_id;				//角色id
-	int m_pos;				//角色9宫格id
+	int m_pos9;				//角色9宫格id
 	int m_sp;				//技能触发回合
 	int m_hp;				//血
 	int m_attck;			//攻击

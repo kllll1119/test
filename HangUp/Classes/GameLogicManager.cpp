@@ -22,6 +22,11 @@ GameLogicManager* GameLogicManager::instance()
 	return &s_gameManager;
 }
 
+void GameLogicManager::SetManLayer(CCLayer* layer)
+{
+	m_manLayer = layer;
+}
+
 vector<Fighter*> GameLogicManager::FindAttackSrc(Fighter::FighterType type, int pos9,int skillid)
 { 
 	vector<Fighter*> findFights;
@@ -213,14 +218,20 @@ void GameLogicManager::GameLogic()
 	if (count++ % 30 != 0)	//防止执行太快了...	越0.003一次
 		return;
 
-	if (m_player.size() == 0)
+	if (m_player.size() == 0 || m_enemy.size() == 0)
 	{
-		//CCLOG("failed");	//失败
+		ReloadFighters();
+		return;
 	}
-	else if (m_enemy.size() == 0)
-	{
-		//CCLOG("victory");	//胜利
-	}
+
+// 	if (m_player.size() == 0)
+// 	{
+// 		//CCLOG("failed");	//失败
+// 	}
+// 	else if (m_enemy.size() == 0)
+// 	{
+// 		//CCLOG("victory");	//胜利
+// 	}
 
 	if (gameAct == EM_PLAYER)
 	{
@@ -231,13 +242,13 @@ void GameLogicManager::GameLogic()
 			if (iter->second->IsAttacked() == false)
 			{
 				hasUnAttck = true;
-				int pos9 = iter->second->m_pos;
+				int pos9 = iter->second->m_pos9;
 				bool baoji = false;
 				int damage = 0;
 				iter->second->PreAttack(m_trun,damage, baoji);	//攻击准备
 
 				//寻找他的攻击对象
-				vector<Fighter*> vecSrc = FindAttackSrc(iter->second->m_type, iter->second->m_pos, 0);
+				vector<Fighter*> vecSrc = FindAttackSrc(iter->second->m_type, iter->second->m_pos9, 0);
 				for (int i = 0; i < vecSrc.size(); ++i)
 				{
 					iter->second->Attack();
@@ -265,13 +276,13 @@ void GameLogicManager::GameLogic()
 			if (iter->second->IsAttacked() == false)
 			{
 				hasUnAttck = true;
-				int pos9 = iter->second->m_pos;
+				int pos9 = iter->second->m_pos9;
 				bool baoji = false;
 				int damage = 0;
 				iter->second->PreAttack(m_trun, damage, baoji);	//攻击准备
 
 				//寻找他的攻击对象
-				vector<Fighter*> vecSrc = FindAttackSrc(iter->second->m_type, iter->second->m_pos, 0);
+				vector<Fighter*> vecSrc = FindAttackSrc(iter->second->m_type, iter->second->m_pos9, 0);
 				for (int i = 0; i < vecSrc.size(); ++i)
 				{
 					iter->second->Attack();
@@ -304,21 +315,54 @@ void GameLogicManager::GameLogic()
 		}
 	}
 }
-void GameLogicManager::InitFighter(CCLayer* layer, int statge)
+
+void GameLogicManager::ReloadFighters()
 {
-	layer->addChild(Fighter::create(Fighter::HERO, 1, 1));
-	layer->addChild(Fighter::create(Fighter::HERO, 1, 5));
+	map<int, Fighter*>::iterator iter = m_enemy.begin();	//重置人员攻击状态
+	for (; iter != m_enemy.end(); ++iter)
+	{
+		m_manLayer->removeChild(iter->second);
+	}
+	iter = m_player.begin();
+	for (; iter != m_player.end(); ++iter)
+	{
+		m_manLayer->removeChild(iter->second);
+	}
+	m_enemy.clear();
+	m_player.clear();
+	InitFighter(0);
+}
 
+void GameLogicManager::InitFighter(int statge)
+{
+	m_trun = 0;
+	//加载玩家
+	m_manLayer->addChild(Fighter::create(Fighter::HERO, 1, 1));
+	m_manLayer->addChild(Fighter::create(Fighter::HERO, 1, 3));
+	m_manLayer->addChild(Fighter::create(Fighter::HERO, 1, 5));
+
+	//随机生成怪物
+	vector<int> vecEnemyIds;
+	vecEnemyIds.push_back(2);
+	vecEnemyIds.push_back(3);
+	vecEnemyIds.push_back(4);
+	vecEnemyIds.push_back(5);
+	vector<int> vecRandomIds = MakeRandomIds(5, vecEnemyIds);
+	vector<int> vecRandomPos9 = MakeRandomIndex1_9(5);
+	for (int i=0; i<vecRandomPos9.size(); ++i)
+	{
+		m_manLayer->addChild(Fighter::create(Fighter::ENEMY, vecRandomIds[i], vecRandomPos9[i]));
+	}
 	// 	addChild(Fighter::create(Fighter::ENEMY, 2, 0));
-	layer->addChild(Fighter::create(Fighter::ENEMY, 2, 4));
-	// 	addChild(Fighter::create(Fighter::ENEMY, 2, 2));
-	// 	addChild(Fighter::create(Fighter::ENEMY, 2, 3));
-	// 	addChild(Fighter::create(Fighter::ENEMY, 2, 4));
-	// 	addChild(Fighter::create(Fighter::ENEMY, 2, 5));
-	// 	addChild(Fighter::create(Fighter::ENEMY, 2, 6));
-	// 	addChild(Fighter::create(Fighter::ENEMY, 2, 7));
-
-	layer->addChild(Fighter::create(Fighter::ENEMY, 2, 8));
+// 	layer->addChild(Fighter::create(Fighter::ENEMY, 2, 4));
+// 	// 	addChild(Fighter::create(Fighter::ENEMY, 2, 2));
+// 	// 	addChild(Fighter::create(Fighter::ENEMY, 2, 3));
+// 	// 	addChild(Fighter::create(Fighter::ENEMY, 2, 4));
+// 	// 	addChild(Fighter::create(Fighter::ENEMY, 2, 5));
+// 	// 	addChild(Fighter::create(Fighter::ENEMY, 2, 6));
+// 	// 	addChild(Fighter::create(Fighter::ENEMY, 2, 7));
+// 
+// 	layer->addChild(Fighter::create(Fighter::ENEMY, 2, 8));
 
 	gameAct = EM_PLAYER;
 }
@@ -327,11 +371,11 @@ void GameLogicManager::AddFighter(Fighter* role)
 {
 	if (role->m_type == Fighter::HERO)
 	{
-		m_player.emplace(role->m_pos, role);
+		m_player.emplace(role->m_pos9, role);
 	}
 	else
 	{
-		m_enemy.emplace(role->m_pos, role);
+		m_enemy.emplace(role->m_pos9, role);
 	}
 }
 

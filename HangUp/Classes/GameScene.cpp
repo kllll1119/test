@@ -68,8 +68,8 @@ bool GameScene::init(){
 // 	addChild(testEneme);
 
 //	testReadNpc();
-
-	_theGameManager->InitFighter(this, 0);
+	_theGameManager->SetManLayer(this);
+	_theGameManager->InitFighter(0);
 
 	scheduleUpdate();
 	return true;
