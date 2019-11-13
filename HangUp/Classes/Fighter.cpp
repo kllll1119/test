@@ -62,6 +62,11 @@ void Fighter::InitPlayer()
 	Vec2 position = GetPostion9();
 	setPosition(position);
 
+	//¼ÓÔØÒõÓ°
+	m_pImageShadow = ImageView::create("shadow.png");
+	m_pImageShadow->setPosition(Vec2(getContentSize().width / 2, 0));
+	this->addChild(m_pImageShadow, 0);
+
 	//¼ÓÔØÊôÐÔ
 	ST_FighterAttr attr = GetFighterAttr(m_id);
 	if (attr.m_hp > 0)
@@ -101,6 +106,7 @@ void Fighter::InitPlayer()
 	m_pLifeProgress->setPosition(Vec2(30, 3));
 	m_pLifeProgress->setPercentage(100);
 	m_pLifeBarBK->addChild(m_pLifeProgress, 0, 0);
+	m_pLifeBarBK->setVisible(false);
 	addChild(m_pLifeBarBK);
 
 	//²âÊÔ¾«Ó¢¹Ö
@@ -204,6 +210,13 @@ bool Fighter::OnHurt(int damage, bool baoji)
 	{
 		m_pImageHurt->setVisible(false);
 	}, 0.1f, 1, 0, "hurt");
+
+	m_pLifeBarBK->setVisible(true);
+	unschedule("showlife");
+	schedule([&](float dt)
+	{
+		m_pLifeBarBK->setVisible(false);
+	}, 2.0f, 1, 0, "showlife");
 
 	//ÉËº¦Æ®×ÖµÈ
 	Color3B color = Color3B(255, 255, 255);
