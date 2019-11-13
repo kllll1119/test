@@ -55,7 +55,10 @@ void Fighter::InitPlayer()
 {
 	//加载皮肤
 	char skinname[20] = { 0 };
-	snprintf(skinname, 19, "npc%d.png", m_id);
+	if(m_type==HERO)
+		snprintf(skinname, 19, "player%d.png", m_id);
+	else
+		snprintf(skinname, 19, "npc%d.png", m_id);
 	initWithFile(skinname);
 
 	//加载位置
@@ -68,7 +71,7 @@ void Fighter::InitPlayer()
 	this->addChild(m_pImageShadow, 0);
 
 	//加载属性
-	ST_FighterAttr attr = GetFighterAttr(m_id);
+	ST_FighterAttr attr = GetFighterAttr(m_type,m_id);
 	if (attr.m_hp > 0)
 	{
 		m_hp = attr.m_hp;
@@ -131,10 +134,10 @@ Vec2 Fighter::GetPostion9()
 		ypos -= PLAY_Y_SITANCE;
 	else if (m_pos9 / 3 == 2)
 		ypos -= 2 * PLAY_Y_SITANCE;
-	if (m_type == Fighter::HERO)
+	if (m_type == HERO)
 	{
 		xpos = visibleSize.width - xpos - getContentSize().width;
-		setFlipX(true);
+		//setFlipX(true);
 	}
 	return Vec2(xpos, ypos);
 }

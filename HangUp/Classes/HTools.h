@@ -52,7 +52,9 @@ struct ST_FighterAttr
 	int m_dodge=0;			//иа╠э
 };
 
-ST_FighterAttr GetFighterAttr(int id);
+enum FighterType { HERO = 0, ENEMY = 1 };
+
+ST_FighterAttr GetFighterAttr(FighterType type,int id);
 
 int MakeRandom(int min, int max);
 std::vector<int> MakeRandomIndex1_9(int count);

@@ -7,9 +7,6 @@ USING_NS_CC;
 class Fighter : public Sprite
 {
 public:
-	enum FighterType{ HERO=0, ENEMY=1};
-
-public:
 	Fighter();
 	~Fighter();
 

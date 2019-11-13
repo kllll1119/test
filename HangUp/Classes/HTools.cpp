@@ -50,10 +50,14 @@ void FlowWord::flowEnd() {//动作结束，从父节点中删除自身
 	label->removeFromParentAndCleanup(true);//再删除
 }
 
-ST_FighterAttr GetFighterAttr(int id)
+ST_FighterAttr GetFighterAttr(FighterType type,int id)
 {
 	ST_FighterAttr attr;
-	string json = Tips::GetCHString("npcs");	//读取事件配置逻辑
+	string json;
+	if(type == HERO)
+		json = Tips::GetCHString("players");
+	else
+		json = Tips::GetCHString("npcs");	//读取事件配置逻辑
 	if (json.empty())
 		return attr;
 

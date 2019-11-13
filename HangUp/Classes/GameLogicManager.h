@@ -35,7 +35,7 @@ public:
 
 	void ReloadFighters();
 	
-	vector<Fighter*> FindAttackSrc(Fighter::FighterType type,int pos9,int skillid);
+	vector<Fighter*> FindAttackSrc(FighterType type,int pos9,int skillid);
 
 	void InitFighter(int statge);			//根据场景初始化相关人物
 
