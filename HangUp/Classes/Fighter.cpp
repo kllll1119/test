@@ -57,7 +57,9 @@ void Fighter::InitPlayer()
 		snprintf(skinname, 19, "player%d.png", m_id);
 	else
 		snprintf(skinname, 19, "npc%d.png", m_id);
-	initWithFile(skinname);
+	bool bOK = initWithFile(skinname);
+	if(bOK==false)
+		return;
 
 	//º”‘ÿŒª÷√
 	Vec2 position = GetPostion9();
