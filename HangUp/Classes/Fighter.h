@@ -50,8 +50,11 @@ public:
 	int m_id;				//角色id
 	int m_pos9;				//角色9宫格id
 	int m_sp;				//技能触发回合
-	int m_hp;				//血
-	int m_attck;			//攻击
-	int m_defense;			//防御
-	int m_dodge;			//闪避
+
+	ST_FighterAttr m_attr;	//自身属性
+
+// 	int m_hp;				//血
+// 	int m_attck;			//攻击
+// 	int m_defense;			//防御
+// 	int m_dodge;			//闪避
 };

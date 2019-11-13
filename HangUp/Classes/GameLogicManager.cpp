@@ -233,7 +233,7 @@ void GameLogicManager::GameLogic()
 // 		//CCLOG("victory");	//Ê¤Àû
 // 	}
 
-	if (gameAct == EM_PLAYER)
+	if (gameAct == ACT_PLAYER)
 	{
 		map<int, Fighter*>::iterator iter = m_player.begin();
 		bool hasUnAttck = false;
@@ -265,9 +265,9 @@ void GameLogicManager::GameLogic()
 			}
 		}
 		if(hasUnAttck==false)
-			gameAct = EM_ENEMY;
+			gameAct = ACT_ENEMY;
 	}
-	else if (gameAct == EM_ENEMY)
+	else if (gameAct == ACT_ENEMY)
 	{
 		bool hasUnAttck = false;
 		map<int, Fighter*>::iterator iter = m_enemy.begin();
@@ -311,7 +311,7 @@ void GameLogicManager::GameLogic()
 			{
 				iter->second->ResetAttacked();
 			}
-			gameAct = EM_PLAYER;
+			gameAct = ACT_PLAYER;
 		}
 	}
 }
@@ -355,7 +355,7 @@ void GameLogicManager::InitFighter(int statge)
 		m_manLayer->addChild(Fighter::create(ENEMY, vecRandomIds[i], vecRandomPos9[i]));
 	}
 
-	gameAct = EM_PLAYER;
+	gameAct = ACT_PLAYER;
 }
 
 void GameLogicManager::AddFighter(Fighter* role)

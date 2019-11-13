@@ -4,16 +4,14 @@
 #define PLAY_X_SITANCE 70	//x9¹¬¸ñx¼ä¾à
 #define PLAY_Y_SITANCE 80	//x9¹¬¸ñy¼ä¾à
 
-#define ATTACK_X_POS 5
+#define ATTACK_X_POS 5		//¹¥»÷xÎ»ÒÆ
+
+#define DAMAGE_OFFSET 5		//¹¥»÷²¨¶¯£¨Æ«²î£©
 
 Fighter::Fighter()
 {
 	m_type = ENEMY;
 	m_sp = 3;				//¼¼ÄÜ´¥·¢»ØºÏ
-	m_hp = 300;				//Ñª
-	m_attck = 80;			//¹¥»÷
-	m_defense = 50;			//·ÀÓù
-	m_dodge = 10;			//ÉÁ±Ü
 
 	m_pLifeBarBK=NULL;
 	m_pLifeBar = NULL;
@@ -71,14 +69,10 @@ void Fighter::InitPlayer()
 	this->addChild(m_pImageShadow, 0);
 
 	//¼ÓÔØÊôÐÔ
-	ST_FighterAttr attr = GetFighterAttr(m_type,m_id);
-	if (attr.m_hp > 0)
+	m_attr = GetFighterAttr(m_type,m_id);
+	if (m_attr.m_hp > 0)
 	{
-		m_hp = attr.m_hp;
-		m_attck = attr.m_attck;
-		m_defense = attr.m_defense;
-
-		m_curHp = m_hp;
+		m_curHp = m_attr.m_hp;
 	}
 
 	//¼ÓÔØ×°±¸
@@ -156,6 +150,16 @@ void Fighter::Alive()
 void Fighter::Die()
 {
 	_theGameManager->RemoveFighter(this);
+
+	if (m_type = ENEMY)
+	{
+		//±¬½ð±Ò
+		if (Random0_100() < m_attr.m_bl)
+		{
+			//±¬×°±¸Âß¼­
+		}
+	}
+
 	stopAllActions();
 	//setColor(Color3B(255, 80, 39));
 	setColor(Color3B(78, 200, 78));
@@ -171,9 +175,15 @@ void Fighter::Die()
 
 void Fighter::PreAttack(int turn, int& demage, bool& baoji)
 {
-	int attackOffset = MakeRandom(-10, 10);	//¹¥»÷²¨¶¯
+	int attackOffset = MakeRandom(-DAMAGE_OFFSET, DAMAGE_OFFSET);	//¹¥»÷²¨¶¯
 	//ÅÐ¶Ï¹¥»÷ÊôÐÔ
-	demage = m_attck + attackOffset;
+	demage = m_attr.m_attck + attackOffset;
+	baoji = false;
+	if (Random0_100() < m_attr.m_bj)
+	{
+		baoji = true;
+		//demage *= 1.5;
+	}
 
 	//ÅÐ¶Ï¼¼ÄÜÆ®×ÖµÈ
 }
@@ -207,47 +217,61 @@ bool Fighter::OnHurt(int damage, bool baoji)
 	if (m_curHp <= 0)
 		return false;
 
-	//ÊÜÉË¶¯»­
-	m_pImageHurt->setVisible(true);
-	schedule([&](float dt)
-	{
-		m_pImageHurt->setVisible(false);
-	}, 0.1f, 1, 0, "hurt");
+	int realDamage = damage - m_attr.m_defense;
+	if (realDamage <= 0)
+		realDamage = 1;
 
-	m_pLifeBarBK->setVisible(true);
-	unschedule("showlife");
-	schedule([&](float dt)
+	if (Random0_100() < m_attr.m_dodge)
 	{
-		m_pLifeBarBK->setVisible(false);
-	}, 2.0f, 1, 0, "showlife");
+		realDamage = 0; //ÉÁ±Ü
+	}
+
+	if (realDamage > 0)
+	{
+		//ÊÜÉË¶¯»­
+		m_pImageHurt->setVisible(true);
+		schedule([&](float dt)
+		{
+			m_pImageHurt->setVisible(false);
+		}, 0.1f, 1, 0, "hurt");
+
+		m_pLifeBarBK->setVisible(true);
+		unschedule("showlife");
+		schedule([&](float dt)
+		{
+			m_pLifeBarBK->setVisible(false);
+		}, 2.0f, 1, 0, "showlife");
+	}
 
 	//ÉËº¦Æ®×ÖµÈ
 	Color3B color = Color3B(255, 255, 255);
 	int size = 12;
-	if (baoji)
+	if (baoji && realDamage>0)	//ÊÜµ½±©»÷
 	{
-		color = Color3B(255, 127, 40);
+		realDamage *= 2;
+		color = Color3B(255, 0, 0);
 		size = 14;
 	}
 
-	int realDamage = damage-m_defense;
-	if (realDamage <= 0)
-		realDamage = 1;
-	char strDamage[20] = { 0 };
-	snprintf(strDamage, 19, "-%d", realDamage);
+	char strDamage[20] = {'0',0};
+	if(realDamage>0)
+		snprintf(strDamage, 19, "-%d", realDamage);
 	int xOff = MakeRandom(-8, 8);
 	int yOff = MakeRandom(-5, 5);
 	fw.showWord(strDamage, Vec2(m_position.x + xOff + getContentSize().width/2,m_position.y+getContentSize().height-25 + yOff), color, size);
 
 	//ÅÐ¶ÏËÀÍö
-	m_curHp -= realDamage;
-	float hp_percent = m_curHp/(float)m_hp*100;
-	m_pLifeProgress->setPercentage(hp_percent);
-	if (m_curHp <= 0)
+	if (realDamage > 0)
 	{
-		m_pLifeProgress->setPercentage(0);
-		Die();
-		return true;
+		m_curHp -= realDamage;
+		float hp_percent = m_curHp / (float)m_attr.m_hp * 100;
+		m_pLifeProgress->setPercentage(hp_percent);
+		if (m_curHp <= 0)
+		{
+			m_pLifeProgress->setPercentage(0);
+			Die();
+			return true;
+		}
 	}
 	return false;
 }

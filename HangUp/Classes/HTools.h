@@ -46,10 +46,14 @@ private:
 
 struct ST_FighterAttr
 {
-	int m_hp=100;				//Ñª
-	int m_attck=0;			//¹¥»÷
-	int m_defense=0;			//·ÀÓù
-	int m_dodge=0;			//ÉÁ±Ü
+	string m_name;			//Ãû×Ö
+	int m_hp = 0;			//Ñª
+	int m_attck= 0;			//¹¥»÷
+	int m_defense = 0;		//·ÀÓù
+	int m_bj = 0;			//±©»÷(1-100)
+	int m_dodge=0;			//ÉÁ±Ü(1-100)
+	int m_money = 0;		//½ðÇ®
+	int m_bl = 0;			//±¬ÂÊ(1-100)
 };
 
 enum FighterType { HERO = 0, ENEMY = 1 };
@@ -59,3 +63,10 @@ ST_FighterAttr GetFighterAttr(FighterType type,int id);
 int MakeRandom(int min, int max);
 std::vector<int> MakeRandomIndex1_9(int count);
 std::vector<int> MakeRandomIds(int count,vector<int> ids);
+
+int Random0_100();
+
+#define JsonChkObj(value, strKey) (value.HasMember(strKey)) 
+#define JsonGetString(value, strKey) (JsonChkObj(value, strKey)? value[strKey].GetString() : "")
+#define JsonGetInt(value, strKey) (JsonChkObj(value, strKey)? value[strKey].GetInt() : 0)
+#define JsonGetInt2(value, strKey,val) (JsonChkObj(value, strKey)? value[strKey].GetInt() : val)

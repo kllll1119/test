@@ -75,10 +75,14 @@ ST_FighterAttr GetFighterAttr(FighterType type,int id)
 		{
 			if (id == readdoc[i]["id"].GetInt())
 			{
-				//string name = readdoc[i]["name"].GetString();
-				attr.m_hp = readdoc[i]["hp"].GetInt();
-				attr.m_attck = readdoc[i]["at"].GetInt();
-				attr.m_defense = readdoc[i]["df"].GetInt();
+				attr.m_name = JsonGetString(readdoc[i],"name");
+				attr.m_hp = JsonGetInt(readdoc[i],"hp");
+				attr.m_attck = JsonGetInt(readdoc[i],"at");
+				attr.m_defense = JsonGetInt(readdoc[i],"df");
+				attr.m_bj = JsonGetInt2(readdoc[i], "bj",10);
+				attr.m_dodge = JsonGetInt2(readdoc[i], "dod",5);
+				attr.m_money = JsonGetInt2(readdoc[i], "money",1);
+				attr.m_bl = JsonGetInt2(readdoc[i], "bl",1);
 			}
 		}
 	}
@@ -123,4 +127,9 @@ std::vector<int> MakeRandomIds(int count, vector<int> ids)
 		vec.push_back(ids[a]);
 	}
 	return vec;
+}
+
+int Random0_100()
+{
+	return MakeRandom(0, 100);
 }
