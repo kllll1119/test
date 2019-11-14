@@ -31,16 +31,28 @@ bool GameScene::init(){
 	Vec2 origin = Director::getInstance()->getVisibleOrigin();
 
 	//载入场景
-	ImageView* m_bk = ImageView::create("bk1.png");
-	m_bk->setPosition(Vec2(0, 0));
-	m_bk->setAnchorPoint(Vec2(0, 0));
-	this->addChild(m_bk, 0);
+// 	ImageView* m_bk = ImageView::create("bk1.png");
+// 	m_bk->setPosition(Vec2(0, 0));
+// 	m_bk->setAnchorPoint(Vec2(0, 0));
+// 	this->addChild(m_bk, ZORDER_BK);
 
-	//载入主界面遮挡
+	//场景效果遮罩
+	ImageView* mask1 = ImageView::create("mask.png");
+	mask1->setPosition(Vec2(0, 0));
+	mask1->setAnchorPoint(Vec2(0, 0));
+	mask1->setOpacity(80);
+	this->addChild(mask1, ZORDER_BK_MASK);
+	CCMoveBy* btnmove = CCMoveBy::create(200.0f, Vec2(-visibleSize.width, -visibleSize.height));
+	CCMoveBy* btnmove2 = CCMoveBy::create(0.0f, Vec2(0, visibleSize.height));
+	CCRepeatForever* m_btnAction = CCRepeatForever::create(static_cast<CCSequence *>(CCSequence::create(btnmove, btnmove2,NULL)));
+	mask1->runAction(m_btnAction);
+
+	//载入主界面
 	ImageView* m_bkMan = ImageView::create("bkman.png");
 	m_bkMan->setPosition(Vec2(0, 0));
 	m_bkMan->setAnchorPoint(Vec2(0, 0));
-	this->addChild(m_bkMan, 1);
+	this->addChild(m_bkMan, ZORDER_MAIN);
+
 
 	//载入角色
 // 	addChild(Fighter::create(Fighter::HERO, 1, 0));
@@ -69,7 +81,7 @@ bool GameScene::init(){
 
 //	testReadNpc();
 	_theGameManager->SetManLayer(this);
-	_theGameManager->InitFighter(0);
+	_theGameManager->InitFighter();
 
 	scheduleUpdate();
 	return true;

@@ -16,24 +16,21 @@ USING_NS_CC;
 using namespace ui;
 using namespace std;
 
-#define XML_CH_CFG "hu.xml"
+#define XML_CFG "hu.xml"
+#define XML_STAGE "stage.xml"
 
-#define ZORDER_BOTTOM 0			//底层
-#define ZORDER_BK 1				//背景
-#define ZORDER_DHK 10			//对话框背景
-#define ZORDER_TX 11			//人物头像
-#define ZORDER_WZ 11			//文字
-#define ZORDER_BTN 11			//点击按钮
-#define ZORDER_GETITEM 12		//获得道具
-#define ZORDER_CHOOSE 20		//选择
-#define ZOORDER_MASK 100		//mask
+#define ZORDER_BK 0				//背景
+#define ZORDER_BK_MASK 1		//背景mask
+#define ZORDER_MAIN 2			//主界面
+#define ZORDER_S_FIGHT 10		//人物头像
+
 
 #define UserDefault CCUserDefault::sharedUserDefault()
 
 class Tips : public Node
 {
 public:
-	static string GetCHString(string key);
+	static string GetCHString(string key,string xml= XML_CFG);
 };
 
 class FlowWord : public CCNode {
@@ -58,7 +55,12 @@ struct ST_FighterAttr
 
 enum FighterType { HERO = 0, ENEMY = 1 };
 
-ST_FighterAttr GetFighterAttr(FighterType type,int id);
+ST_FighterAttr GetFighterAttr(FighterType type,int id);	//配置读取属性
+
+std::vector<string> GetEnemys(int stage);	//配置读取怪物
+
+void TSplit(std::vector<string>& vecRet, const string& strSrc, string strSplit);
+	
 
 int MakeRandom(int min, int max);
 std::vector<int> MakeRandomIndex1_9(int count);

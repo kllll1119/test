@@ -1,10 +1,10 @@
 #include "HTools.h"
 
-string Tips::GetCHString(string key)
+string Tips::GetCHString(string key, string xml)
 {
 	try
 	{
-		auto *chnStrings = Dictionary::createWithContentsOfFile(XML_CH_CFG);	//显示中文配置
+		auto *chnStrings = Dictionary::createWithContentsOfFile(xml.c_str());	//显示中文配置
 		if (chnStrings)
 		{
 			String* str = static_cast<String*>(chnStrings->objectForKey(key));
@@ -83,10 +83,80 @@ ST_FighterAttr GetFighterAttr(FighterType type,int id)
 				attr.m_dodge = JsonGetInt2(readdoc[i], "dod",5);
 				attr.m_money = JsonGetInt2(readdoc[i], "money",1);
 				attr.m_bl = JsonGetInt2(readdoc[i], "bl",1);
+				break;
 			}
 		}
 	}
 	return attr;
+}
+
+std::vector<string> GetEnemys(int stage)
+{
+	std::vector<string> vec;
+	string json = Tips::GetCHString("stages", XML_STAGE);
+	if (json.empty())
+		return vec;
+
+	rapidjson::Document readdoc;
+	bool bRet = false;
+	ssize_t size = 0;
+	readdoc.Parse<0>(json.c_str());
+	if (readdoc.HasParseError())
+	{
+		return vec;
+	}
+	string enemys;
+	if (readdoc.IsArray())
+	{
+		for (int i = 0; i < readdoc.Capacity(); i++)
+		{
+			if (stage == readdoc[i]["id"].GetInt())
+			{
+				enemys = JsonGetString(readdoc[i], "enemys");
+				break;
+			}
+		}
+	}
+	std::vector<std::string> des;
+	TSplit(vec, enemys,",");
+	return vec;
+}
+
+void TSplit(std::vector<string>& vecRet, const string& strSrc, string strSplit)
+{
+	vecRet.clear();
+	string strTemp = strSrc;
+	string split = strSplit;
+	int splitSize = split.length();
+	int npos = strTemp.find(strSplit);
+	int nStartPos = 0;
+	if (npos == string::npos)
+	{
+		vecRet.push_back(strTemp);
+	}
+	else
+	{
+		vecRet.push_back(strTemp.substr(0, npos));
+
+		nStartPos = npos + splitSize;
+		strTemp = strTemp.substr(nStartPos);
+		while (npos != string::npos)
+		{
+			npos = strTemp.find(strSplit);
+			if (npos == string::npos)
+			{
+				vecRet.push_back(strTemp);
+			}
+			else
+			{
+				string str = strTemp.substr(0, npos);
+				vecRet.push_back(str);
+
+				nStartPos = npos + splitSize;
+				strTemp = strTemp.substr(nStartPos);
+			}
+		}
+	}
 }
 
 int MakeRandom(int min, int max)

@@ -37,7 +37,7 @@ public:
 	
 	vector<Fighter*> FindAttackSrc(FighterType type,int pos9,int skillid);
 
-	void InitFighter(int statge);			//根据场景初始化相关人物
+	void InitFighter();						//根据场景初始化相关人物
 
 	void AddFighter(Fighter* role);			//添加相关信息
 	void RemoveFighter(Fighter* role);		//删除相关信息
@@ -49,4 +49,10 @@ public:
 	int m_trun = 0;
 	GAME_ACTION gameAct;
 	CCLayer*	m_manLayer;
+
+	ImageView* m_bk;
+
+	int m_curStage;
+	int m_nextStage;
+	bool m_nextBoss;
 };

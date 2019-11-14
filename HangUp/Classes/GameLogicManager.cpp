@@ -9,7 +9,11 @@ ENEMY		PLAYER
 
 GameLogicManager::GameLogicManager()
 {
+	m_bk = NULL;
 	m_trun = 0;
+	m_curStage = 1;
+	m_nextStage = 1;
+	m_nextBoss = false;
 }
 
 GameLogicManager::~GameLogicManager()
@@ -220,6 +224,10 @@ void GameLogicManager::GameLogic()
 
 	if (m_player.size() == 0 || m_enemy.size() == 0)
 	{
+		if(m_curStage==1)
+			m_nextStage = 2;
+		else
+			m_nextStage = 1;
 		ReloadFighters();
 		return;
 	}
@@ -330,29 +338,62 @@ void GameLogicManager::ReloadFighters()
 	}
 	m_enemy.clear();
 	m_player.clear();
-	InitFighter(0);
+	InitFighter();
 }
 
-void GameLogicManager::InitFighter(int statge)
+void GameLogicManager::InitFighter()
 {
+	//加载场景
+	if (m_bk == NULL)
+	{
+		m_curStage = 1;
+		m_bk = ImageView::create("bk1.png");
+		m_bk->setPosition(Vec2(0, 0));
+		m_bk->setAnchorPoint(Vec2(0, 0));
+		m_manLayer->addChild(m_bk, ZORDER_BK);
+	}
+	char skinname[10] = { 0 };
+	int curStage = m_curStage;
+	if (m_nextStage != m_curStage)
+	{
+		curStage = m_nextStage;
+		snprintf(skinname, 9, "bk%d.png", curStage);
+		m_bk->loadTexture(skinname);
+	}
+	m_curStage = curStage;
+	
 	m_trun = 0;
 	//加载玩家
 	m_manLayer->addChild(Fighter::create(HERO, 1, 1));
 	m_manLayer->addChild(Fighter::create(HERO, 1, 3));
 	m_manLayer->addChild(Fighter::create(HERO, 1, 5));
 
-	//随机生成怪物
-	vector<int> vecEnemyIds;
-	vecEnemyIds.push_back(1);
-	vecEnemyIds.push_back(2);
-	vecEnemyIds.push_back(3);
-	vecEnemyIds.push_back(4);
-	vecEnemyIds.push_back(5);
-	vector<int> vecRandomIds = MakeRandomIds(5, vecEnemyIds);
-	vector<int> vecRandomPos9 = MakeRandomIndex1_9(5);
-	for (int i=0; i<vecRandomPos9.size(); ++i)
+	//生成怪物
+	if (m_nextBoss == false)
 	{
-		m_manLayer->addChild(Fighter::create(ENEMY, vecRandomIds[i], vecRandomPos9[i]));
+		std::vector<string> vecDes = GetEnemys(m_curStage);
+		vector<int> vecEnemyIds;
+		for (int i=0; i< vecDes.size(); ++i)
+		{
+			vecEnemyIds.push_back(atoi(vecDes[i].c_str()));
+		}
+		if (vecEnemyIds.size() == 0)
+			return; //加载失败
+// 		vecEnemyIds.push_back(1);
+// 		vecEnemyIds.push_back(2);
+// 		vecEnemyIds.push_back(3);
+// 		vecEnemyIds.push_back(4);
+// 		vecEnemyIds.push_back(5);
+		vector<int> vecRandomIds = MakeRandomIds(5, vecEnemyIds);
+		vector<int> vecRandomPos9 = MakeRandomIndex1_9(5);
+		for (int i = 0; i < vecRandomPos9.size(); ++i)
+		{
+			m_manLayer->addChild(Fighter::create(ENEMY, vecRandomIds[i], vecRandomPos9[i]));
+		}
+	}
+	else
+	{
+		//boss
 	}
 
 	gameAct = ACT_PLAYER;
