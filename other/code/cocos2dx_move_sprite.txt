@@ -1,0 +1,65 @@
+#include "HelloWorldScene.h"
+
+#define MOVESPEED 0.5
+
+USING_NS_CC;
+
+Scene* HelloWorld::createScene()
+{
+    // 'scene' is an autorelease object
+    auto scene = Scene::create();
+
+    // 'layer' is an autorelease object
+    auto layer = HelloWorld::create();
+
+    // add layer as a child to scene
+    scene->addChild(layer);
+
+    // return the scene
+    return scene;
+}
+
+// on "init" you need to initialize your instance
+bool HelloWorld::init()
+{
+    //////////////////////////////
+    // 1. super init first
+    if ( !Layer::init() )
+    {
+        return false;
+    }
+
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+    Vec2 origin = Director::getInstance()->getVisibleOrigin();
+
+    sprite = Sprite::create("CloseNormal.png");
+    sprite->setPosition(visibleSize.width / 2, visibleSize.height / 2);
+    this->addChild(sprite);
+    currentPoint = sprite->getPosition();
+
+    auto listener = EventListenerTouchOneByOne::create();
+    listener->onTouchBegan = CC_CALLBACK_2(HelloWorld::onTouchBegan, this);
+    listener->onTouchMoved = CC_CALLBACK_2(HelloWorld::onTouchMoved, this);
+    _eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+
+    this->schedule(schedule_selector(HelloWorld::updatePoint));
+    return true;
+}
+
+void HelloWorld::updatePoint(float dt) {
+    sprite->setPosition(sprite->getPosition() + (currentPoint - sprite->getPosition())*MOVESPEED);
+}
+
+bool HelloWorld::onTouchBegan(Touch* touch, Event* event) {
+    auto touchLocation = touch->getLocation();
+    if (sprite->getBoundingBox().containsPoint(touchLocation)) {
+        currentPoint = touchLocation;
+    }
+    return true;
+}
+
+void HelloWorld::onTouchMoved(Touch* touch, Event* event) {
+    auto touchLocation = touch->getLocation();
+//  sprite->setPosition(sprite->getPosition() + touchLocation - currentPoint);
+    currentPoint = touchLocation;
+}
