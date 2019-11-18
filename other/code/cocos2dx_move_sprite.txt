@@ -1,5 +1,4 @@
-#include "HelloWorldScene.h"
-
+//????
 #define MOVESPEED 0.5
 
 USING_NS_CC;
@@ -62,4 +61,70 @@ void HelloWorld::onTouchMoved(Touch* touch, Event* event) {
     auto touchLocation = touch->getLocation();
 //  sprite->setPosition(sprite->getPosition() + touchLocation - currentPoint);
     currentPoint = touchLocation;
+}
+
+////////////////////////////////////////////////
+//µØÍ¼move
+
+spriteMove = Sprite::create("bk2.png");
+	//spriteMove->setPosition(visibleSize.width / 2, visibleSize.height / 2);
+
+	Sprite* sp1 = Sprite::create("1.png");
+	sp1->setPosition(100, 100);
+	spriteMove->addChild(sp1);
+
+	spriteMove->setAnchorPoint(CCPointZero);
+
+	this->addChild(spriteMove);
+	currentPoint = spriteMove->getPosition();
+	CCLOG("x:%.3f,y:%3f", currentPoint.x, currentPoint.y);
+	auto listener = EventListenerTouchOneByOne::create();
+	listener->onTouchBegan = CC_CALLBACK_2(GameScene::onTouchBegan, this);
+	listener->onTouchMoved = CC_CALLBACK_2(GameScene::onTouchMoved, this);
+	_eventDispatcher->addEventListenerWithSceneGraphPriority(listener, this);
+
+
+bool GameScene::onTouchBegan(Touch* touch, Event* event) {
+	auto touchLocation = touch->getLocation();
+	if (spriteMove->getBoundingBox().containsPoint(touchLocation)) {
+		currentPoint = touchLocation;
+	}
+	return true;
+}
+
+void GameScene::onTouchMoved(Touch* touch, Event* event) {
+	auto posS = spriteMove->getPosition();
+	auto touchLocation = touch->getLocation();
+	auto movePoint = touchLocation - currentPoint;
+	currentPoint = touchLocation;
+	CCLOG("x:%.3f,y:%3f", posS.x, posS.y);
+	if ((posS.y >= 0 && movePoint.y>0))
+	{
+		posS.y = 0;
+		spriteMove->setPosition(posS);
+		return;
+	}
+	Size visibleSize = Director::getInstance()->getVisibleSize();
+	if ((posS.y <= -(spriteMove->getContentSize().height- visibleSize.height) && movePoint.y < 0))
+	{
+ 		posS.y = -(spriteMove->getContentSize().height - visibleSize.height);
+ 		spriteMove->setPosition(posS);
+		return;
+	}
+
+	if (posS.x >= 0 && movePoint.x > 0)
+	{
+		posS.x = 0;
+		spriteMove->setPosition(posS);
+		return;
+	}
+	if (posS.x <= -(spriteMove->getContentSize().width - visibleSize.width) && movePoint.x < 0)
+	{
+		posS.x = -(spriteMove->getContentSize().width - visibleSize.width);
+		spriteMove->setPosition(posS);
+		return;
+	}
+
+	spriteMove->setPosition(spriteMove->getPosition() + movePoint);
+	/*currentPoint = touchLocation;*/
 }
