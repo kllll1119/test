@@ -2,7 +2,9 @@
 #include "GameLogicManager.h"
 
 #define PLAY_X_SITANCE 70	//x9宫格x间距
-#define PLAY_Y_SITANCE 80	//x9宫格y间距
+#define PLAY_Y_SITANCE 70	//x9宫格y间距
+#define PLAY_Y_SITANCE_OFF 5 //中间怪物y间距
+
 
 #define ATTACK_X_POS 5		//攻击x位移
 
@@ -66,9 +68,9 @@ void Fighter::InitPlayer()
 	setPosition(position);
 
 	//加载阴影
-	m_pImageShadow = ImageView::create("shadow.png");
-	m_pImageShadow->setPosition(Vec2(getContentSize().width / 2, 0));
-	this->addChild(m_pImageShadow, 0);
+// 	m_pImageShadow = ImageView::create("shadow.png");
+// 	m_pImageShadow->setPosition(Vec2(getContentSize().width / 2, 0));
+// 	this->addChild(m_pImageShadow, 0);
 
 	//加载属性
 	m_attr = GetFighterAttr(m_type,m_id);
@@ -125,7 +127,7 @@ Vec2 Fighter::GetPostion9()
 {
 	Size visibleSize = Director::getInstance()->getVisibleSize();
 	int xpos = 10 + m_pos9 %3* PLAY_X_SITANCE;
-	int ypos = visibleSize.height/2 + 100;
+	int ypos = visibleSize.height-250;
 	if (m_pos9/3==1)
 		ypos -= PLAY_Y_SITANCE;
 	else if (m_pos9 / 3 == 2)
@@ -135,15 +137,21 @@ Vec2 Fighter::GetPostion9()
 		xpos = visibleSize.width - xpos - getContentSize().width;
 		//setFlipX(true);
 	}
+
+	if (m_pos9 == 1 || m_pos9 == 4 || m_pos9 == 7)
+	{
+		ypos += PLAY_Y_SITANCE_OFF;
+	}
+
 	return Vec2(xpos, ypos);
 }
 
 void Fighter::Alive()
 {
-	CCScaleTo* btnmove = ScaleTo::create(2.f, 1.0f, 0.95f);
-	CCScaleTo* btnmove2 = ScaleTo::create(2.f, 1.0f, 1.0f);
+	CCScaleTo* btnmove = ScaleTo::create(3.f, 1.0f, 0.95f);
+	CCScaleTo* btnmove2 = ScaleTo::create(3.f, 1.0f, 1.0f);
 
-	float freetime = MakeRandom(10, 30) / 10.f;
+	float freetime = MakeRandom(20, 30) / 10.f;
 	CCScaleTo* btnmove3 = ScaleTo::create(freetime, 1.0f, 1.0f);
 	CCRepeatForever* m_btnAction = CCRepeatForever::create(static_cast<CCSequence *>(CCSequence::create(btnmove, btnmove2, btnmove3, NULL)));	//循环动作
 	runAction(m_btnAction);
