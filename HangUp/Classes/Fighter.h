@@ -15,7 +15,7 @@ public:
 	void Alive();
 	void Die();
 
-	void PreAttack(int turn,int& demage, bool& baoji);	//准备攻击，返回出相关的攻击属性
+	ST_FighterSkill PreAttack(int turn,int& demage, bool& baoji);	//准备攻击，返回出相关的攻击属性
 	void Attack();								//攻击动画
 	bool OnHurt(int damage, bool baoji);	//受伤,返回击杀
 

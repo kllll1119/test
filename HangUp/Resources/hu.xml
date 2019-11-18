@@ -1,15 +1,16 @@
 ﻿<dict>
 <key>players</key>
 <string>[
-{"id":1,"name":"p1","hp":200,"at":110,"df":80,"bj":20,"dod":10}
+{"id":1,"name":"p1","hp":200,"at":110,"df":80,"bj":20,"dod":10,"skill":[{"lv":1,"name":"横扫千军","at":150,"area":"vec","turn":2}]}
 ]</string>
 
 <key>npcs</key>
 <string>[
-{"id":1,"hp":200,"at":108,"df":50,"money":10,"bj":20,"bl":2},
+{"id":1,"hp":200,"at":108,"df":50,"money":10,"bj":20,"bl":2,"skill":[{"name":"风之吹息","at":1,"area":"all","turn":1}]},
 {"id":2,"hp":300,"at":112,"df":60,"money":12},
 {"id":3,"hp":100,"at":82,"df":60,"money":13},
 {"id":4,"hp":200,"at":132,"df":60,"money":20},
 {"id":5,"hp":200,"at":122,"df":55,"money":20}
 ]</string>
+
 </dict>

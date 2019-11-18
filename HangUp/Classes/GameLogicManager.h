@@ -9,7 +9,7 @@ USING_NS_CC;
 
 enum GAME_ACTION
 {
-	ACT_NULL,
+	ACT_LOAD_DATA,
 	ACT_PLAYER,
 	ACT_ENEMY,
 };
@@ -35,7 +35,7 @@ public:
 
 	void ReloadFighters();
 	
-	vector<Fighter*> FindAttackSrc(FighterType type,int pos9,int skillid);
+	vector<Fighter*> FindAttackSrc(FighterType type,int pos9, ST_FighterSkill skill);
 
 	void InitFighter();						//根据场景初始化相关人物
 
@@ -46,8 +46,11 @@ public:
 	map<int,Fighter*> m_player;	//pos-Fighter
 	map<int,Fighter*> m_enemy;
 
-	int m_trun = 0;
-	GAME_ACTION gameAct;
+	int m_atack_count;		//攻击行动计数
+	int m_trun;				//回合计数
+	bool loading;
+
+	GAME_ACTION m_gameAct;
 	CCLayer*	m_manLayer;
 
 	ImageView* m_bk;

@@ -41,23 +41,46 @@ private:
 	void flowEnd();//飘字结束时的回调（处理）函数，主要用于删除自己	
 };
 
+enum SkillArea
+{
+	EM_NOMAL,	//单体
+	EM_HOR,		//横
+	EM_VEC,		//竖
+	EM_ALL,		//全体
+};
+
+struct ST_FighterSkill
+{
+	ST_FighterSkill()
+	{
+		at = 0;
+	}
+	string skillName;	//技能名称
+	SkillArea area;		//攻击区域
+	int at;				//攻击率%
+	int lv;				//要求等级
+	int turn;			//触发回合
+};
+
 struct ST_FighterAttr
 {
-	string m_name;			//名字
-	int m_hp = 0;			//血
-	int m_attck= 0;			//攻击
-	int m_defense = 0;		//防御
-	int m_bj = 0;			//暴击(1-100)
-	int m_dodge=0;			//闪避(1-100)
-	int m_money = 0;		//金钱
-	int m_bl = 0;			//爆率(1-100)
+	string m_name;						//名字
+	int m_hp = 0;						//血
+	int m_attck= 0;						//攻击
+	int m_defense = 0;					//防御
+	int m_bj = 0;						//暴击(1-100)
+	int m_dodge=0;						//闪避(1-100)
+	int m_money = 0;					//金钱
+	int m_bl = 0;						//爆率(1-100)
+	vector<ST_FighterSkill> vecSkill;	//
 };
 
 enum FighterType { HERO = 0, ENEMY = 1 };
 
 ST_FighterAttr GetFighterAttr(FighterType type,int id);	//配置读取属性
 
-std::vector<string> GetEnemys(int stage);	//配置读取怪物
+std::vector<string> GetEnemys(int stage);		//配置读取怪物
+std::vector<string> GetEnemysBoss(int stage);	//配置读取怪物boss
 
 void TSplit(std::vector<string>& vecRet, const string& strSrc, string strSplit);
 	

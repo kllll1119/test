@@ -81,7 +81,7 @@ bool GameScene::init(){
 
 //	testReadNpc();
 	_theGameManager->SetManLayer(this);
-	_theGameManager->InitFighter();
+//	_theGameManager->InitFighter();
 
 	scheduleUpdate();
 	return true;

@@ -109,9 +109,9 @@ void Fighter::InitPlayer()
 	addChild(m_pLifeBarBK);
 
 	//²âÊÔ¾«Ó¢¹Ö
-	setColor(Color3B(255, 255, 255));
-	if (m_pos9 == 4)
-		setColor(Color3B(255, 127, 39));
+// 	setColor(Color3B(255, 255, 255));
+// 	if (m_pos9 == 4)
+// 		setColor(Color3B(255, 127, 39));
 //  else if (m_pos == 1)
 //  	setColor(Color3B(150,120, 120));
 
@@ -175,7 +175,7 @@ void Fighter::Die()
 	}, dieTime, 1, 0.0f, "Die");//CC_REPEAT_FOREVER
 }
 
-void Fighter::PreAttack(int turn, int& demage, bool& baoji)
+ST_FighterSkill Fighter::PreAttack(int turn, int& demage, bool& baoji)
 {
 	int attackOffset = MakeRandom(-DAMAGE_OFFSET, DAMAGE_OFFSET);	//¹¥»÷²¨¶¯
 	//ÅÐ¶Ï¹¥»÷ÊôÐÔ
@@ -188,6 +188,16 @@ void Fighter::PreAttack(int turn, int& demage, bool& baoji)
 	}
 
 	//ÅÐ¶Ï¼¼ÄÜÆ®×ÖµÈ
+	ST_FighterSkill sk;
+	for (int i=0; turn > 0 &&  i< m_attr.vecSkill.size(); ++i)
+	{
+		if (m_attr.vecSkill[i].turn>0 && turn % m_attr.vecSkill[i].turn == 0)
+		{
+			fw.showWord(m_attr.vecSkill[i].skillName.c_str(), Vec2(m_position.x + getContentSize().width / 2, m_position.y + getContentSize().height - 10), Color3B(255, 0, 0), 18);
+			return m_attr.vecSkill[i];
+		}
+	}
+	return sk;
 }
 
 void Fighter::Attack()

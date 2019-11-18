@@ -10,10 +10,11 @@ ENEMY		PLAYER
 GameLogicManager::GameLogicManager()
 {
 	m_bk = NULL;
-	m_trun = 0;
+	m_trun = 1;
 	m_curStage = 1;
 	m_nextStage = 1;
 	m_nextBoss = false;
+	loading = false;
 }
 
 GameLogicManager::~GameLogicManager()
@@ -29,9 +30,11 @@ GameLogicManager* GameLogicManager::instance()
 void GameLogicManager::SetManLayer(CCLayer* layer)
 {
 	m_manLayer = layer;
+
+	m_gameAct = ACT_LOAD_DATA;
 }
 
-vector<Fighter*> GameLogicManager::FindAttackSrc(FighterType type, int pos9,int skillid)
+vector<Fighter*> GameLogicManager::FindAttackSrc(FighterType type, int pos9, ST_FighterSkill skill)
 { 
 	vector<Fighter*> findFights;
 
@@ -41,10 +44,99 @@ vector<Fighter*> GameLogicManager::FindAttackSrc(FighterType type, int pos9,int 
 	else if (pos9 / 3 == 2)
 		findPos = POS_BUTTOM;
 
-	//技能查询
+	map<int, Fighter*> *attackMap = &m_enemy;	//攻击对象
+	if (type == ENEMY)
+	{
+		attackMap = &m_player;
+	}
 
-	//普通查询
-	Fighter* findFight = NULL;
+	int findAttackSrc = -1;	//攻击主目标
+	{
+		if (findPos == POS_TOP)
+		{
+			for (int i = 2; i >= 0; --i)
+			{
+				if ((*attackMap).find(i) != (*attackMap).end())
+				{
+					findAttackSrc = i;
+					break;
+				}
+			}
+			for (int i = 5; findAttackSrc == -1 && i >= 3; --i)
+			{
+				if ((*attackMap).find(i) != (*attackMap).end())
+				{
+					findAttackSrc = i;
+					break;
+				}
+			}
+			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
+			{
+				if ((*attackMap).find(i) != (*attackMap).end())
+				{
+					findAttackSrc = i;
+					break;
+				}
+			}
+		}
+		else if (findPos == POS_CENTER)
+		{
+			for (int i = 5; findAttackSrc == -1 && i >= 3; --i)
+			{
+				if ((*attackMap).find(i) != (*attackMap).end())
+				{
+					findAttackSrc = i;
+					break;
+				}
+			}
+			for (int i = 2; findAttackSrc == -1 && i >= 0; --i)
+			{
+				if ((*attackMap).find(i) != (*attackMap).end())
+				{
+					findAttackSrc = i;
+					break;
+				}
+			}
+			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
+			{
+				if ((*attackMap).find(i) != (*attackMap).end())
+				{
+					findAttackSrc = i;
+					break;
+				}
+			}
+		}
+		else
+		{
+			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
+			{
+				if ((*attackMap).find(i) != (*attackMap).end())
+				{
+					findAttackSrc = i;
+					break;
+				}
+			}
+			for (int i = 2; findAttackSrc == -1 && i >= 0; --i)
+			{
+				if ((*attackMap).find(i) != (*attackMap).end())
+				{
+					findAttackSrc = i;
+					break;
+				}
+			}
+			for (int i = 5; findAttackSrc == -1 && i >= 3; --i)
+			{
+				if ((*attackMap).find(i) != (*attackMap).end())
+				{
+					findAttackSrc = i;
+					break;
+				}
+			}
+		}
+	}
+
+	//普通攻击
+/*	Fighter* findFight = NULL;
 	if (type == HERO)
 	{
 		if (findPos == POS_TOP)
@@ -53,78 +145,96 @@ vector<Fighter*> GameLogicManager::FindAttackSrc(FighterType type, int pos9,int 
 			{
 				if (m_enemy.find(i) != m_enemy.end())
 				{
-					findFights.push_back(m_enemy[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_enemy[i]);
+// 					return findFights;
+					break;
 				}
 			}
-			for (int i = 5; i >= 3; --i)
+			for (int i = 5; findAttackSrc==-1 && i >= 3; --i)
 			{
 				if (m_enemy.find(i) != m_enemy.end())
 				{
-					findFights.push_back(m_enemy[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_enemy[i]);
+// 					return findFights;
+					break;
 				}
 			}
-			for (int i = 8; i >= 6; --i)
+			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
 			{
 				if (m_enemy.find(i) != m_enemy.end())
 				{
-					findFights.push_back(m_enemy[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_enemy[i]);
+// 					return findFights;
+					break;
 				}
 			}
 		}
 		else if (findPos == POS_CENTER)
 		{
-			for (int i = 5; i >= 3; --i)
+			for (int i = 5; findAttackSrc == -1 && i >= 3; --i)
 			{
 				if (m_enemy.find(i) != m_enemy.end())
 				{
-					findFights.push_back(m_enemy[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_enemy[i]);
+// 					return findFights;
+					break;
 				}
 			}
-			for (int i = 2; i >= 0; --i)
+			for (int i = 2; findAttackSrc == -1 && i >= 0; --i)
 			{
 				if (m_enemy.find(i) != m_enemy.end())
 				{
-					findFights.push_back(m_enemy[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_enemy[i]);
+// 					return findFights;
+					break;
 				}
 			}
-			for (int i = 8; i >= 6; --i)
+			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
 			{
 				if (m_enemy.find(i) != m_enemy.end())
 				{
-					findFights.push_back(m_enemy[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_enemy[i]);
+// 					return findFights;
+					break;
 				}
 			}
 		}
 		else
 		{
-			for (int i = 8; i >= 6; --i)
+			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
 			{
 				if (m_enemy.find(i) != m_enemy.end())
 				{
-					findFights.push_back(m_enemy[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_enemy[i]);
+// 					return findFights;
+					break;
 				}
 			}
-			for (int i = 2; i >= 0; --i)
+			for (int i = 2; findAttackSrc == -1 && i >= 0; --i)
 			{
 				if (m_enemy.find(i) != m_enemy.end())
 				{
-					findFights.push_back(m_enemy[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_enemy[i]);
+// 					return findFights;
+					break;
 				}
 			}
-			for (int i = 5; i >= 3; --i)
+			for (int i = 5; findAttackSrc == -1 && i >= 3; --i)
 			{
 				if (m_enemy.find(i) != m_enemy.end())
 				{
-					findFights.push_back(m_enemy[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_enemy[i]);
+// 					return findFights;
+					break;
 				}
 			}
 		}
@@ -133,86 +243,152 @@ vector<Fighter*> GameLogicManager::FindAttackSrc(FighterType type, int pos9,int 
 	{
 		if (findPos == POS_TOP)
 		{
-			for (int i = 2; i >= 0; --i)
+			for (int i = 2; findAttackSrc == -1 && i >= 0; --i)
 			{
 				if (m_player.find(i) != m_player.end())
 				{
-					findFights.push_back(m_player[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_player[i]);
+// 					return findFights;
+					break;
 				}
 			}
-			for (int i = 5; i >= 3; --i)
+			for (int i = 5; findAttackSrc == -1 && i >= 3; --i)
 			{
 				if (m_player.find(i) != m_player.end())
 				{
-					findFights.push_back(m_player[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_player[i]);
+// 					return findFights;
+					break;
 				}
 			}
-			for (int i = 8; i >= 6; --i)
+			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
 			{
 				if (m_player.find(i) != m_player.end())
 				{
-					findFights.push_back(m_player[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_player[i]);
+// 					return findFights;
+					break;
 				}
 			}
 		}
 		else if (findPos == POS_CENTER)
 		{
-			for (int i = 5; i >= 3; --i)
+			for (int i = 5; findAttackSrc == -1 && i >= 3; --i)
 			{
 				if (m_player.find(i) != m_player.end())
 				{
-					findFights.push_back(m_player[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_player[i]);
+// 					return findFights;
+					break;
 				}
 			}
-			for (int i = 2; i >= 0; --i)
+			for (int i = 2; findAttackSrc == -1 && i >= 0; --i)
 			{
 				if (m_player.find(i) != m_player.end())
 				{
-					findFights.push_back(m_player[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_player[i]);
+// 					return findFights;
+					break;
 				}
 			}
-			for (int i = 8; i >= 6; --i)
+			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
 			{
 				if (m_player.find(i) != m_player.end())
 				{
-					findFights.push_back(m_player[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_player[i]);
+// 					return findFights;
+					break;
 				}
 			}
 		}
 		else
 		{
-			for (int i = 8; i >= 6; --i)
+			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
 			{
 				if (m_player.find(i) != m_player.end())
 				{
-					findFights.push_back(m_player[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_player[i]);
+// 					return findFights;
+					break;
 				}
 			}
-			for (int i = 2; i >= 0; --i)
+			for (int i = 2; findAttackSrc == -1 && i >= 0; --i)
 			{
 				if (m_player.find(i) != m_player.end())
 				{
-					findFights.push_back(m_player[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_player[i]);
+// 					return findFights;
+					break;
 				}
 			}
-			for (int i = 5; i >= 3; --i)
+			for (int i = 5; findAttackSrc == -1 && i >= 3; --i)
 			{
 				if (m_player.find(i) != m_player.end())
 				{
-					findFights.push_back(m_player[i]);
-					return findFights;
+					findAttackSrc = i;
+// 					findFights.push_back(m_player[i]);
+// 					return findFights;
+					break;
 				}
 			}
 		}
 	}
+*/
+	//技能攻击
+	if(skill.at>0 && findAttackSrc != -1)
+	{
+		if (skill.area == EM_VEC)
+		{
+			if (findAttackSrc / 3 == 0)
+			{
+				if((*attackMap).find(findAttackSrc)!= (*attackMap).end())
+					findFights.push_back((*attackMap)[findAttackSrc]);
+				if ((*attackMap).find(findAttackSrc + 3) != (*attackMap).end())
+					findFights.push_back((*attackMap)[findAttackSrc+3]);
+				if ((*attackMap).find(findAttackSrc + 6) != (*attackMap).end())
+					findFights.push_back((*attackMap)[findAttackSrc+6]);
+			}
+			else if (findAttackSrc / 3 == 1)
+			{
+				if ((*attackMap).find(findAttackSrc-3) != (*attackMap).end())
+					findFights.push_back((*attackMap)[findAttackSrc -3]);
+				if ((*attackMap).find(findAttackSrc) != (*attackMap).end())
+					findFights.push_back((*attackMap)[findAttackSrc]);
+				if ((*attackMap).find(findAttackSrc+3) != (*attackMap).end())
+					findFights.push_back((*attackMap)[findAttackSrc + 3]);
+			}
+			else
+			{
+				if ((*attackMap).find(findAttackSrc-6) != (*attackMap).end())
+					findFights.push_back((*attackMap)[findAttackSrc -6]);
+				if ((*attackMap).find(findAttackSrc-3) != (*attackMap).end())
+					findFights.push_back((*attackMap)[findAttackSrc -3]);
+				if ((*attackMap).find(findAttackSrc) != (*attackMap).end())
+					findFights.push_back((*attackMap)[findAttackSrc]);
+			}
+		}
+		else if (skill.area == EM_ALL)
+		{
+			map<int, Fighter*>::iterator iter = (*attackMap).begin();
+			for (; iter!= (*attackMap).end(); ++iter)
+			{
+				findFights.push_back(iter->second);
+			}
+		}
+	}
+	else
+	{
+		findFights.push_back((*attackMap)[findAttackSrc]);
+	}
+
 	return findFights;
 }
 
@@ -221,16 +397,33 @@ void GameLogicManager::GameLogic()
 	static int count = 0;
 	if (count++ % 30 != 0)	//防止执行太快了...	越0.003一次
 		return;
+	
+	if (m_gameAct == ACT_LOAD_DATA && loading==false)
+	{
+		loading = true;
+		//初始化
 
-	if (m_player.size() == 0 || m_enemy.size() == 0)
+		//结算
+		CCLOG("turn:%d,atack_count:%d", m_trun, m_atack_count);
+
+		//结算完成
+		ReloadFighters();
+		m_gameAct = ACT_PLAYER;
+		return;
+	}
+
+	loading = false;
+	if (m_player.size() == 0 || m_enemy.size() == 0)	//胜利、失败
 	{
 		if(m_curStage==1)
 			m_nextStage = 2;
 		else
 			m_nextStage = 1;
-		ReloadFighters();
+		m_gameAct = ACT_LOAD_DATA;
 		return;
 	}
+
+	++m_atack_count;
 
 // 	if (m_player.size() == 0)
 // 	{
@@ -241,7 +434,7 @@ void GameLogicManager::GameLogic()
 // 		//CCLOG("victory");	//胜利
 // 	}
 
-	if (gameAct == ACT_PLAYER)
+	if (m_gameAct == ACT_PLAYER)
 	{
 		map<int, Fighter*>::iterator iter = m_player.begin();
 		bool hasUnAttck = false;
@@ -253,10 +446,10 @@ void GameLogicManager::GameLogic()
 				int pos9 = iter->second->m_pos9;
 				bool baoji = false;
 				int damage = 0;
-				iter->second->PreAttack(m_trun,damage, baoji);	//攻击准备
+				ST_FighterSkill sk = iter->second->PreAttack(m_trun,damage, baoji);	//攻击准备
 
 				//寻找他的攻击对象
-				vector<Fighter*> vecSrc = FindAttackSrc(iter->second->m_type, iter->second->m_pos9, 0);
+				vector<Fighter*> vecSrc = FindAttackSrc(iter->second->m_type, iter->second->m_pos9, sk);
 				for (int i = 0; i < vecSrc.size(); ++i)
 				{
 					iter->second->Attack();
@@ -273,9 +466,9 @@ void GameLogicManager::GameLogic()
 			}
 		}
 		if(hasUnAttck==false)
-			gameAct = ACT_ENEMY;
+			m_gameAct = ACT_ENEMY;
 	}
-	else if (gameAct == ACT_ENEMY)
+	else if (m_gameAct == ACT_ENEMY)
 	{
 		bool hasUnAttck = false;
 		map<int, Fighter*>::iterator iter = m_enemy.begin();
@@ -287,10 +480,10 @@ void GameLogicManager::GameLogic()
 				int pos9 = iter->second->m_pos9;
 				bool baoji = false;
 				int damage = 0;
-				iter->second->PreAttack(m_trun, damage, baoji);	//攻击准备
+				ST_FighterSkill sk = iter->second->PreAttack(m_trun, damage, baoji);	//攻击准备
 
 				//寻找他的攻击对象
-				vector<Fighter*> vecSrc = FindAttackSrc(iter->second->m_type, iter->second->m_pos9, 0);
+				vector<Fighter*> vecSrc = FindAttackSrc(iter->second->m_type, iter->second->m_pos9, sk);
 				for (int i = 0; i < vecSrc.size(); ++i)
 				{
 					iter->second->Attack();
@@ -319,7 +512,7 @@ void GameLogicManager::GameLogic()
 			{
 				iter->second->ResetAttacked();
 			}
-			gameAct = ACT_PLAYER;
+			m_gameAct = ACT_PLAYER;
 		}
 	}
 }
@@ -362,7 +555,7 @@ void GameLogicManager::InitFighter()
 	}
 	m_curStage = curStage;
 	
-	m_trun = 0;
+	m_trun = 1;
 	//加载玩家
 	m_manLayer->addChild(Fighter::create(HERO, 1, 1));
 	m_manLayer->addChild(Fighter::create(HERO, 1, 3));
@@ -394,9 +587,15 @@ void GameLogicManager::InitFighter()
 	else
 	{
 		//boss
+		std::vector<string> vecDes = GetEnemysBoss(m_curStage);
+		for (int i = 0; i < vecDes.size(); ++i)
+		{
+			int id = atoi(vecDes[i].c_str());
+			if(id>0)
+				m_manLayer->addChild(Fighter::create(ENEMY, id,i));
+		}
 	}
-
-	gameAct = ACT_PLAYER;
+	m_gameAct = ACT_PLAYER;
 }
 
 void GameLogicManager::AddFighter(Fighter* role)

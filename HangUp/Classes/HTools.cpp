@@ -83,6 +83,25 @@ ST_FighterAttr GetFighterAttr(FighterType type,int id)
 				attr.m_dodge = JsonGetInt2(readdoc[i], "dod",5);
 				attr.m_money = JsonGetInt2(readdoc[i], "money",1);
 				attr.m_bl = JsonGetInt2(readdoc[i], "bl",1);
+
+				if(readdoc[i].HasMember("skill") && readdoc[i]["skill"].IsArray())
+					for (int j = 0; j < readdoc[i]["skill"].Capacity(); j++)
+					{
+						ST_FighterSkill sk;
+						sk.skillName = JsonGetString(readdoc[i]["skill"][j], "name");
+						sk.lv = JsonGetInt(readdoc[i]["skill"][j], "lv");
+						sk.at = JsonGetInt(readdoc[i]["skill"][j], "at");
+						sk.turn = JsonGetInt(readdoc[i]["skill"][j], "turn");
+						string ar = JsonGetString(readdoc[i]["skill"][j], "area");
+						sk.area = EM_NOMAL;
+						if (ar == "hor")
+							sk.area = EM_HOR;
+						else if (ar == "vec")
+							sk.area = EM_VEC;
+						else if (ar == "all")
+							sk.area = EM_ALL;
+						attr.vecSkill.push_back(sk);
+					}
 				break;
 			}
 		}
@@ -119,6 +138,38 @@ std::vector<string> GetEnemys(int stage)
 	}
 	std::vector<std::string> des;
 	TSplit(vec, enemys,",");
+	return vec;
+}
+
+std::vector<std::string> GetEnemysBoss(int stage)
+{
+	std::vector<string> vec;
+	string json = Tips::GetCHString("stages", XML_STAGE);
+	if (json.empty())
+		return vec;
+
+	rapidjson::Document readdoc;
+	bool bRet = false;
+	ssize_t size = 0;
+	readdoc.Parse<0>(json.c_str());
+	if (readdoc.HasParseError())
+	{
+		return vec;
+	}
+	string enemys;
+	if (readdoc.IsArray())
+	{
+		for (int i = 0; i < readdoc.Capacity(); i++)
+		{
+			if (stage == readdoc[i]["id"].GetInt())
+			{
+				enemys = JsonGetString(readdoc[i], "boss");
+				break;
+			}
+		}
+	}
+	std::vector<std::string> des;
+	TSplit(vec, enemys, ",");
 	return vec;
 }
 

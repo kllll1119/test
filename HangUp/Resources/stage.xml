@@ -1,7 +1,7 @@
 ﻿<dict>
 <key>stages</key>
 <string>[
-{"id":1,"name":"初始之村","enemys":"1,2,3","boss":"0,0,1,0,5,0,*,0,0","tip":""},
+{"id":1,"name":"初始之村","enemys":"1,2,3","boss":"1,0,1,0,5,0,1,0,1","tip":""},
 {"id":2,"name":"迷雾森林","enemys":"3,4,5"}
 ]</string>
 </dict>
