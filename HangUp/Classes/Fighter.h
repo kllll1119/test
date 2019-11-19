@@ -36,7 +36,7 @@ public:
 	CCSprite*				m_pLifeBar;
 	CCProgressTimer*		m_pLifeProgress;
 
-	ImageView*				m_pImageShadow;	//“ı”∞
+//	ImageView*				m_pImageShadow;	//“ı”∞
 	ImageView*				m_pImageWQ;		//Œ‰∆˜
 	ImageView*				m_pImageHurt;	// ‹…À
 

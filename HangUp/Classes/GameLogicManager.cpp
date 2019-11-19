@@ -415,10 +415,13 @@ void GameLogicManager::GameLogic()
 	loading = false;
 	if (m_player.size() == 0 || m_enemy.size() == 0)	//胜利、失败
 	{
-		if(m_curStage==1)
-			m_nextStage = 2;
-		else
-			m_nextStage = 1;
+		if (m_player.size() > 0)
+		{
+			if (m_curStage == 1)
+				m_nextStage = 2;
+			else
+				m_nextStage = 1;
+		}
 		m_gameAct = ACT_LOAD_DATA;
 		return;
 	}
@@ -557,9 +560,9 @@ void GameLogicManager::InitFighter()
 	
 	m_trun = 1;
 	//加载玩家
-	m_manLayer->addChild(Fighter::create(HERO, 1, 1));
-	m_manLayer->addChild(Fighter::create(HERO, 1, 3));
-	m_manLayer->addChild(Fighter::create(HERO, 1, 5));
+	m_manLayer->addChild(Fighter::create(HERO, 1, 1), ZORDER_S_FIGHT);
+	m_manLayer->addChild(Fighter::create(HERO, 1, 3), ZORDER_S_FIGHT);
+	m_manLayer->addChild(Fighter::create(HERO, 1, 5), ZORDER_S_FIGHT);
 
 	//生成怪物
 	if (m_nextBoss == false)
@@ -581,7 +584,7 @@ void GameLogicManager::InitFighter()
 		vector<int> vecRandomPos9 = MakeRandomIndex1_9(5);
 		for (int i = 0; i < vecRandomPos9.size(); ++i)
 		{
-			m_manLayer->addChild(Fighter::create(ENEMY, vecRandomIds[i], vecRandomPos9[i]));
+			m_manLayer->addChild(Fighter::create(ENEMY, vecRandomIds[i], vecRandomPos9[i]), ZORDER_S_FIGHT);
 		}
 	}
 	else

@@ -43,7 +43,7 @@ bool GameScene::init(){
 	mask1->setOpacity(80);
 	this->addChild(mask1, ZORDER_BK_MASK);
 	CCMoveBy* btnmove = CCMoveBy::create(200.0f, Vec2(-visibleSize.width, -visibleSize.height));
-	CCMoveBy* btnmove2 = CCMoveBy::create(0.0f, Vec2(0, visibleSize.height));
+	CCMoveBy* btnmove2 = CCMoveBy::create(0, Vec2(visibleSize.width, visibleSize.height));
 	CCRepeatForever* m_btnAction = CCRepeatForever::create(static_cast<CCSequence *>(CCSequence::create(btnmove, btnmove2,NULL)));
 	mask1->runAction(m_btnAction);
 
