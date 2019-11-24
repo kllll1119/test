@@ -395,8 +395,8 @@ vector<Fighter*> GameLogicManager::FindAttackSrc(FighterType type, int pos9, ST_
 void GameLogicManager::GameLogic()
 {
 	static int count = 0;
-	if (count++ % 30 != 0)	//防止执行太快了...	越0.003一次
-		return;
+ 	if (count++ % 30 != 0)	//防止执行太快了...	越0.003一次
+ 		return;
 	
 	if (m_gameAct == ACT_LOAD_DATA && loading==false)
 	{

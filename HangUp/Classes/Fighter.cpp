@@ -6,7 +6,7 @@
 #define PLAY_Y_SITANCE_OFF 5 //中间怪物y间距
 
 
-#define ATTACK_X_POS 5		//攻击x位移
+#define ATTACK_X_POS 3		//攻击x位移
 
 #define DAMAGE_OFFSET 5		//攻击波动（偏差）
 
@@ -98,16 +98,16 @@ void Fighter::InitPlayer()
 	//加载血条
 	m_pLifeBarBK = CCSprite::create("life_bk.png");
 	m_pLifeBarBK->setAnchorPoint(Vec2(0, 0));
-	m_pLifeBarBK->setPosition(Vec2((getContentSize().width-60)/2,-7));
+	m_pLifeBarBK->setPosition(Vec2((getContentSize().width-50)/2,-5));
 	m_pLifeBar = CCSprite::create("life_bar.png");
 	m_pLifeProgress = CCProgressTimer::create(m_pLifeBar);
 	m_pLifeProgress->setType(kCCProgressTimerTypeBar);
 	m_pLifeProgress->setBarChangeRate(Vec2(1, 0));
 	m_pLifeProgress->setMidpoint(Vec2(0, 0));
-	m_pLifeProgress->setPosition(Vec2(30, 3));
+	m_pLifeProgress->setPosition(Vec2(25, 2));
 	m_pLifeProgress->setPercentage(100);
 	m_pLifeBarBK->addChild(m_pLifeProgress, 0, 0);
-	m_pLifeBarBK->setVisible(false);
+//	m_pLifeBarBK->setVisible(false);
 	addChild(m_pLifeBarBK);
 
 	//测试精英怪
@@ -171,8 +171,8 @@ void Fighter::Die()
 	}
 
 	stopAllActions();
-	//setColor(Color3B(255, 80, 39));
-	setColor(Color3B(78, 200, 78));
+	setColor(Color3B(255, 127, 39));
+	//setColor(Color3B(78, 200, 78));
 
 	float dieTime = 1.0f;
 	FadeOut* dieAni = FadeOut::create(dieTime);
@@ -246,21 +246,25 @@ bool Fighter::OnHurt(int damage, bool baoji)
 		realDamage = 0; //闪避
 	}
 
+	
+
 	if (realDamage > 0)
 	{
 		//受伤动画
+		setColor(Color3B(255, 213, 170));
 		m_pImageHurt->setVisible(true);
 		schedule([&](float dt)
 		{
+			setColor(Color3B(255, 255, 255));
 			m_pImageHurt->setVisible(false);
 		}, 0.1f, 1, 0, "hurt");
 
-		m_pLifeBarBK->setVisible(true);
-		unschedule("showlife");
-		schedule([&](float dt)
-		{
-			m_pLifeBarBK->setVisible(false);
-		}, 2.0f, 1, 0, "showlife");
+// 		m_pLifeBarBK->setVisible(true);
+// 		unschedule("showlife");
+// 		schedule([&](float dt)
+// 		{
+// 			m_pLifeBarBK->setVisible(false);
+// 		}, 2.0f, 1, 0, "showlife");
 	}
 
 	//伤害飘字等

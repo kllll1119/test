@@ -35,10 +35,10 @@ public:
 
 class FlowWord : public CCNode {
 public:
-	void showWord(const char* text, CCPoint pos,Color3B color,int size = 12);//飘字方法，text为飘字的内容，pos为飘字的位置
+	void showWord(const char* text, CCPoint pos,Color3B color,int size = 18);//飘字方法，text为飘字的内容，pos为飘字的位置
 private:
-	CCLabelTTF* label;//类成员
-	void flowEnd();//飘字结束时的回调（处理）函数，主要用于删除自己	
+//	CCLabelTTF* label;//类成员
+	void flowEnd(Node* lable);//飘字结束时的回调（处理）函数，主要用于删除自己	
 };
 
 enum SkillArea
