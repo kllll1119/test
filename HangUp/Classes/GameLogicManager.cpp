@@ -135,213 +135,6 @@ vector<Fighter*> GameLogicManager::FindAttackSrc(FighterType type, int pos9, ST_
 		}
 	}
 
-	//普通攻击
-/*	Fighter* findFight = NULL;
-	if (type == HERO)
-	{
-		if (findPos == POS_TOP)
-		{
-			for (int i = 2; i >= 0; --i)
-			{
-				if (m_enemy.find(i) != m_enemy.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_enemy[i]);
-// 					return findFights;
-					break;
-				}
-			}
-			for (int i = 5; findAttackSrc==-1 && i >= 3; --i)
-			{
-				if (m_enemy.find(i) != m_enemy.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_enemy[i]);
-// 					return findFights;
-					break;
-				}
-			}
-			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
-			{
-				if (m_enemy.find(i) != m_enemy.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_enemy[i]);
-// 					return findFights;
-					break;
-				}
-			}
-		}
-		else if (findPos == POS_CENTER)
-		{
-			for (int i = 5; findAttackSrc == -1 && i >= 3; --i)
-			{
-				if (m_enemy.find(i) != m_enemy.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_enemy[i]);
-// 					return findFights;
-					break;
-				}
-			}
-			for (int i = 2; findAttackSrc == -1 && i >= 0; --i)
-			{
-				if (m_enemy.find(i) != m_enemy.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_enemy[i]);
-// 					return findFights;
-					break;
-				}
-			}
-			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
-			{
-				if (m_enemy.find(i) != m_enemy.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_enemy[i]);
-// 					return findFights;
-					break;
-				}
-			}
-		}
-		else
-		{
-			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
-			{
-				if (m_enemy.find(i) != m_enemy.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_enemy[i]);
-// 					return findFights;
-					break;
-				}
-			}
-			for (int i = 2; findAttackSrc == -1 && i >= 0; --i)
-			{
-				if (m_enemy.find(i) != m_enemy.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_enemy[i]);
-// 					return findFights;
-					break;
-				}
-			}
-			for (int i = 5; findAttackSrc == -1 && i >= 3; --i)
-			{
-				if (m_enemy.find(i) != m_enemy.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_enemy[i]);
-// 					return findFights;
-					break;
-				}
-			}
-		}
-	}
-	else if (type == ENEMY)
-	{
-		if (findPos == POS_TOP)
-		{
-			for (int i = 2; findAttackSrc == -1 && i >= 0; --i)
-			{
-				if (m_player.find(i) != m_player.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_player[i]);
-// 					return findFights;
-					break;
-				}
-			}
-			for (int i = 5; findAttackSrc == -1 && i >= 3; --i)
-			{
-				if (m_player.find(i) != m_player.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_player[i]);
-// 					return findFights;
-					break;
-				}
-			}
-			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
-			{
-				if (m_player.find(i) != m_player.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_player[i]);
-// 					return findFights;
-					break;
-				}
-			}
-		}
-		else if (findPos == POS_CENTER)
-		{
-			for (int i = 5; findAttackSrc == -1 && i >= 3; --i)
-			{
-				if (m_player.find(i) != m_player.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_player[i]);
-// 					return findFights;
-					break;
-				}
-			}
-			for (int i = 2; findAttackSrc == -1 && i >= 0; --i)
-			{
-				if (m_player.find(i) != m_player.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_player[i]);
-// 					return findFights;
-					break;
-				}
-			}
-			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
-			{
-				if (m_player.find(i) != m_player.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_player[i]);
-// 					return findFights;
-					break;
-				}
-			}
-		}
-		else
-		{
-			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
-			{
-				if (m_player.find(i) != m_player.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_player[i]);
-// 					return findFights;
-					break;
-				}
-			}
-			for (int i = 2; findAttackSrc == -1 && i >= 0; --i)
-			{
-				if (m_player.find(i) != m_player.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_player[i]);
-// 					return findFights;
-					break;
-				}
-			}
-			for (int i = 5; findAttackSrc == -1 && i >= 3; --i)
-			{
-				if (m_player.find(i) != m_player.end())
-				{
-					findAttackSrc = i;
-// 					findFights.push_back(m_player[i]);
-// 					return findFights;
-					break;
-				}
-			}
-		}
-	}
-*/
 	//技能攻击
 	if(skill.at>0 && findAttackSrc != -1)
 	{
@@ -415,27 +208,28 @@ void GameLogicManager::GameLogic()
 	loading = false;
 	if (m_player.size() == 0 || m_enemy.size() == 0)	//胜利、失败
 	{
-		if (m_player.size() > 0)
+		if (m_player.size() > 0)	//胜利
 		{
 			if (m_curStage == 1)
 				m_nextStage = 2;
 			else
 				m_nextStage = 1;
+			ST_HourInfo info;
+			info.money = m_preGetMoney;
+			AppendHourInfo(m_atack_count, info);
 		}
+		else
+		{
+			ST_HourInfo info;
+			AppendHourInfo(m_atack_count, info);	//失败
+		}
+		ST_HourInfo curInfo = GetCurHourInfo();
+		CCLOG("h_money:%d,h_exp:%d", curInfo.money, curInfo.exp);
 		m_gameAct = ACT_LOAD_DATA;
 		return;
 	}
 
 	++m_atack_count;
-
-// 	if (m_player.size() == 0)
-// 	{
-// 		//CCLOG("failed");	//失败
-// 	}
-// 	else if (m_enemy.size() == 0)
-// 	{
-// 		//CCLOG("victory");	//胜利
-// 	}
 
 	if (m_gameAct == ACT_PLAYER)
 	{
@@ -458,13 +252,6 @@ void GameLogicManager::GameLogic()
 					iter->second->Attack();
 					vecSrc[i]->OnHurt(damage, baoji);
 				}
-// 				map<int, Fighter*>::iterator iter2 = m_enemy.begin();
-// 				for (; iter2 != m_enemy.end(); ++iter2)
-// 				{
-// 					iter->second->Attack();
-// 					iter2->second->OnHurt(damage, baoji);
-// 					break;
-// 				}
 				break;
 			}
 		}
@@ -492,13 +279,6 @@ void GameLogicManager::GameLogic()
 					iter->second->Attack();
 					vecSrc[i]->OnHurt(damage, baoji);
 				}
-//				map<int, Fighter*>::iterator iter2 = m_player.begin();
-// 				for (; iter2 != m_player.end(); ++iter2)
-// 				{
-// 					iter->second->Attack();
-// 					iter2->second->OnHurt(damage, baoji);
-// 					break;
-// 				}
 				break;
 			}
 		}
@@ -558,7 +338,9 @@ void GameLogicManager::InitFighter()
 	}
 	m_curStage = curStage;
 	
+	m_preGetMoney = 0;
 	m_trun = 1;
+	m_atack_count = 0;
 	//加载玩家
 	m_manLayer->addChild(Fighter::create(HERO, 1, 1), ZORDER_S_FIGHT);
 	m_manLayer->addChild(Fighter::create(HERO, 1, 3), ZORDER_S_FIGHT);
@@ -610,6 +392,8 @@ void GameLogicManager::AddFighter(Fighter* role)
 	else
 	{
 		m_enemy.emplace(role->m_pos9, role);
+
+		m_preGetMoney += role->m_attr.m_money;
 	}
 }
 
@@ -639,4 +423,33 @@ void GameLogicManager::ResetFighter()
 {
 	m_player.clear();
 	m_enemy.clear();
+}
+
+void GameLogicManager::AppendHourInfo(int atack_count, ST_HourInfo info)
+{
+	if (m_deqHourInfo.size() >= 3)
+		m_deqHourInfo.pop_back();
+
+	//一个atack_count单位约为0.5秒
+	float scale = 3600 * 1.0f / 0.5;
+	info.exp *= scale;
+	info.money *= scale;
+	CCLOG("AppendFightInfo:money:%d,exp:%d", info.money, info.exp);
+	m_deqHourInfo.push_front(info);
+}
+
+ST_HourInfo GameLogicManager::GetCurHourInfo()
+{
+	ST_HourInfo info;
+	int size = m_deqHourInfo.size();
+	if (size <= 0)
+		return info;
+	for (size_t i=0; i< size; ++i)
+	{
+		info.exp += m_deqHourInfo[i].exp;
+		info.money += m_deqHourInfo[i].money;
+	}
+	info.exp /= size;
+	info.money /= size;
+	return info;
 }

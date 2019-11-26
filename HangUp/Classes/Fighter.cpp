@@ -247,7 +247,6 @@ bool Fighter::OnHurt(int damage, bool baoji)
 	}
 
 	
-
 	if (realDamage > 0)
 	{
 		// ‹…À∂Øª≠
