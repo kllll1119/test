@@ -86,7 +86,7 @@ void Fighter::InitPlayer()
 		m_pImageWQ->setAnchorPoint(Vec2(1.0f, 0));
 		m_pImageWQ->setPosition(Vec2(getContentSize().width/4, getContentSize().height/2));
 		m_pImageWQ->setVisible(false);
-		m_pImageWQ->setScale(1.2f); //放大大小
+		//m_pImageWQ->setScale(1.1f); //放大大小
 		this->addChild(m_pImageWQ, 0);
 	}
 

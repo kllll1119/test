@@ -19,6 +19,27 @@ string Tips::GetCHString(string key, string xml)
 	}
 }
 
+
+CCEaseInOut* createParabola(float t, CCPoint startPoint, CCPoint endPoint, float height /* = 0 */, float angle /* = 60 */) {
+
+	// 把角度转换为弧度
+	float radian = angle * 3.14159 / 180.0;
+	// 第一个控制点为抛物线左半弧的中点
+	float q1x = startPoint.x + (endPoint.x - startPoint.x) / 4.0;
+	CCPoint q1 = ccp(q1x, height + startPoint.y + cos(radian)*q1x);
+	// 第二个控制点为整个抛物线的中点
+	float q2x = startPoint.x + (endPoint.x - startPoint.x) / 2.0;
+	CCPoint q2 = ccp(q2x, height + startPoint.y + cos(radian)*q2x);
+
+	//曲线配置
+	ccBezierConfig cfg;
+	cfg.controlPoint_1 = q1;
+	cfg.controlPoint_2 = q2;
+	cfg.endPosition = endPoint;
+	//使用CCEaseInOut让曲线运动有一个由慢到快的变化，显得更自然
+	return CCEaseInOut::create(CCBezierTo::create(t, cfg), 0.5);
+}
+
 void FlowWord::showWord(const char* text, CCPoint position, Color3B color, int size) {//text为飘字的内容，pos为飘字的位置
 	/*初始化*/
 	CCLabelTTF* label = CCLabelTTF::create(text, "Arial", size);//创建一个字体为Arial，字号为18，内容为text的CCLabelTTF，也就是标签文本
@@ -39,13 +60,17 @@ void FlowWord::showWord(const char* text, CCPoint position, Color3B color, int s
 
 	//CCSize visibleSize = CCDirector::sharedDirector()->getVisibleSize();//获取屏幕的尺寸、位置信息等     
 	//CCFiniteTimeAction* action1 = CCScaleTo::create(0.2f, 3.0f, 3.0f);//0.2s内在x、y上方向皆放大为原尺寸的3倍
-	CCFiniteTimeAction* action2 = CCMoveTo::create(0.3f, ccp(position.x, position.y + 30));//在0.3s内，移动到坐标为(x=屏幕宽度的25%，y=屏幕高度的75%处)
-	///*CCFiniteTimeAction*/* action3 = CCScaleTo::create(0.2f, 0.1f, 0.1f);//之后在0.2s内在x、y上皆缩小为原尺寸的0.1倍
-//	CCCallFunc* callFunc = CCCallFunc::create(this, callfunc_selector(FlowWord::flowEnd));//声明一个回调（处理）函数，为FlowWord类中的flowEnd()
-	CCCallFuncN* callFunc = CCCallFuncN::create(this, callfuncN_selector(FlowWord::flowEnd, label));
 
+	/*
+	CCFiniteTimeAction* action2 = CCMoveTo::create(0.3f, ccp(position.x, position.y + 30));//在0.3s内，移动到坐标为(x=屏幕宽度的25%，y=屏幕高度的75%处)
 	CCFiniteTimeAction* action3 = CCMoveTo::create(0.3f, ccp(position.x, position.y+MakeRandom(10,20)));
-	CCFiniteTimeAction* action = CCSequence::create(action2, action3,callFunc, NULL);//以上的所有动作组成动作序列action
+	*/
+
+	CCEaseInOut* act1 =  createParabola(0.5, position, ccp(position.x + MakeRandom(-20, 20), position.y + MakeRandom(5, 10)), 20, 20);
+
+	CCScaleTo* nullAct = ScaleTo::create(1.0f, 1.0f, 1.0f);
+	CCCallFuncN* callFunc = CCCallFuncN::create(this, callfuncN_selector(FlowWord::flowEnd, label));
+	CCFiniteTimeAction* action = CCSequence::create(act1/*action2, action3*/, nullAct,callFunc, NULL);//以上的所有动作组成动作序列action
 
 	label->runAction(action);
 }
