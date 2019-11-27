@@ -53,6 +53,8 @@ public:
 
 	void AppendHourInfo(int atack_count,ST_HourInfo info);	//这里的info是当局的，并不是hour的
 
+	void UpdateHourLab();
+
 	ST_HourInfo GetCurHourInfo();			//获取每小时获取金币等数目
 public:
 	map<int,Fighter*> m_player;	//pos-Fighter
@@ -67,9 +69,12 @@ public:
 	int m_preGetMoney=0;
 
 	GAME_ACTION m_gameAct;
-	CCLayer*	m_manLayer;
+	CCLayer*	m_manLayer=NULL;
 
-	ImageView* m_bk;
+	ImageView* m_bk=NULL;
+
+	CCLabelTTF* m_labHourMoney=NULL;
+	CCLabelTTF* m_labHourExp=NULL;
 
 	int m_curStage;
 	int m_nextStage;

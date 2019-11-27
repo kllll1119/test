@@ -223,8 +223,9 @@ void GameLogicManager::GameLogic()
 			ST_HourInfo info;
 			AppendHourInfo(m_atack_count, info);	//失败
 		}
-		ST_HourInfo curInfo = GetCurHourInfo();
-		CCLOG("h_money:%d,h_exp:%d", curInfo.money, curInfo.exp);
+		UpdateHourLab();
+// 		ST_HourInfo curInfo = GetCurHourInfo();
+// 		CCLOG("h_money:%d,h_exp:%d", curInfo.money, curInfo.exp);
 		m_gameAct = ACT_LOAD_DATA;
 		return;
 	}
@@ -337,6 +338,9 @@ void GameLogicManager::InitFighter()
 		m_bk->loadTexture(skinname);
 	}
 	m_curStage = curStage;
+	
+	//加载小时获取数目
+	UpdateHourLab();
 
 	//加载日志框
 	
@@ -429,15 +433,50 @@ void GameLogicManager::ResetFighter()
 
 void GameLogicManager::AppendHourInfo(int atack_count, ST_HourInfo info)
 {
-	if (m_deqHourInfo.size() >= 3)
+	if(m_deqHourInfo.size()==0)	//初始化添加两个空元素
+	{
+		m_deqHourInfo.push_front(ST_HourInfo());
+		m_deqHourInfo.push_front(ST_HourInfo());
+	}
+	else if (m_deqHourInfo.size() >= 3)
 		m_deqHourInfo.pop_back();
 
 	//一个atack_count单位约为0.5秒
-	float scale = 3600 * 1.0f / 0.5;
+	float scale = 3600/ (0.5f * atack_count);
 	info.exp *= scale;
 	info.money *= scale;
 	CCLOG("AppendFightInfo:money:%d,exp:%d", info.money, info.exp);
 	m_deqHourInfo.push_front(info);
+}
+
+void GameLogicManager::UpdateHourLab()
+{
+	if (m_labHourMoney == NULL || m_labHourExp==NULL)
+	{
+		Size visibleSize = Director::getInstance()->getVisibleSize();
+		m_labHourMoney = CCLabelTTF::create("", "Arial", 16,Size::ZERO, cocos2d::TextHAlignment::RIGHT);
+		m_labHourMoney->setColor(Color3B::RED);
+
+		m_labHourMoney->setAnchorPoint(ccp(0,0));
+		//m_labHourMoney->setHorizontalAlignment(TextHAlignment::RIGHT);
+		m_labHourMoney->setPosition(ccp(visibleSize.width-180,visibleSize.height - 100));
+
+		m_manLayer->addChild(m_labHourMoney, ZORDER_MAIN_TIP);
+		
+		m_labHourExp = CCLabelTTF::create("", "Arial", 16, Size::ZERO, cocos2d::CCTextAlignment::RIGHT);
+		m_labHourExp->setColor(Color3B::RED);
+		m_labHourExp->setPosition(ccp(visibleSize.width - 80, visibleSize.height - 100));
+		m_labHourExp->setAnchorPoint(ccp(0, 0));
+		m_manLayer->addChild(m_labHourExp, ZORDER_MAIN_TIP);
+	}
+
+	ST_HourInfo hInfo = GetCurHourInfo();
+	char buf[30] = { 0 };
+	snprintf(buf, 29, "%d/h Money",hInfo.money);
+	m_labHourMoney->setString(buf);
+	snprintf(buf, 29, "%d/h Exp", hInfo.money);
+	m_labHourExp->setString(buf);
+	CCLOG("h_money:%d,h_exp:%d", hInfo.money, hInfo.exp);
 }
 
 ST_HourInfo GameLogicManager::GetCurHourInfo()

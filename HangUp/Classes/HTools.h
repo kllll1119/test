@@ -23,7 +23,7 @@ using namespace std;
 #define ZORDER_BK_MASK 1		//背景mask
 #define ZORDER_MAIN 2			//主界面
 #define ZORDER_S_FIGHT 10		//人物
-
+#define ZORDER_MAIN_TIP 90		//主界面提示
 
 #define UserDefault CCUserDefault::sharedUserDefault()
 
