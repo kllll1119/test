@@ -12,6 +12,14 @@
 #include "ui/cocosGUI.h"
 #include "ui/UIWidget.h"
 
+// 分辨率
+// 密度类型             代表的分辨率（px） 屏幕像素密度（dpi）
+// 低密度（ldpi）       240x320             120
+// 中密度（mdpi）       320x480             160
+// 高密度（hdpi）       480x800             240
+// 超高密度（xhdpi）    720x1280           320
+// 超超高密度（xxhdpi） 1080x1920          480
+
 USING_NS_CC;
 using namespace ui;
 using namespace std;
