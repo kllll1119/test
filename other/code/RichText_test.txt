@@ -1,0 +1,30 @@
+ui::RichText* _richText = ui::RichText::create();
+	_richText->ignoreContentAdaptWithSize(false);
+	_richText->setSize(CCSizeMake(300, 100));
+
+	ui::RichElementText* re1 = ui::RichElementText::create(1, Color3B::WHITE, 255, "WHITE", "Helvetica", 14);
+	ui::RichElementText* re2 = ui::RichElementText::create(2, Color3B::YELLOW, 255, "YELLOW", "Helvetica", 24);
+	ui::RichElementText* re3 = ui::RichElementText::create(3, Color3B::BLUE, 255, "BLUE", "Helvetica", 37);
+	ui::RichElementText* re4 = ui::RichElementText::create(4, Color3B::GREEN, 255, "GREEN", "Helvetica", 24);
+	ui::RichElementText* re5 = ui::RichElementText::create(5, Color3B::RED, 255, "RED", "Helvetica", 24);
+
+	ui::RichElementImage* reimg = ui::RichElementImage::create(6, Color3B::WHITE, 255, "wq1.png");
+
+// 	cocos2d::extension::CCArmatureDataManager::sharedArmatureDataManager()->addArmatureFileInfo("cocosgui/100/100.ExportJson");
+// 	cocos2d::extension::CCArmature *pAr = cocos2d::extension::CCArmature::create("100");
+// 	pAr->getAnimation()->play("Animation1");
+// 	ui::RichElementCustomNode* recustom = ui::RichElementCustomNode::create(1, ccWHITE, 255, pAr);
+
+	ui::RichElementText* re6 = ui::RichElementText::create(7, Color3B::ORANGE, 255, "ORANGE", "Helvetica",30);
+	_richText->pushBackElement(re1);
+	_richText->insertElement(re2, 1);
+	_richText->pushBackElement(re3);
+	_richText->pushBackElement(re4);
+	_richText->pushBackElement(re5);
+	_richText->insertElement(reimg, 2);
+	_richText->pushBackElement(re6);
+//	_richText->pushBackElement(recustom);
+
+	CCSize size = CCDirector::sharedDirector()->getWinSize();
+	_richText->setPosition(ccp(size.width / 2, 100));
+	m_manLayer->addChild(_richText);

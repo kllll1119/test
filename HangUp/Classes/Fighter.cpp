@@ -126,7 +126,7 @@ void Fighter::InitPlayer()
 Vec2 Fighter::GetPostion9()
 {
 	Size visibleSize = Director::getInstance()->getVisibleSize();
-	int xpos = 10 + m_pos9 %3* PLAY_X_SITANCE;
+	int xpos = 10 + /*m_pos9*/(2 - m_pos9 % 3) % 3 * PLAY_X_SITANCE;
 	int ypos = visibleSize.height-250;
 	if (m_pos9/3==1)
 		ypos -= PLAY_Y_SITANCE;

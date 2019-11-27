@@ -1,10 +1,10 @@
 #include "GameLogicManager.h"
 
-/*坐标参考
+/*坐标参考NEW
 ENEMY		PLAYER
-0 1 2		2 1 0
-3 4 5		5 4 3
-6 7 8		8 7 6
+2 1 0		0 1 2
+5 4 3		3 4 5
+8 7 6		6 7 8
 */
 
 GameLogicManager::GameLogicManager()
@@ -54,7 +54,7 @@ vector<Fighter*> GameLogicManager::FindAttackSrc(FighterType type, int pos9, ST_
 	{
 		if (findPos == POS_TOP)
 		{
-			for (int i = 2; i >= 0; --i)
+			for (int i = 0; i <3; ++i)
 			{
 				if ((*attackMap).find(i) != (*attackMap).end())
 				{
@@ -62,7 +62,7 @@ vector<Fighter*> GameLogicManager::FindAttackSrc(FighterType type, int pos9, ST_
 					break;
 				}
 			}
-			for (int i = 5; findAttackSrc == -1 && i >= 3; --i)
+			for (int i = 3; findAttackSrc == -1 && i <6; ++i)
 			{
 				if ((*attackMap).find(i) != (*attackMap).end())
 				{
@@ -70,7 +70,7 @@ vector<Fighter*> GameLogicManager::FindAttackSrc(FighterType type, int pos9, ST_
 					break;
 				}
 			}
-			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
+			for (int i = 6; findAttackSrc == -1 && i < 9; ++i)
 			{
 				if ((*attackMap).find(i) != (*attackMap).end())
 				{
@@ -81,7 +81,7 @@ vector<Fighter*> GameLogicManager::FindAttackSrc(FighterType type, int pos9, ST_
 		}
 		else if (findPos == POS_CENTER)
 		{
-			for (int i = 5; findAttackSrc == -1 && i >= 3; --i)
+			for (int i = 3; findAttackSrc == -1 && i < 6; ++i)
 			{
 				if ((*attackMap).find(i) != (*attackMap).end())
 				{
@@ -89,7 +89,7 @@ vector<Fighter*> GameLogicManager::FindAttackSrc(FighterType type, int pos9, ST_
 					break;
 				}
 			}
-			for (int i = 2; findAttackSrc == -1 && i >= 0; --i)
+			for (int i = 0; findAttackSrc == -1 && i < 3; ++i)
 			{
 				if ((*attackMap).find(i) != (*attackMap).end())
 				{
@@ -97,7 +97,7 @@ vector<Fighter*> GameLogicManager::FindAttackSrc(FighterType type, int pos9, ST_
 					break;
 				}
 			}
-			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
+			for (int i = 6; findAttackSrc == -1 && i < 9; ++i)
 			{
 				if ((*attackMap).find(i) != (*attackMap).end())
 				{
@@ -108,7 +108,7 @@ vector<Fighter*> GameLogicManager::FindAttackSrc(FighterType type, int pos9, ST_
 		}
 		else
 		{
-			for (int i = 8; findAttackSrc == -1 && i >= 6; --i)
+			for (int i = 6; findAttackSrc == -1 && i <9; ++i)
 			{
 				if ((*attackMap).find(i) != (*attackMap).end())
 				{
@@ -116,7 +116,7 @@ vector<Fighter*> GameLogicManager::FindAttackSrc(FighterType type, int pos9, ST_
 					break;
 				}
 			}
-			for (int i = 2; findAttackSrc == -1 && i >= 0; --i)
+			for (int i = 0; findAttackSrc == -1 && i <3; ++i)
 			{
 				if ((*attackMap).find(i) != (*attackMap).end())
 				{
@@ -124,7 +124,7 @@ vector<Fighter*> GameLogicManager::FindAttackSrc(FighterType type, int pos9, ST_
 					break;
 				}
 			}
-			for (int i = 5; findAttackSrc == -1 && i >= 3; --i)
+			for (int i = 3; findAttackSrc == -1 && i <6; ++i)
 			{
 				if ((*attackMap).find(i) != (*attackMap).end())
 				{
@@ -337,6 +337,8 @@ void GameLogicManager::InitFighter()
 		m_bk->loadTexture(skinname);
 	}
 	m_curStage = curStage;
+
+	//加载日志框
 	
 	m_preGetMoney = 0;
 	m_trun = 1;
