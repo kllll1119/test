@@ -66,7 +66,7 @@ void FlowWord::showWord(const char* text, CCPoint position, Color3B color, int s
 	CCFiniteTimeAction* action3 = CCMoveTo::create(0.3f, ccp(position.x, position.y+MakeRandom(10,20)));
 	*/
 
-	CCEaseInOut* act1 =  createParabola(0.5, position, ccp(position.x + MakeRandom(-20, 20), position.y + MakeRandom(5, 10)), 20, 20);
+	CCEaseInOut* act1 =  createParabola(0.5, position, ccp(position.x + MakeRandom(-15, 15), position.y + MakeRandom(5, 10)), 20, 20);
 
 	CCScaleTo* nullAct = ScaleTo::create(1.0f, 1.0f, 1.0f);
 	CCCallFuncN* callFunc = CCCallFuncN::create(this, callfuncN_selector(FlowWord::flowEnd, label));
@@ -75,10 +75,39 @@ void FlowWord::showWord(const char* text, CCPoint position, Color3B color, int s
 	label->runAction(action);
 }
 
+void FlowWord::showSkillWord(const char* text, CCPoint pos, Color3B color, int size /*= 14*/)
+{
+	ImageView* skill_bk = ImageView::create("skill_bk.png");
+	CCLabelTTF* label = CCLabelTTF::create(text, "Arial", size,Size::ZERO,TextHAlignment::CENTER);//创建一个字体为Arial，字号为18，内容为text的CCLabelTTF，也就是标签文本
+	label->enableStroke(Color3B(0, 0, 0), 11);
+	//	label->enableShadow(Size(1, 1), 255, 255);
+	label->setColor(color);
+	//label->setPosition(pos);//设置其位置
+
+	label->setPosition(skill_bk->getContentSize().width/2,10);
+
+	skill_bk->addChild(label);
+	skill_bk->setPosition(pos);
+	this->addChild(skill_bk);//在场景上添加这个标签文本
+
+	CCScaleTo* nullAct = ScaleTo::create(1.0f, 1.0f, 1.0f);
+	CCCallFuncN* callFunc = CCCallFuncN::create(this, callfuncN_selector(FlowWord::flowSkillEnd, skill_bk));
+	CCFiniteTimeAction* action = CCSequence::create(nullAct, callFunc, NULL);//以上的所有动作组成动作序列action
+
+	skill_bk->runAction(action);
+}
+
 void FlowWord::flowEnd(Node* obj) {//动作结束，从父节点中删除自身
 	//label->setVisible(false);//先隐藏显示
 	CCLabelTTF* label = (CCLabelTTF*)obj;
 	if(label)
+		label->removeFromParentAndCleanup(true);//再删除
+}
+
+void FlowWord::flowSkillEnd(Node* obj)
+{
+	ImageView* label = (ImageView*)obj;
+	if (label)
 		label->removeFromParentAndCleanup(true);//再删除
 }
 

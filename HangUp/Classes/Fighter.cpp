@@ -1,8 +1,8 @@
 #include "Fighter.h"
 #include "GameLogicManager.h"
 
-#define PLAY_X_SITANCE 70	//x9宫格x间距
-#define PLAY_Y_SITANCE 70	//x9宫格y间距
+#define PLAY_X_SITANCE 40	//x9宫格x间距
+#define PLAY_Y_SITANCE 45	//x9宫格y间距
 #define PLAY_Y_SITANCE_OFF 5 //中间怪物y间距
 
 
@@ -98,13 +98,13 @@ void Fighter::InitPlayer()
 	//加载血条
 	m_pLifeBarBK = CCSprite::create("life_bk.png");
 	m_pLifeBarBK->setAnchorPoint(Vec2(0, 0));
-	m_pLifeBarBK->setPosition(Vec2((getContentSize().width-50)/2,-5));
+	m_pLifeBarBK->setPosition(Vec2((getContentSize().width-36)/2,-5));
 	m_pLifeBar = CCSprite::create("life_bar.png");
 	m_pLifeProgress = CCProgressTimer::create(m_pLifeBar);
 	m_pLifeProgress->setType(kCCProgressTimerTypeBar);
 	m_pLifeProgress->setBarChangeRate(Vec2(1, 0));
 	m_pLifeProgress->setMidpoint(Vec2(0, 0));
-	m_pLifeProgress->setPosition(Vec2(25, 2));
+	m_pLifeProgress->setPosition(Vec2(18, 2));
 	m_pLifeProgress->setPercentage(100);
 	m_pLifeBarBK->addChild(m_pLifeProgress, 0, 0);
 //	m_pLifeBarBK->setVisible(false);
@@ -126,8 +126,8 @@ void Fighter::InitPlayer()
 Vec2 Fighter::GetPostion9()
 {
 	Size visibleSize = Director::getInstance()->getVisibleSize();
-	int xpos = 10 + /*m_pos9*/(2 - m_pos9 % 3) % 3 * PLAY_X_SITANCE;
-	int ypos = visibleSize.height-250;
+	int xpos = 5 + /*m_pos9*/(2 - m_pos9 % 3) % 3 * PLAY_X_SITANCE;
+	int ypos = visibleSize.height-230;
 	if (m_pos9/3==1)
 		ypos -= PLAY_Y_SITANCE;
 	else if (m_pos9 / 3 == 2)
@@ -201,7 +201,7 @@ ST_FighterSkill Fighter::PreAttack(int turn, int& demage, bool& baoji)
 	{
 		if (m_attr.vecSkill[i].turn>0 && turn % m_attr.vecSkill[i].turn == 0)
 		{
-			fw.showWord(m_attr.vecSkill[i].skillName.c_str(), Vec2(m_position.x + getContentSize().width / 2, m_position.y + getContentSize().height - 10), Color3B(255, 0, 0), 18);
+			fw.showSkillWord(m_attr.vecSkill[i].skillName.c_str(), Vec2(m_position.x + getContentSize().width / 2, m_position.y + getContentSize().height + 10), Color3B(255, 255, 255), 8);
 			return m_attr.vecSkill[i];
 		}
 	}
@@ -279,8 +279,8 @@ bool Fighter::OnHurt(int damage, bool baoji)
 	char strDamage[20] = {'0',0};
 	if(realDamage>0)
 		snprintf(strDamage, 19, "-%d", realDamage);
-	int xOff = MakeRandom(-8, 8);
-	int yOff = MakeRandom(-5, 5);
+	int xOff = 0;// MakeRandom(-8, 8);
+	int yOff = 0;//MakeRandom(-5, 5);
 	fw.showWord(strDamage, Vec2(m_position.x + xOff + getContentSize().width/2,m_position.y+getContentSize().height-25 + yOff), color, size);
 
 	//判断死亡

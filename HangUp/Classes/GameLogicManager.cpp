@@ -372,7 +372,7 @@ void GameLogicManager::InitFighter()
 		vector<int> vecRandomPos9 = MakeRandomIndex1_9(5);
 		for (int i = 0; i < vecRandomPos9.size(); ++i)
 		{
-			m_manLayer->addChild(Fighter::create(ENEMY, vecRandomIds[i], vecRandomPos9[i]), ZORDER_S_FIGHT);
+			m_manLayer->addChild(Fighter::create(ENEMY, vecRandomIds[i], vecRandomPos9[i]), ZORDER_S_FIGHT + vecRandomPos9[i]);
 		}
 	}
 	else
@@ -451,21 +451,21 @@ void GameLogicManager::AppendHourInfo(int atack_count, ST_HourInfo info)
 
 void GameLogicManager::UpdateHourLab()
 {
+	Size visibleSize = Director::getInstance()->getVisibleSize();
 	if (m_labHourMoney == NULL || m_labHourExp==NULL)
 	{
-		Size visibleSize = Director::getInstance()->getVisibleSize();
 		m_labHourMoney = CCLabelTTF::create("", "Arial", 16,Size::ZERO, cocos2d::TextHAlignment::RIGHT);
 		m_labHourMoney->setColor(Color3B::RED);
 
 		m_labHourMoney->setAnchorPoint(ccp(0,0));
 		//m_labHourMoney->setHorizontalAlignment(TextHAlignment::RIGHT);
-		m_labHourMoney->setPosition(ccp(visibleSize.width-180,visibleSize.height - 100));
+		//m_labHourMoney->setPosition(ccp(visibleSize.width-180,visibleSize.height - 100));
 
 		m_manLayer->addChild(m_labHourMoney, ZORDER_MAIN_TIP);
 		
 		m_labHourExp = CCLabelTTF::create("", "Arial", 16, Size::ZERO, cocos2d::CCTextAlignment::RIGHT);
 		m_labHourExp->setColor(Color3B::RED);
-		m_labHourExp->setPosition(ccp(visibleSize.width - 80, visibleSize.height - 100));
+		//m_labHourExp->setPosition(ccp(visibleSize.width - 80, visibleSize.height - 100));
 		m_labHourExp->setAnchorPoint(ccp(0, 0));
 		m_manLayer->addChild(m_labHourExp, ZORDER_MAIN_TIP);
 	}
@@ -477,6 +477,9 @@ void GameLogicManager::UpdateHourLab()
 	snprintf(buf, 29, "%d/h Exp", hInfo.money);
 	m_labHourExp->setString(buf);
 	CCLOG("h_money:%d,h_exp:%d", hInfo.money, hInfo.exp);
+
+	m_labHourMoney->setPosition(ccp(visibleSize.width - 180, visibleSize.height - 100));
+	m_labHourExp->setPosition(ccp(visibleSize.width - 80, visibleSize.height - 100));
 }
 
 ST_HourInfo GameLogicManager::GetCurHourInfo()
