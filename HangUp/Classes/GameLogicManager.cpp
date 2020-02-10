@@ -457,7 +457,7 @@ void GameLogicManager::UpdateHourLab()
 		m_labHourMoney = CCLabelTTF::create("", "Arial", 16,Size::ZERO, cocos2d::TextHAlignment::RIGHT);
 		m_labHourMoney->setColor(Color3B::RED);
 
-		m_labHourMoney->setAnchorPoint(ccp(0,0));
+		
 		//m_labHourMoney->setHorizontalAlignment(TextHAlignment::RIGHT);
 		//m_labHourMoney->setPosition(ccp(visibleSize.width-180,visibleSize.height - 100));
 
@@ -466,7 +466,7 @@ void GameLogicManager::UpdateHourLab()
 		m_labHourExp = CCLabelTTF::create("", "Arial", 16, Size::ZERO, cocos2d::CCTextAlignment::RIGHT);
 		m_labHourExp->setColor(Color3B::RED);
 		//m_labHourExp->setPosition(ccp(visibleSize.width - 80, visibleSize.height - 100));
-		m_labHourExp->setAnchorPoint(ccp(0, 0));
+		
 		m_manLayer->addChild(m_labHourExp, ZORDER_MAIN_TIP);
 	}
 
@@ -474,9 +474,12 @@ void GameLogicManager::UpdateHourLab()
 	char buf[30] = { 0 };
 	snprintf(buf, 29, "%d/h Money",hInfo.money);
 	m_labHourMoney->setString(buf);
-	snprintf(buf, 29, "%d/h Exp", hInfo.money);
+	snprintf(buf, 29, "%d/h Exp", hInfo.exp);
 	m_labHourExp->setString(buf);
 	CCLOG("h_money:%d,h_exp:%d", hInfo.money, hInfo.exp);
+
+	m_labHourMoney->setAnchorPoint(ccp(0, 0));
+	m_labHourExp->setAnchorPoint(ccp(0, 0));
 
 	m_labHourMoney->setPosition(ccp(visibleSize.width - 180, visibleSize.height - 100));
 	m_labHourExp->setPosition(ccp(visibleSize.width - 80, visibleSize.height - 100));

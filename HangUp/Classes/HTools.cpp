@@ -69,7 +69,7 @@ void FlowWord::showWord(const char* text, CCPoint position, Color3B color, int s
 	CCEaseInOut* act1 =  createParabola(0.5, position, ccp(position.x + MakeRandom(-15, 15), position.y + MakeRandom(5, 10)), 20, 20);
 
 	CCScaleTo* nullAct = ScaleTo::create(1.0f, 1.0f, 1.0f);
-	CCCallFuncN* callFunc = CCCallFuncN::create(this, callfuncN_selector(FlowWord::flowEnd, label));
+	CCCallFuncN* callFunc = CCCallFuncN::create(CC_CALLBACK_1(FlowWord::flowEnd, this));//CCCallFuncN::create(label, callfuncN_selector(FlowWord::flowEnd/*, (void*)label*/));
 	CCFiniteTimeAction* action = CCSequence::create(act1/*action2, action3*/, nullAct,callFunc, NULL);//以上的所有动作组成动作序列action
 
 	label->runAction(action);
@@ -91,7 +91,7 @@ void FlowWord::showSkillWord(const char* text, CCPoint pos, Color3B color, int s
 	this->addChild(skill_bk);//在场景上添加这个标签文本
 
 	CCScaleTo* nullAct = ScaleTo::create(1.0f, 1.0f, 1.0f);
-	CCCallFuncN* callFunc = CCCallFuncN::create(this, callfuncN_selector(FlowWord::flowSkillEnd, skill_bk));
+	CCCallFuncN* callFunc = CCCallFuncN::create(CC_CALLBACK_1(FlowWord::flowSkillEnd, this));// CCCallFuncN::create(skill_bk/*this*/, callfuncN_selector(FlowWord::flowSkillEnd/*, (void*)skill_bk*/));
 	CCFiniteTimeAction* action = CCSequence::create(nullAct, callFunc, NULL);//以上的所有动作组成动作序列action
 
 	skill_bk->runAction(action);

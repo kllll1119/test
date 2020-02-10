@@ -45,7 +45,7 @@ public:
 
 	void BtnClick(cocos2d::Ref* pSender, Widget::TouchEventType type);
 
-	void BtnSave(cocos2d::Ref* pSender, Widget::TouchEventType type);
+	void BtnMenu(cocos2d::Ref* pSender, Widget::TouchEventType type);
 
 	void ChangeBackgroup(std::string backgroud,float delay=0.5f);
 
@@ -90,6 +90,7 @@ private:
 	Button* m_btnChoose3 = NULL;
 
 	Button* m_btnSave = NULL;
+	ImageView* m_MenuBK = NULL;
 
 	LabelRPG* m_lab1 = NULL;
 	LabelRPG* m_lab2 = NULL;

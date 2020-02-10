@@ -122,5 +122,6 @@ void TitleScene::BtnExit(cocos2d::Ref* pSender, Widget::TouchEventType type)
 		stopAllActions();
 		Director::getInstance()->popScene();
 		Director::getInstance()->stopAnimation();
+		Director::getInstance()->end();
 	}
 }

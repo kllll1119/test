@@ -170,12 +170,21 @@ void SplashScene::InitAllUI()
 	this->addChild(m_btnChoose3, ZORDER_CHOOSE);
 
 	//保存
+	int offset = 5;
 	m_btnSave = Button::create("save.png", "save.png");
-	m_btnSave->setPosition(Vec2(visibleSize.width - m_btnSave->getContentSize().width,
-		visibleSize.height - m_btnSave->getContentSize().height));
+	m_btnSave->setPosition(Vec2(visibleSize.width - m_btnSave->getContentSize().width-offset,
+		visibleSize.height - m_btnSave->getContentSize().height - offset));
 	m_btnSave->setAnchorPoint(Vec2(0, 0));
-	m_btnSave->addTouchEventListener(CC_CALLBACK_2(SplashScene::BtnSave, this));
+	m_btnSave->addTouchEventListener(CC_CALLBACK_2(SplashScene::BtnMenu, this));
+	//m_btnSave->setOpacity(180);
 	this->addChild(m_btnSave, ZORDER_CHOOSE);
+
+	m_MenuBK = ImageView::create("bk_null.png");
+	m_MenuBK->setPosition(Vec2(visibleSize.width / 2, visibleSize.height / 2));
+	m_MenuBK->setAnchorPoint(Vec2(0.5, 0.5));
+	m_MenuBK->setOpacity(200);
+	this->addChild(m_MenuBK, ZOORDER_MASK);
+	m_MenuBK->setVisible(false);
 
 	//菜单
 	auto *chnStrings = Dictionary::createWithContentsOfFile("cfg_data.xml");
@@ -198,23 +207,23 @@ void SplashScene::InitAllUI()
 		arr[indexMenu] = MenuItemFont::create(save_game.c_str(), CC_CALLBACK_1(SplashScene::menuItemCallback, this));
 		arr[indexMenu]->setColor(Color3B(255, 255, 255));
 		arr[indexMenu]->setUserData((void*)indexMenu);
-		arr[indexMenu]->setPosition(0, 100 - 50 * indexMenu);
+		arr[indexMenu]->setPosition(0, 100 - 60 * indexMenu);
 
 		++indexMenu;
 		arr[indexMenu] = MenuItemFont::create(main_menu.c_str(), CC_CALLBACK_1(SplashScene::menuItemCallback, this));
 		arr[indexMenu]->setColor(Color3B(255, 255, 255));
 		arr[indexMenu]->setUserData((void*)indexMenu);
-		arr[indexMenu]->setPosition(0, 100 - 50 * indexMenu);
+		arr[indexMenu]->setPosition(0, 100 - 60 * indexMenu);
 
 		++indexMenu;
 		arr[indexMenu] = MenuItemFont::create(return_game.c_str(), CC_CALLBACK_1(SplashScene::menuItemCallback, this));
 		arr[indexMenu]->setColor(Color3B(255, 255, 255));
 		arr[indexMenu]->setUserData((void*)indexMenu);
-		arr[indexMenu]->setPosition(0, 100 - 50 * indexMenu);
+		arr[indexMenu]->setPosition(0, 100 - 60 * indexMenu);
 		m_pMenu = Menu::create(arr[0], arr[1], arr[2], NULL);
 		m_pMenu->setPosition(visibleSize.width / 2, visibleSize.height / 2);
 		m_pMenu->setVisible(false);
-		this->addChild(m_pMenu, ZORDER_CHOOSE);
+		this->addChild(m_pMenu, ZOORDER_MASK);
 	}
 	
 
@@ -225,6 +234,10 @@ void SplashScene::InitAllUI()
 void SplashScene::menuItemCallback(cocos2d::Ref* pSender)
 {
 	SimpleAudioEngine::sharedEngine()->playEffect("wav/al.wav");
+
+	Director::getInstance()->resume();
+
+	m_MenuBK->setVisible(false);
 	m_pMenu->setVisible(false);
 	MenuItemFont* menuItem = (MenuItemFont*)pSender;
 	if (menuItem)
@@ -238,6 +251,7 @@ void SplashScene::menuItemCallback(cocos2d::Ref* pSender)
 		else if (index == 1)
 		{
 			stopAllActions();
+			Director::getInstance()->popScene();
 			auto scene = TitleScene::createScene();
 			Director::getInstance()->runWithScene/*replaceScene*/(scene);
 		}
@@ -408,14 +422,17 @@ void SplashScene::BtnClick(cocos2d::Ref* pSender, Widget::TouchEventType type)
 	}
 }
 
-void SplashScene::BtnSave(cocos2d::Ref* pSender, Widget::TouchEventType type)
+void SplashScene::BtnMenu(cocos2d::Ref* pSender, Widget::TouchEventType type)
 {
 	if (type == Widget::TouchEventType::ENDED)
 	{
+		m_MenuBK->setVisible(true);
 		m_pMenu->setVisible(true);
-// 		SimpleAudioEngine::sharedEngine()->playEffect("wav/al.wav");
+ 		SimpleAudioEngine::sharedEngine()->playEffect("wav/al.wav");
 // 		auto scene = SaveScene::createScene(true);
 // 		Director::getInstance()->runWithScene(scene);
+
+		Director::getInstance()->pause();
 	}
 }
 
@@ -514,7 +531,7 @@ void SplashScene::update(float delta)
 				scheduleOnce([&](float dt)
 				{
 					showText();
-				}, 1.5f,"showText");	//CC_REPEAT_FOREVER，可执行多次
+				}, 1.0f,"showText");	//CC_REPEAT_FOREVER，可执行多次
 			}
 			else
 			{
