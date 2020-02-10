@@ -1,10 +1,10 @@
 ﻿<dict>
 	<!--event:{"role":999,"ico":"","bk":"","music":"","wav":"","item":"","shark":5,"mask":"mask1","bktime":0,"mv":1.5,"bkx":10,"bky":10,"goto":0,"choose":[{"key":"chs15_0","bk":"","goto":0},{"key":"chs15_1","bk":"","goto":0}]}-->
 	<key>debug_start</key>
-	<string>4089</string><!--3684-->
+	<string>1</string><!--3684-->
 	
 	<key>first</key>
-    <string>这一次…请给他们一个圆满的结局！</string>
+    <string>仙剑奇侠传四番外篇...点击任意处开始游戏！</string>
 
 	<key>et_1</key>
     <string>{"bk":"bk1","music":"snd/scxd.mp3","tag":"第一章 序章"}</string>
@@ -22020,47 +22020,92 @@
 	<key>4101</key>
 	<string></string>
 	<key>et_4102</key>
-    <string>{"mv":5,"bk":"bk219"}</string>
+    <string>{"bk":"bk223"}</string>
 	<key>4102</key>
-	<string></string>
+	<string>
+青鸾峰上……还是如往日般寂静……</string>
 	<key>et_4103</key>
-    <string>{"bk":"bk220"}</string>
+    <string>{}</string>
 	<key>4103</key>
-	<string>慕容紫英：
-		……你来了。</string>
+	<string>
+时光如梭……琼华之祸，距今已是百年……</string>
 	<key>et_4104</key>
     <string>{}</string>
 	<key>4104</key>
-	<string>柳梦璃：
-		紫英……这些年来，过得可好？</string>
+	<string>
+天河因此双目失明，不过好在有菱纱悉心照料……</string>
+
 	<key>et_4105</key>
-    <string>{}</string>
+    <string>{"bk":"bk224"}</string>
 	<key>4105</key>
-	<string>慕容紫英：
-		……无所谓好或不好，人生一场虚空大梦，韶华白首，不过转瞬。惟有天道恒在，往复循环，不曾更改……</string>
+	<string>
+来到屋小木屋外，两只蝴蝶正自在飞舞……</string>
 	<key>et_4106</key>
     <string>{}</string>
 	<key>4106</key>
-	<string>慕容紫英：
-		他……他们也等你很久了，一定有许多话要说，我先回剑冢……</string>
+	<string>
+生尽欢，死无憾……唉……</string>
+
 	<key>et_4107</key>
-    <string>{"mv":6,"bk":"bk221"}</string>
+    <string>{}</string>
 	<key>4107</key>
-	<string></string>
+	<string>
+你们相濡以沫的时日虽然不多，也似神仙眷侣了……</string>
+		
 	<key>et_4108</key>
-    <string>{"mv":5,"bk":"bk222"}</string>
+    <string>{}</string>
 	<key>4108</key>
-	<string></string>
+	<string>
+差点忘了……我还有一件事今天要做……下次再来了……</string>
+
 	<key>et_4109</key>
-    <string>{"mv":5,"bk":"bk223"}</string>
+    <string>{"bk":"bk220"}</string>
 	<key>4109</key>
-	<string></string>
+	<string>
+今日之约已是百年整…………</string>
+	
 	<key>et_4110</key>
-    <string>{"mv":5,"bk":"bk224"}</string>
+    <string>{"bk":"bk219"}</string>
 	<key>4110</key>
-	<string></string>
+	<string>慕容紫英：
+		……你来了。</string>
 	<key>et_4111</key>
-    <string>{"mv":4,"bk":"bk225"}</string>
+    <string>{}</string>
 	<key>4111</key>
+	<string>柳梦璃：
+		紫英……这些年来，过得可好？</string>
+	<key>et_4112</key>
+    <string>{}</string>
+	<key>4112</key>
+	<string>慕容紫英：
+		……无所谓好或不好，人生一场虚空大梦，韶华白首，不过转瞬。惟有天道恒在，往复循环，不曾更改……</string>
+	<key>et_4113</key>
+    <string>{}</string>
+	<key>4113</key>
+	<string>慕容紫英：
+		见到你无恙我真的很开心……</string>
+	<key>et_4114</key>
+    <string>{}</string>
+	<key>4114</key>
+	<string>慕容紫英：
+		我还有要事，要去天墉一趟……</string>
+	<key>et_4115</key>
+    <string>{}</string>
+	<key>4115</key>
+	<string>慕容紫英：
+		他们……也等你很久了，一定有许多话要说……</string>
+	
+	<key>et_4116</key>
+    <string>{"mv":4}</string>
+	<key>4116</key>
+	<string>柳梦璃：
+		紫英……</string>
+	<key>et_4117</key>
+    <string>{"mv":8,"bk":"bk221"}</string>
+	<key>4117</key>
+	<string></string>
+	<key>et_4118</key>
+    <string>{"mv":4,"bk":"bk225"}</string>
+	<key>4118</key>
 	<string></string>
 </dict>
